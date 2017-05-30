@@ -1,421 +1,4 @@
 @charset "UTF-8";
-/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
-/* line 2, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-wrap,
-.fancybox-skin,
-.fancybox-outer,
-.fancybox-inner,
-.fancybox-image,
-.fancybox-wrap iframe,
-.fancybox-wrap object,
-.fancybox-nav,
-.fancybox-nav span,
-.fancybox-tmp {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: none;
-  vertical-align: top;
-}
-
-/* line 20, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 8020;
-}
-
-/* line 27, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-skin {
-  position: relative;
-  background: #f9f9f9;
-  color: #444;
-  text-shadow: none;
-  border-radius: 4px;
-}
-
-/* line 37, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-opened {
-  z-index: 8030;
-}
-
-/* line 41, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-opened .fancybox-skin {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-
-/* line 47, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-outer, .fancybox-inner {
-  position: relative;
-}
-
-/* line 51, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-inner {
-  overflow: hidden;
-}
-
-/* line 55, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-type-iframe .fancybox-inner {
-  -webkit-overflow-scrolling: touch;
-}
-
-/* line 59, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-error {
-  color: #444;
-  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 15px;
-  white-space: nowrap;
-}
-
-/* line 67, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-image, .fancybox-iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 73, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-image {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* line 78, ../../app/styles/_jquery.fancybox.scss */
-#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-  background-image: url("../img/fancybox_sprite.png");
-}
-
-/* line 82, ../../app/styles/_jquery.fancybox.scss */
-#fancybox-loading {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -22px;
-  margin-left: -22px;
-  background-position: 0 -108px;
-  opacity: 0.8;
-  cursor: pointer;
-  z-index: 8060;
-}
-
-/* line 94, ../../app/styles/_jquery.fancybox.scss */
-#fancybox-loading div {
-  width: 44px;
-  height: 44px;
-  background: url("../img/fancybox_loading.gif") center center no-repeat;
-}
-
-/* line 100, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-close {
-  position: absolute;
-  top: -18px;
-  right: -18px;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  z-index: 8040;
-}
-
-/* line 110, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-nav {
-  position: absolute;
-  top: 0;
-  width: 40%;
-  height: 100%;
-  cursor: pointer;
-  text-decoration: none;
-  background: transparent url("blank.gif");
-  /* helps IE */
-  -webkit-tap-highlight-color: transparent;
-  z-index: 8040;
-}
-
-/* line 122, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-prev {
-  left: 0;
-}
-
-/* line 126, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-next {
-  right: 0;
-}
-
-/* line 130, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-nav span {
-  position: absolute;
-  top: 50%;
-  width: 36px;
-  height: 34px;
-  margin-top: -18px;
-  cursor: pointer;
-  z-index: 8040;
-  visibility: hidden;
-}
-
-/* line 141, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-prev span {
-  left: 10px;
-  background-position: 0 -36px;
-}
-
-/* line 146, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-next span {
-  right: 10px;
-  background-position: 0 -72px;
-}
-
-/* line 151, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-nav:hover span {
-  visibility: visible;
-}
-
-/* line 155, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-tmp {
-  position: absolute;
-  top: -99999px;
-  left: -99999px;
-  visibility: hidden;
-  max-width: 99999px;
-  max-height: 99999px;
-  overflow: visible !important;
-}
-
-/* Overlay helper */
-/* line 167, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-lock {
-  overflow: hidden !important;
-  width: auto;
-}
-
-/* line 172, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-lock body {
-  overflow: hidden !important;
-}
-
-/* line 176, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-lock-test {
-  overflow-y: hidden !important;
-}
-
-/* line 180, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  display: none;
-  z-index: 8000;
-  background: url("../img/fancybox_overlay.png");
-}
-
-/* line 190, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-overlay-fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-/* line 196, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-lock .fancybox-overlay {
-  overflow: auto;
-  overflow-y: scroll;
-}
-
-/* Title helper */
-/* line 203, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-title {
-  visibility: hidden;
-  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
-  position: relative;
-  text-shadow: none;
-  z-index: 8050;
-}
-
-/* line 211, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-opened .fancybox-title {
-  visibility: visible;
-}
-
-/* line 215, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-title-float-wrap {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  margin-bottom: -35px;
-  z-index: 8050;
-  text-align: center;
-}
-
-/* line 224, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-title-float-wrap .child {
-  display: inline-block;
-  margin-right: -100%;
-  padding: 2px 20px;
-  background: transparent;
-  /* Fallback for web browsers that doesn't support RGBa */
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 15px;
-  text-shadow: 0 1px 2px #222;
-  color: #FFF;
-  font-weight: bold;
-  line-height: 24px;
-  white-space: nowrap;
-}
-
-/* line 240, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-title-outside-wrap {
-  position: relative;
-  margin-top: 10px;
-  color: #fff;
-}
-
-/* line 246, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-title-inside-wrap {
-  padding-top: 10px;
-}
-
-/* line 250, ../../app/styles/_jquery.fancybox.scss */
-.fancybox-title-over-wrap {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  padding: 10px;
-  background: #000;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/*Retina graphics!*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 265, ../../app/styles/_jquery.fancybox.scss */
-  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-    background-image: url("../img/fancybox_sprite@2x.png");
-    background-size: 44px 152px;
-    /*The size of the normal image, half the size of the hi-res image*/
-  }
-
-  /* line 270, ../../app/styles/_jquery.fancybox.scss */
-  #fancybox-loading div {
-    background-image: url("../img/fancybox_loading@2x.gif");
-    background-size: 24px 24px;
-    /*The size of the normal image, half the size of the hi-res image*/
-  }
-}
-/* Flickity
-------------------------- */
-/* line 4, ../../app/styles/_flickity.scss */
-.flickity-enabled {
-  position: relative;
-}
-
-/* line 8, ../../app/styles/_flickity.scss */
-.flickity-enabled:focus {
-  outline: none;
-}
-
-/* line 10, ../../app/styles/_flickity.scss */
-.flickity-viewport {
-  overflow: hidden;
-  position: relative;
-  cursor: grab;
-}
-
-/* line 17, ../../app/styles/_flickity.scss */
-.flickity-viewport.is-pointer-down {
-  cursor: grabbing;
-}
-
-/* line 22, ../../app/styles/_flickity.scss */
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-}
-
-/* ---- previous/next buttons ---- */
-/* line 29, ../../app/styles/_flickity.scss */
-.flickity-prev-next-button {
-  position: absolute;
-  top: 50%;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background: white;
-  background: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  /* vertically center */
-  transform: translateY(-50%);
-}
-
-/* line 45, ../../app/styles/_flickity.scss */
-.flickity-prev-next-button.previous {
-  left: 10px;
-}
-
-/* line 46, ../../app/styles/_flickity.scss */
-.flickity-prev-next-button.next {
-  right: 10px;
-}
-
-/* line 48, ../../app/styles/_flickity.scss */
-.flickity-prev-next-button:disabled {
-  opacity: 0.3;
-  cursor: auto;
-}
-
-/* line 53, ../../app/styles/_flickity.scss */
-.flickity-prev-next-button svg {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  width: 60%;
-  height: 60%;
-}
-
-/* line 61, ../../app/styles/_flickity.scss */
-.flickity-prev-next-button .arrow {
-  fill: #333;
-}
-
-/* color & size if no SVG - IE8 and Android 2.3 */
-/* line 66, ../../app/styles/_flickity.scss */
-.flickity-prev-next-button.no-svg {
-  color: #333;
-  font-size: 26px;
-}
-
-/* ---- page dots ---- */
-/* line 73, ../../app/styles/_flickity.scss */
-.flickity-page-dots {
-  position: absolute;
-  width: 100%;
-  bottom: -25px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  line-height: 1;
-}
-
-/* line 84, ../../app/styles/_flickity.scss */
-.flickity-page-dots .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 8px;
-  background: #333;
-  border-radius: 50%;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-/* line 95, ../../app/styles/_flickity.scss */
-.flickity-page-dots .dot.is-selected {
-  opacity: 1;
-}
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -9118,13 +8701,14 @@ button.close {
   }
 }
 /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
-/* line 15, ../../app/styles/_app.scss */
+/* line 11, ../../app/styles/_customs.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -9132,7 +8716,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 /*
 * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
-/* line 22, ../../app/styles/_app.scss */
+/* line 18, ../../app/styles/_customs.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
@@ -9143,7 +8727,7 @@ audio, canvas, video {
 * Prevents modern browsers from displaying `audio` without controls.
 * Remove excess height in iOS 5 devices.
 */
-/* line 32, ../../app/styles/_app.scss */
+/* line 28, ../../app/styles/_customs.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -9153,7 +8737,7 @@ audio:not([controls]) {
 * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
 * Known issue:no IE 6 support.
 */
-/* line 41, ../../app/styles/_app.scss */
+/* line 37, ../../app/styles/_customs.scss */
 [hidden] {
   display: none;
 }
@@ -9167,7 +8751,7 @@ Base
 * 2. Prevents iOS text size adjust after orientation change, without disabling
 *    user zoom.
 */
-/* line 55, ../../app/styles/_app.scss */
+/* line 51, ../../app/styles/_customs.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -9181,13 +8765,13 @@ html {
 * Addresses `font-family` inconsistency between `textarea` and other form
 * elements.
 */
-/* line 65, ../../app/styles/_app.scss */
+/* line 61, ../../app/styles/_customs.scss */
 html, button, input, select, textarea {
   font-family: sans-serif;
   font-family: 'Nunito', sans-serif;
 }
 
-/* line 69, ../../app/styles/_app.scss */
+/* line 65, ../../app/styles/_customs.scss */
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -9196,7 +8780,7 @@ html, body {
 /*
 * Addresses margins handled incorrectly in IE 6/7.
 */
-/* line 77, ../../app/styles/_app.scss */
+/* line 73, ../../app/styles/_customs.scss */
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
@@ -9205,7 +8789,7 @@ body {
 /*
 * Font Smoothing
 */
-/* line 85, ../../app/styles/_app.scss */
+/* line 81, ../../app/styles/_customs.scss */
 html, html a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   -webkit-font-smoothing: antialiased;
@@ -9217,7 +8801,7 @@ Links
 /*
 * Addresses `outline` inconsistency between Chrome and other browsers.
 */
-/* line 97, ../../app/styles/_app.scss */
+/* line 93, ../../app/styles/_customs.scss */
 a:focus {
   outline: thin dotted;
   text-decoration: none;
@@ -9226,7 +8810,7 @@ a:focus {
 /*
 * Improves readability when focused and also mouse hovered in all browsers.
 */
-/* line 105, ../../app/styles/_app.scss */
+/* line 101, ../../app/styles/_customs.scss */
 a:active, a:hover {
   outline: 0;
   text-decoration: none;
@@ -9239,37 +8823,37 @@ Typography
 * Addresses font sizes and margins set differently in IE 6/7.
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
 */
-/* line 118, ../../app/styles/_app.scss */
+/* line 114, ../../app/styles/_customs.scss */
 h1 {
   margin: 0.67em 0;
   font-size: 2em;
 }
 
-/* line 122, ../../app/styles/_app.scss */
+/* line 118, ../../app/styles/_customs.scss */
 h2 {
   margin: 0.83em 0;
   font-size: 1.5em;
 }
 
-/* line 126, ../../app/styles/_app.scss */
+/* line 122, ../../app/styles/_customs.scss */
 h3 {
   margin: 1em 0;
   font-size: 1.17em;
 }
 
-/* line 130, ../../app/styles/_app.scss */
+/* line 126, ../../app/styles/_customs.scss */
 h4 {
   margin: 1.33em 0;
   font-size: 1em;
 }
 
-/* line 134, ../../app/styles/_app.scss */
+/* line 130, ../../app/styles/_customs.scss */
 h5 {
   margin: 1.67em 0;
   font-size: 0.83em;
 }
 
-/* line 138, ../../app/styles/_app.scss */
+/* line 134, ../../app/styles/_customs.scss */
 h6 {
   margin: 2.33em 0;
   font-size: 0.75em;
@@ -9278,7 +8862,7 @@ h6 {
 /*
 * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
 */
-/* line 146, ../../app/styles/_app.scss */
+/* line 142, ../../app/styles/_customs.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -9286,12 +8870,12 @@ abbr[title] {
 /*
 * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
 */
-/* line 153, ../../app/styles/_app.scss */
+/* line 149, ../../app/styles/_customs.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 156, ../../app/styles/_app.scss */
+/* line 152, ../../app/styles/_customs.scss */
 blockquote {
   margin: 0px;
 }
@@ -9299,7 +8883,7 @@ blockquote {
 /*
 * Addresses styling not present in Safari 5 and Chrome.
 */
-/* line 163, ../../app/styles/_app.scss */
+/* line 159, ../../app/styles/_customs.scss */
 dfn {
   font-style: italic;
 }
@@ -9307,7 +8891,7 @@ dfn {
 /*
 * Addresses styling not present in IE 6/7/8/9.
 */
-/* line 170, ../../app/styles/_app.scss */
+/* line 166, ../../app/styles/_customs.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -9316,7 +8900,7 @@ mark {
 /*
 * Addresses margins set differently in IE 6/7.
 */
-/* line 178, ../../app/styles/_app.scss */
+/* line 174, ../../app/styles/_customs.scss */
 p, pre {
   margin: 1em 0;
 }
@@ -9324,7 +8908,7 @@ p, pre {
 /*
 * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
 */
-/* line 185, ../../app/styles/_app.scss */
+/* line 181, ../../app/styles/_customs.scss */
 code, kbd, pre, samp {
   font-size: 1em;
   font-family: monospace, serif;
@@ -9334,7 +8918,7 @@ code, kbd, pre, samp {
 /*
 * Improves readability of pre-formatted text in all browsers.
 */
-/* line 194, ../../app/styles/_app.scss */
+/* line 190, ../../app/styles/_customs.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -9344,7 +8928,7 @@ pre {
 /*
 * Addresses CSS quotes not supported in IE 6/7.
 */
-/* line 203, ../../app/styles/_app.scss */
+/* line 199, ../../app/styles/_customs.scss */
 q {
   quotes: none;
 }
@@ -9352,13 +8936,13 @@ q {
 /*
 * Addresses `quotes` property not supported in Safari 4.
 */
-/* line 210, ../../app/styles/_app.scss */
+/* line 206, ../../app/styles/_customs.scss */
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 214, ../../app/styles/_app.scss */
+/* line 210, ../../app/styles/_customs.scss */
 small {
   font-size: 75%;
 }
@@ -9366,7 +8950,7 @@ small {
 /*
 * Prevents `sub` and `sup` affecting `line-height` in all browsers.
 */
-/* line 221, ../../app/styles/_app.scss */
+/* line 217, ../../app/styles/_customs.scss */
 sub, sup {
   position: relative;
   vertical-align: baseline;
@@ -9374,12 +8958,12 @@ sub, sup {
   line-height: 0;
 }
 
-/* line 227, ../../app/styles/_app.scss */
+/* line 223, ../../app/styles/_customs.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 230, ../../app/styles/_app.scss */
+/* line 226, ../../app/styles/_customs.scss */
 sub {
   bottom: -0.25em;
 }
@@ -9390,12 +8974,12 @@ Lists
 /*
 * Addresses margins set differently in IE 6/7.
 */
-/* line 241, ../../app/styles/_app.scss */
+/* line 237, ../../app/styles/_customs.scss */
 dl, menu, ol, ul {
   margin: 1em 0;
 }
 
-/* line 244, ../../app/styles/_app.scss */
+/* line 240, ../../app/styles/_customs.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -9403,7 +8987,7 @@ dd {
 /*
 * Addresses paddings set differently in IE 6/7.
 */
-/* line 251, ../../app/styles/_app.scss */
+/* line 247, ../../app/styles/_customs.scss */
 menu, ol, ul {
   padding: 0;
 }
@@ -9411,7 +8995,7 @@ menu, ol, ul {
 /*
 * Corrects list images handled incorrectly in IE 7.
 */
-/* line 258, ../../app/styles/_app.scss */
+/* line 254, ../../app/styles/_customs.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none;
@@ -9424,7 +9008,7 @@ Embedded content
 * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
 * 2. Improves image quality when scaled in IE 7.
 */
-/* line 271, ../../app/styles/_app.scss */
+/* line 267, ../../app/styles/_customs.scss */
 img {
   border: 0;
   /* 1 */
@@ -9435,7 +9019,7 @@ img {
 /*
 * Corrects overflow displayed oddly in IE 9.
 */
-/* line 279, ../../app/styles/_app.scss */
+/* line 275, ../../app/styles/_customs.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -9446,7 +9030,7 @@ Figures
 /*
 * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
 */
-/* line 290, ../../app/styles/_app.scss */
+/* line 286, ../../app/styles/_customs.scss */
 figure {
   margin: 0;
 }
@@ -9457,7 +9041,7 @@ Forms
 /*
 * Corrects margin displayed oddly in IE 6/7.
 */
-/* line 301, ../../app/styles/_app.scss */
+/* line 297, ../../app/styles/_customs.scss */
 form {
   margin: 0;
 }
@@ -9465,7 +9049,7 @@ form {
 /*
 * Define consistent border, margin, and padding.
 */
-/* line 308, ../../app/styles/_app.scss */
+/* line 304, ../../app/styles/_customs.scss */
 fieldset {
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
@@ -9477,7 +9061,7 @@ fieldset {
 * 2. Corrects text not wrapping in Firefox 3.
 * 3. Corrects alignment displayed oddly in IE 6/7.
 */
-/* line 319, ../../app/styles/_app.scss */
+/* line 315, ../../app/styles/_customs.scss */
 legend {
   padding: 0;
   border: 0;
@@ -9493,7 +9077,7 @@ legend {
 * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
 * 3. Improves appearance and consistency in all browsers.
 */
-/* line 331, ../../app/styles/_app.scss */
+/* line 327, ../../app/styles/_customs.scss */
 button, input, select, textarea {
   margin: 0;
   /* 2 */
@@ -9509,7 +9093,7 @@ button, input, select, textarea {
 * Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
 * the UA stylesheet.
 */
-/* line 342, ../../app/styles/_app.scss */
+/* line 338, ../../app/styles/_customs.scss */
 button, input {
   line-height: normal;
 }
@@ -9523,7 +9107,7 @@ button, input {
 * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
 *    Known issue:inner spacing remains in IE 6.
 */
-/* line 355, ../../app/styles/_app.scss */
+/* line 351, ../../app/styles/_customs.scss */
 button, html input[type="button"],
 input[type="reset"], input[type="submit"] {
   cursor: pointer;
@@ -9537,7 +9121,7 @@ input[type="reset"], input[type="submit"] {
 /*
 * Re-set default cursor for disabled elements.
 */
-/* line 365, ../../app/styles/_app.scss */
+/* line 361, ../../app/styles/_customs.scss */
 button[disabled], input[disabled] {
   cursor: default;
 }
@@ -9548,7 +9132,7 @@ button[disabled], input[disabled] {
 * 3. Removes excess padding in IE 7.
 *    Known issue:excess padding remains in IE 6.
 */
-/* line 375, ../../app/styles/_app.scss */
+/* line 371, ../../app/styles/_customs.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
@@ -9565,7 +9149,7 @@ input[type="checkbox"], input[type="radio"] {
 * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
 *    (include `-moz` to future-proof).
 */
-/* line 387, ../../app/styles/_app.scss */
+/* line 383, ../../app/styles/_customs.scss */
 input[type="search"] {
   /* 2 */
   box-sizing: content-box;
@@ -9578,7 +9162,7 @@ input[type="search"] {
 * Removes inner padding and search cancel button in Safari 5 and Chrome
 * on OS X.
 */
-/* line 398, ../../app/styles/_app.scss */
+/* line 394, ../../app/styles/_customs.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -9586,7 +9170,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 /*
 * Removes inner padding and border in Firefox 3+.
 */
-/* line 405, ../../app/styles/_app.scss */
+/* line 401, ../../app/styles/_customs.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -9596,7 +9180,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 * 1. Removes default vertical scrollbar in IE 6/7/8/9.
 * 2. Improves readability and alignment in all browsers.
 */
-/* line 414, ../../app/styles/_app.scss */
+/* line 410, ../../app/styles/_customs.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -9610,7 +9194,7 @@ Tables
 /*
 * Remove most spacing between table cells.
 */
-/* line 426, ../../app/styles/_app.scss */
+/* line 422, ../../app/styles/_customs.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -9619,57 +9203,57 @@ table {
 /* ==========================================================================
 Global Styles
 ========================================================================== */
-/* line 434, ../../app/styles/_app.scss */
+/* line 430, ../../app/styles/_customs.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 439, ../../app/styles/_app.scss */
+/* line 435, ../../app/styles/_customs.scss */
 a {
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
   transition-property: color, border-color, background-color;
 }
 
-/* line 447, ../../app/styles/_app.scss */
+/* line 443, ../../app/styles/_customs.scss */
 .nopadding {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* line 451, ../../app/styles/_app.scss */
+/* line 447, ../../app/styles/_customs.scss */
 p {
   font-size: 14px;
   line-height: 25px;
 }
 
-/* line 455, ../../app/styles/_app.scss */
+/* line 451, ../../app/styles/_customs.scss */
 a {
   color: #73d0da;
 }
 
-/* line 458, ../../app/styles/_app.scss */
+/* line 454, ../../app/styles/_customs.scss */
 a:hover, a:focus {
   color: #73d0da;
   text-decoration: none;
 }
 
-/* line 462, ../../app/styles/_app.scss */
+/* line 458, ../../app/styles/_customs.scss */
 .texture-overlay {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background-image: url(../images/grid.png);
+  background-image: url(../img/grid.png);
 }
 
 /* ==========================================================================
 Buttons
 ========================================================================== */
-/* line 474, ../../app/styles/_app.scss */
+/* line 470, ../../app/styles/_customs.scss */
 .use-btn {
   display: inline-block;
   margin: 0 10px 10px 0;
@@ -9680,14 +9264,14 @@ Buttons
   font-size: 16px;
 }
 
-/* line 483, ../../app/styles/_app.scss */
+/* line 479, ../../app/styles/_customs.scss */
 .use-btn:hover, .use-btn:focus {
   background-color: #73d0da;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 488, ../../app/styles/_app.scss */
+/* line 484, ../../app/styles/_customs.scss */
 .learn-btn, .download-btn {
   display: inline-block;
   padding: 18px 46px;
@@ -9697,14 +9281,14 @@ Buttons
   font-size: 16px;
 }
 
-/* line 496, ../../app/styles/_app.scss */
+/* line 492, ../../app/styles/_customs.scss */
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
   border-color: #73d0da;
   color: #73d0da;
   text-decoration: none;
 }
 
-/* line 501, ../../app/styles/_app.scss */
+/* line 497, ../../app/styles/_customs.scss */
 .read-more-btn {
   display: inline-block;
   color: #323a45;
@@ -9712,17 +9296,17 @@ Buttons
   font-weight: 400;
 }
 
-/* line 507, ../../app/styles/_app.scss */
+/* line 503, ../../app/styles/_customs.scss */
 .read-more-btn i, .download-btn i {
   margin-left: 5px;
 }
 
-/* line 510, ../../app/styles/_app.scss */
+/* line 506, ../../app/styles/_customs.scss */
 .showcase .download-btn {
   margin-top: 50px;
 }
 
-/* line 513, ../../app/styles/_app.scss */
+/* line 509, ../../app/styles/_customs.scss */
 .download .download-btn {
   margin-top: 25px;
 }
@@ -9730,7 +9314,7 @@ Buttons
 /* ==========================================================================
 Navigation
 ========================================================================== */
-/* line 520, ../../app/styles/_app.scss */
+/* line 516, ../../app/styles/_customs.scss */
 .nav-toggle {
   position: absolute;
   top: 0;
@@ -9740,12 +9324,12 @@ Navigation
   cursor: pointer;
 }
 
-/* line 528, ../../app/styles/_app.scss */
+/* line 524, ../../app/styles/_customs.scss */
 .nav-toggle:focus {
   outline: none;
 }
 
-/* line 531, ../../app/styles/_app.scss */
+/* line 527, ../../app/styles/_customs.scss */
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   content: '';
   position: absolute;
@@ -9757,54 +9341,54 @@ Navigation
   cursor: pointer;
 }
 
-/* line 541, ../../app/styles/_app.scss */
+/* line 537, ../../app/styles/_customs.scss */
 .nav-toggle span:before {
   top: -10px;
 }
 
-/* line 544, ../../app/styles/_app.scss */
+/* line 540, ../../app/styles/_customs.scss */
 .nav-toggle span:after {
   bottom: -10px;
 }
 
-/* line 547, ../../app/styles/_app.scss */
+/* line 543, ../../app/styles/_customs.scss */
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   transition: all 300ms ease-in-out;
 }
 
-/* line 551, ../../app/styles/_app.scss */
+/* line 547, ../../app/styles/_customs.scss */
 .nav-toggle.active span {
   background-color: transparent;
 }
 
-/* line 554, ../../app/styles/_app.scss */
+/* line 550, ../../app/styles/_customs.scss */
 .nav-toggle.active span:before, .nav-toggle.active span:after {
   top: 0;
 }
 
-/* line 557, ../../app/styles/_app.scss */
+/* line 553, ../../app/styles/_customs.scss */
 .nav-toggle.active span:before {
   transform: rotate(45deg);
 }
 
-/* line 562, ../../app/styles/_app.scss */
+/* line 558, ../../app/styles/_customs.scss */
 .nav-toggle.active span:after {
   top: 10px;
   transform: translateY(-10px) rotate(-45deg);
 }
 
-/* line 568, ../../app/styles/_app.scss */
+/* line 564, ../../app/styles/_customs.scss */
 .navicon {
   position: relative;
   height: 26px;
 }
 
-/* line 572, ../../app/styles/_app.scss */
+/* line 568, ../../app/styles/_customs.scss */
 .navicon p {
   margin: 1px 50px 0 0;
 }
 
-/* line 575, ../../app/styles/_app.scss */
+/* line 571, ../../app/styles/_customs.scss */
 .navicon-fixed {
   position: fixed;
   top: 59px;
@@ -9814,42 +9398,42 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
-/* line 584, ../../app/styles/_app.scss */
+/* line 580, ../../app/styles/_customs.scss */
 .hero {
   position: relative;
   padding: 60px 0 60px 0;
   min-height: 800px;
-  background: #284666 url("../images/hero-01.jpg") no-repeat center center;
+  background: #284666 url("../img/hero-01.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
 }
 
-/* line 592, ../../app/styles/_app.scss */
+/* line 588, ../../app/styles/_customs.scss */
 .hero h1 {
   margin: 200px 0 45px 0;
   font-weight: 300;
   font-size: 45px;
 }
 
-/* line 597, ../../app/styles/_app.scss */
+/* line 593, ../../app/styles/_customs.scss */
 .hero h1 span {
   display: inline-block;
   color: #a1a9b0;
 }
 
-/* line 601, ../../app/styles/_app.scss */
+/* line 597, ../../app/styles/_customs.scss */
 #home {
   width: 100%;
   height: 100%;
 }
 
-/* line 605, ../../app/styles/_app.scss */
+/* line 601, ../../app/styles/_customs.scss */
 .hero {
   width: 100%;
   height: 100%;
 }
 
-/* line 609, ../../app/styles/_app.scss */
+/* line 605, ../../app/styles/_customs.scss */
 header i {
   margin-left: 5px;
 }
@@ -9857,7 +9441,7 @@ header i {
 /* ==========================================================================
 Video
 ========================================================================== */
-/* line 616, ../../app/styles/_app.scss */
+/* line 612, ../../app/styles/_customs.scss */
 section.video i {
   margin-right: 10px;
   color: #323a45;
@@ -9866,30 +9450,30 @@ section.video i {
   transition: color 300ms ease-in-out;
 }
 
-/* line 624, ../../app/styles/_app.scss */
+/* line 620, ../../app/styles/_customs.scss */
 section.video h1 {
   font-weight: 400;
   font-size: 20px;
 }
 
-/* line 628, ../../app/styles/_app.scss */
+/* line 624, ../../app/styles/_customs.scss */
 section.video {
   padding: 60px 0;
   background-color: #f6f7f9;
 }
 
-/* line 632, ../../app/styles/_app.scss */
+/* line 628, ../../app/styles/_customs.scss */
 section.video a {
   color: #323a45;
 }
 
-/* line 635, ../../app/styles/_app.scss */
+/* line 631, ../../app/styles/_customs.scss */
 section.video a:hover, section.video a:focus {
   color: #73d0da;
   text-decoration: none;
 }
 
-/* line 639, ../../app/styles/_app.scss */
+/* line 635, ../../app/styles/_customs.scss */
 section.video a:hover i, section.video a:focus i {
   color: #73d0da;
 }
@@ -9897,7 +9481,7 @@ section.video a:hover i, section.video a:focus i {
 /* ==========================================================================
 Custom Slider Controls (Flickity)
 ========================================================================== */
-/* line 646, ../../app/styles/_app.scss */
+/* line 642, ../../app/styles/_customs.scss */
 .flickity-page-dots .dot {
   width: 13px;
   height: 13px;
@@ -9907,7 +9491,7 @@ Custom Slider Controls (Flickity)
   transition: background 0.3s;
 }
 
-/* line 655, ../../app/styles/_app.scss */
+/* line 651, ../../app/styles/_customs.scss */
 .flickity-page-dots .dot.is-selected {
   background: white;
 }
@@ -9915,15 +9499,15 @@ Custom Slider Controls (Flickity)
 /* ==========================================================================
 Features Slider
 ========================================================================== */
-/* line 662, ../../app/styles/_app.scss */
+/* line 658, ../../app/styles/_customs.scss */
 .features-bg {
   position: relative;
   min-height: 400px;
-  background: url("../images/features-intro-01.jpg") no-repeat center center;
+  background: url("../img/features-intro-01.jpg") no-repeat center center;
   background-size: cover;
 }
 
-/* line 668, ../../app/styles/_app.scss */
+/* line 664, ../../app/styles/_customs.scss */
 .features-img {
   width: 100%;
   height: 400px;
@@ -9931,7 +9515,7 @@ Features Slider
   line-height: 400px;
 }
 
-/* line 674, ../../app/styles/_app.scss */
+/* line 670, ../../app/styles/_customs.scss */
 .features-slider {
   position: relative;
   padding: 11% 100px 10% 100px;
@@ -9939,19 +9523,19 @@ Features Slider
   background-color: #3F6184;
 }
 
-/* line 680, ../../app/styles/_app.scss */
+/* line 676, ../../app/styles/_customs.scss */
 .features-slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 685, ../../app/styles/_app.scss */
+/* line 681, ../../app/styles/_customs.scss */
 .features-slider ul li {
   width: 100%;
 }
 
-/* line 688, ../../app/styles/_app.scss */
+/* line 684, ../../app/styles/_customs.scss */
 .features-slider li h1 {
   margin-bottom: 15px;
   color: #fff;
@@ -9959,31 +9543,31 @@ Features Slider
   font-size: 22px;
 }
 
-/* line 694, ../../app/styles/_app.scss */
+/* line 690, ../../app/styles/_customs.scss */
 .features-slider li p {
   color: #fff;
   font-size: 14px;
 }
 
-/* line 698, ../../app/styles/_app.scss */
+/* line 694, ../../app/styles/_customs.scss */
 .features-intro-img {
   position: relative;
 }
 
-/* line 701, ../../app/styles/_app.scss */
+/* line 697, ../../app/styles/_customs.scss */
 .slides li h1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 705, ../../app/styles/_app.scss */
+/* line 701, ../../app/styles/_customs.scss */
 .features-slider .flickity-page-dots {
   text-align: left;
   margin-top: 50px;
   position: static;
 }
 
-/* line 710, ../../app/styles/_app.scss */
+/* line 706, ../../app/styles/_customs.scss */
 .features-slider .flickity-page-dots .dot {
   margin: 0 12px 0 0;
 }
@@ -9991,12 +9575,12 @@ Features Slider
 /* ==========================================================================
 Features List
 ========================================================================== */
-/* line 717, ../../app/styles/_app.scss */
+/* line 713, ../../app/styles/_customs.scss */
 .features-list {
   padding: 130px 0;
 }
 
-/* line 720, ../../app/styles/_app.scss */
+/* line 716, ../../app/styles/_customs.scss */
 .features-list h1 {
   margin: 0 0 10px 0;
   padding: 0;
@@ -10004,20 +9588,20 @@ Features List
   font-size: 20px;
 }
 
-/* line 726, ../../app/styles/_app.scss */
+/* line 722, ../../app/styles/_customs.scss */
 .features-list p {
   margin-bottom: 20px;
   color: #778899;
 }
 
-/* line 730, ../../app/styles/_app.scss */
+/* line 726, ../../app/styles/_customs.scss */
 .feature-content {
   display: inline-block;
   margin-left: 0;
   width: 65%;
 }
 
-/* line 735, ../../app/styles/_app.scss */
+/* line 731, ../../app/styles/_customs.scss */
 .feature-icon {
   display: inline-block;
   margin-right: 25px;
@@ -10031,7 +9615,7 @@ Features List
   line-height: 90px;
 }
 
-/* line 747, ../../app/styles/_app.scss */
+/* line 743, ../../app/styles/_customs.scss */
 .feature-icon i {
   color: #4e9ba3;
 }
@@ -10039,14 +9623,14 @@ Features List
 /* ==========================================================================
 Blockquote
 ========================================================================== */
-/* line 754, ../../app/styles/_app.scss */
+/* line 750, ../../app/styles/_customs.scss */
 blockquote {
   margin: 40px 0 0;
   padding: 0;
   border: none;
 }
 
-/* line 759, ../../app/styles/_app.scss */
+/* line 755, ../../app/styles/_customs.scss */
 blockquote p {
   display: inline-block;
   margin: 0;
@@ -10056,7 +9640,7 @@ blockquote p {
   font-style: italic;
 }
 
-/* line 767, ../../app/styles/_app.scss */
+/* line 763, ../../app/styles/_customs.scss */
 blockquote .avatar {
   display: inline-block;
   margin-right: 20px;
@@ -10065,7 +9649,7 @@ blockquote .avatar {
   vertical-align: middle;
 }
 
-/* line 774, ../../app/styles/_app.scss */
+/* line 770, ../../app/styles/_customs.scss */
 blockquote .logo-quote {
   display: inline-block;
   margin: 0 0 0 90px;
@@ -10074,13 +9658,13 @@ blockquote .logo-quote {
 /* ==========================================================================
 Showcase
 ========================================================================== */
-/* line 782, ../../app/styles/_app.scss */
+/* line 778, ../../app/styles/_customs.scss */
 .showcase {
-  background: url("../images/showcase-bg-fixed-01.jpg") no-repeat center center fixed;
+  background: url("../img/showcase-bg-fixed-01.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* line 786, ../../app/styles/_app.scss */
+/* line 782, ../../app/styles/_customs.scss */
 .showcase h1 {
   margin: 0 0 20px 0;
   color: #fff;
@@ -10088,23 +9672,23 @@ Showcase
   font-size: 22px;
 }
 
-/* line 792, ../../app/styles/_app.scss */
+/* line 788, ../../app/styles/_customs.scss */
 .showcase p {
   margin-bottom: 25px;
   color: #fff;
 }
 
-/* line 796, ../../app/styles/_app.scss */
+/* line 792, ../../app/styles/_customs.scss */
 .device {
   position: absolute;
   top: -60px;
   left: 20%;
   min-height: 676px;
   width: 359px;
-  background: url("../images/iphone-skeleton.png") no-repeat center center;
+  background: url("../img/iphone-skeleton.png") no-repeat center center;
 }
 
-/* line 804, ../../app/styles/_app.scss */
+/* line 800, ../../app/styles/_customs.scss */
 .device-content {
   position: absolute;
   top: 115px;
@@ -10114,27 +9698,27 @@ Showcase
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 812, ../../app/styles/_app.scss */
+/* line 808, ../../app/styles/_customs.scss */
 .device-content img {
   width: 247px;
   height: 445px;
 }
 
-/* line 816, ../../app/styles/_app.scss */
+/* line 812, ../../app/styles/_customs.scss */
 .showcase-wrap {
   position: relative;
   padding: 100px 0;
   min-height: 600px;
 }
 
-/* line 821, ../../app/styles/_app.scss */
+/* line 817, ../../app/styles/_customs.scss */
 .showcase-slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 826, ../../app/styles/_app.scss */
+/* line 822, ../../app/styles/_customs.scss */
 .showcase-slider .flickity-page-dots {
   bottom: 20px;
 }
@@ -10142,13 +9726,13 @@ Showcase
 /* ==========================================================================
 Screenshots Intro
 ========================================================================== */
-/* line 833, ../../app/styles/_app.scss */
+/* line 829, ../../app/styles/_customs.scss */
 .screenshots-intro {
   padding: 170px 0 100px 0;
   background-color: #f6f7f9;
 }
 
-/* line 837, ../../app/styles/_app.scss */
+/* line 833, ../../app/styles/_customs.scss */
 .screenshots-intro h1 {
   margin-bottom: 20px;
   color: #24374b;
@@ -10156,7 +9740,7 @@ Screenshots Intro
   font-size: 22px;
 }
 
-/* line 843, ../../app/styles/_app.scss */
+/* line 839, ../../app/styles/_customs.scss */
 .screenshots-intro p {
   margin-bottom: 25px;
   color: #778899;
@@ -10165,14 +9749,14 @@ Screenshots Intro
 /* ==========================================================================
 Screenshots
 ========================================================================== */
-/* line 851, ../../app/styles/_app.scss */
+/* line 847, ../../app/styles/_customs.scss */
 .screenshots ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 856, ../../app/styles/_app.scss */
+/* line 852, ../../app/styles/_customs.scss */
 .screenshots ul li {
   float: left;
   min-height: 100%;
@@ -10181,25 +9765,25 @@ Screenshots
   list-style: none;
 }
 
-/* line 863, ../../app/styles/_app.scss */
+/* line 859, ../../app/styles/_customs.scss */
 .screenshots figure {
   position: relative;
   overflow: hidden;
 }
 
-/* line 867, ../../app/styles/_app.scss */
+/* line 863, ../../app/styles/_customs.scss */
 .screenshots figure img {
   width: 100%;
   height: 100%;
   transition: all 300ms ease-in-out;
 }
 
-/* line 873, ../../app/styles/_app.scss */
+/* line 869, ../../app/styles/_customs.scss */
 .screenshots figure:hover img, .screenshots figure:focus img {
   transform: scale(1.1);
 }
 
-/* line 878, ../../app/styles/_app.scss */
+/* line 874, ../../app/styles/_customs.scss */
 .screenshots figcaption {
   position: absolute;
   top: 0;
@@ -10214,44 +9798,44 @@ Screenshots
   transition: all 300ms ease-in-out;
 }
 
-/* line 892, ../../app/styles/_app.scss */
+/* line 888, ../../app/styles/_customs.scss */
 .screenshots figcaption a {
   color: #fff;
 }
 
-/* line 895, ../../app/styles/_app.scss */
+/* line 891, ../../app/styles/_customs.scss */
 .screenshots figcaption a:hover, .screenshots figcaption a:focus {
   color: #73d0da;
 }
 
-/* line 898, ../../app/styles/_app.scss */
+/* line 894, ../../app/styles/_customs.scss */
 .screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
   opacity: 1;
 }
 
-/* line 901, ../../app/styles/_app.scss */
+/* line 897, ../../app/styles/_customs.scss */
 .visible {
   opacity: 1;
 }
 
-/* line 904, ../../app/styles/_app.scss */
+/* line 900, ../../app/styles/_customs.scss */
 .screenshots figure.cs-hover figcaption {
   opacity: 1;
 }
 
-/* line 907, ../../app/styles/_app.scss */
+/* line 903, ../../app/styles/_customs.scss */
 .screenshots figcaption i {
   font-size: 35px;
 }
 
-/* line 910, ../../app/styles/_app.scss */
+/* line 906, ../../app/styles/_customs.scss */
 .screenshots figcaption p {
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-/* line 915, ../../app/styles/_app.scss */
+/* line 911, ../../app/styles/_customs.scss */
 .screenshots figcaption .caption-content {
   position: absolute;
   top: 50%;
@@ -10263,7 +9847,7 @@ Screenshots
   transition: all 300ms ease-in-out;
 }
 
-/* line 928, ../../app/styles/_app.scss */
+/* line 924, ../../app/styles/_customs.scss */
 .screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
   transform: translate(0px, 0px);
 }
@@ -10271,13 +9855,13 @@ Screenshots
 /* ==========================================================================
 Download Now
 ========================================================================== */
-/* line 937, ../../app/styles/_app.scss */
+/* line 933, ../../app/styles/_customs.scss */
 .download {
   padding: 120px 0;
   background-color: #3f6184;
 }
 
-/* line 941, ../../app/styles/_app.scss */
+/* line 937, ../../app/styles/_customs.scss */
 .download h1 {
   margin: 0 0 15px 0;
   color: #fff;
@@ -10288,23 +9872,23 @@ Download Now
 /* ==========================================================================
 Footer
 ========================================================================== */
-/* line 951, ../../app/styles/_app.scss */
+/* line 947, ../../app/styles/_customs.scss */
 footer {
   padding: 100px 0;
 }
 
-/* line 954, ../../app/styles/_app.scss */
+/* line 950, ../../app/styles/_customs.scss */
 footer p {
   color: #c7cacc;
   font-size: 12px;
 }
 
-/* line 958, ../../app/styles/_app.scss */
+/* line 954, ../../app/styles/_customs.scss */
 footer ul {
   margin-top: 30px;
 }
 
-/* line 961, ../../app/styles/_app.scss */
+/* line 957, ../../app/styles/_customs.scss */
 footer li {
   float: left;
   margin-right: 15%;
@@ -10313,12 +9897,12 @@ footer li {
   font-weight: 400;
 }
 
-/* line 968, ../../app/styles/_app.scss */
+/* line 964, ../../app/styles/_customs.scss */
 footer li a {
   color: #3f6184;
 }
 
-/* line 971, ../../app/styles/_app.scss */
+/* line 967, ../../app/styles/_customs.scss */
 footer li:last-child {
   margin-right: 0;
 }
@@ -10327,18 +9911,18 @@ footer li:last-child {
 Nav Overlay
 ========================================================================== */
 /* Overlay style */
-/* line 980, ../../app/styles/_app.scss */
+/* line 976, ../../app/styles/_customs.scss */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(52, 82, 113, 0.95);
+  background: #D7C966;
 }
 
 /* Menu style */
-/* line 990, ../../app/styles/_app.scss */
+/* line 986, ../../app/styles/_customs.scss */
 .overlay nav {
   position: relative;
   top: 50%;
@@ -10348,7 +9932,7 @@ Nav Overlay
   transform: translateY(-50%);
 }
 
-/* line 1000, ../../app/styles/_app.scss */
+/* line 996, ../../app/styles/_customs.scss */
 .overlay ul {
   position: relative;
   display: inline-block;
@@ -10357,89 +9941,89 @@ Nav Overlay
   list-style: none;
 }
 
-/* line 1007, ../../app/styles/_app.scss */
+/* line 1003, ../../app/styles/_customs.scss */
 .overlay ul li {
   display: block;
   float: left;
   margin-right: 20px;
 }
 
-/* line 1012, ../../app/styles/_app.scss */
+/* line 1008, ../../app/styles/_customs.scss */
 .overlay ul li:last-child {
   margin-right: 0px;
 }
 
-/* line 1015, ../../app/styles/_app.scss */
+/* line 1011, ../../app/styles/_customs.scss */
 .overlay ul li i {
   display: block;
   margin-bottom: 10px;
   font-size: 40px;
 }
 
-/* line 1020, ../../app/styles/_app.scss */
+/* line 1016, ../../app/styles/_customs.scss */
 .overlay ul li a {
   display: block;
   padding: 50px 0;
   min-width: 190px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 3px;
-  background-color: #345271;
-  color: #fff;
+  background-color: #9900CC;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 15px;
   transition: all 300ms ease-in-out;
 }
 
-/* line 1034, ../../app/styles/_app.scss */
+/* line 1030, ../../app/styles/_customs.scss */
 .overlay ul li a:hover, .overlay ul li a:focus {
-  border-color: #73d0da;
-  color: #73d0da;
+  border-color: #34FC99;
+  color: #34FC99;
 }
 
 /* Effects */
-/* line 1040, ../../app/styles/_app.scss */
+/* line 1036, ../../app/styles/_customs.scss */
 .overlay-boxify {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-/* line 1046, ../../app/styles/_app.scss */
+/* line 1042, ../../app/styles/_customs.scss */
 .overlay-boxify.open {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-/* line 1052, ../../app/styles/_app.scss */
+/* line 1048, ../../app/styles/_customs.scss */
 .overlay-boxify nav ul li {
   opacity: 0;
   transform: translate3d(0, -80px, 0);
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 1059, ../../app/styles/_app.scss */
+/* line 1055, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:first-child li:first-child {
   transition-delay: 0.05s;
 }
 
-/* line 1063, ../../app/styles/_app.scss */
+/* line 1059, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:first-child li:nth-child(2) {
   transition-delay: 0.1s;
 }
 
-/* line 1067, ../../app/styles/_app.scss */
+/* line 1063, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:first-child {
   transition-delay: 0.15s;
 }
 
-/* line 1071, ../../app/styles/_app.scss */
+/* line 1067, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-/* line 1075, ../../app/styles/_app.scss */
+/* line 1071, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul li {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -10448,181 +10032,24 @@ Nav Overlay
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-/* line 1084, ../../app/styles/_app.scss */
+/* line 1080, ../../app/styles/_customs.scss */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
   visibility: hidden;
 }
 
-/* line 1087, ../../app/styles/_app.scss */
+/* line 1083, ../../app/styles/_customs.scss */
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible;
 }
 
-/* line 1090, ../../app/styles/_app.scss */
+/* line 1086, ../../app/styles/_customs.scss */
 .delay-05s {
   animation-delay: 0.5s;
 }
 
-/* line 1094, ../../app/styles/_app.scss */
+/* line 1090, ../../app/styles/_customs.scss */
 .delay-1s {
   animation-delay: 1s;
-}
-
-@media screen and (max-width: 1200px) {
-  /* line 1100, ../../app/styles/_app.scss */
-  .device {
-    left: 20%;
-    top: -36px;
-  }
-
-  /* line 1101, ../../app/styles/_app.scss */
-  footer li {
-    margin-right: 10%;
-  }
-
-  /* line 1102, ../../app/styles/_app.scss */
-  .feature-content {
-    width: 55%;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* line 1105, ../../app/styles/_app.scss */
-  .feature-1, .feature-2 {
-    margin-bottom: 50px;
-  }
-
-  /* line 1106, ../../app/styles/_app.scss */
-  .device {
-    display: none;
-  }
-
-  /* line 1107, ../../app/styles/_app.scss */
-  .screenshots ul li {
-    width: 50%;
-  }
-
-  /* line 1108, ../../app/styles/_app.scss */
-  .screenshots-intro {
-    padding: 110px 0 100px 0;
-  }
-
-  /* line 1109, ../../app/styles/_app.scss */
-  .feature-content {
-    width: 80%;
-  }
-
-  /* line 1110, ../../app/styles/_app.scss */
-  .features-slider {
-    height: 100%;
-  }
-}
-@media screen and (max-width: 680px) {
-  /* line 1113, ../../app/styles/_app.scss */
-  .feature-content {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 640px) {
-  /* line 1116, ../../app/styles/_app.scss */
-  .use-btn {
-    display: none;
-  }
-
-  /* line 1117, ../../app/styles/_app.scss */
-  footer li {
-    display: block;
-    text-align: left;
-    padding: 20px 0;
-    border-bottom: dashed 1px #c7cacc;
-    margin-right: 0 !important;
-    float: none;
-  }
-
-  /* line 1118, ../../app/styles/_app.scss */
-  nav {
-    margin-top: 40px;
-  }
-
-  /* line 1119, ../../app/styles/_app.scss */
-  .overlay ul {
-    margin-left: 0px;
-  }
-
-  /* line 1120, ../../app/styles/_app.scss */
-  .overlay ul li a {
-    padding: 20px 0;
-    min-width: 120px;
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 465px) {
-  /* line 1123, ../../app/styles/_app.scss */
-  .hero h1 {
-    font-size: 40px;
-    margin: 100px 0 45px 0;
-  }
-
-  /* line 1124, ../../app/styles/_app.scss */
-  .screenshots ul li {
-    width: 100%;
-    min-height: 100%;
-    float: none;
-  }
-
-  /* line 1125, ../../app/styles/_app.scss */
-  section.video i {
-    font-size: 30px;
-  }
-
-  /* line 1126, ../../app/styles/_app.scss */
-  section.video h1 {
-    font-size: 15px;
-    font-weight: 400;
-  }
-
-  /* line 1127, ../../app/styles/_app.scss */
-  section.video {
-    padding: 40px;
-  }
-
-  /* line 1128, ../../app/styles/_app.scss */
-  .feature-content {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  /* line 1129, ../../app/styles/_app.scss */
-  .feature-icon {
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* line 1130, ../../app/styles/_app.scss */
-  blockquote p {
-    width: 60%;
-  }
-
-  /* line 1131, ../../app/styles/_app.scss */
-  .features-slider {
-    padding: 11% 50px 10% 50px;
-  }
-}
-/* line 1, ../../app/styles/_customs.scss */
-.parrafo-prueba {
-  background-color: yellow;
-}
-/* line 3, ../../app/styles/_customs.scss */
-.parrafo-prueba a {
-  text-decoration: none;
-  font-size: 20px;
-  color: red;
-}
-/* line 7, ../../app/styles/_customs.scss */
-.parrafo-prueba a:hover {
-  cursor: copy;
-  font-size: 50px;
-  color: #0000FF;
 }
 
 /*# sourceMappingURL=main.css.map */
