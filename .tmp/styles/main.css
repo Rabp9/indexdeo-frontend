@@ -9231,12 +9231,12 @@ p {
 
 /* line 451, ../../app/styles/_customs.scss */
 a {
-  color: #73d0da;
+  color: #34FC99;
 }
 
 /* line 454, ../../app/styles/_customs.scss */
 a:hover, a:focus {
-  color: #73d0da;
+  color: #9900CC;
   text-decoration: none;
 }
 
@@ -9259,14 +9259,14 @@ Buttons
   margin: 0 10px 10px 0;
   padding: 20px 50px;
   border-radius: 3px;
-  background-color: #fff;
-  color: #4b98a9;
+  background-color: #9900CC;
+  color: #ffffff;
   font-size: 16px;
 }
 
 /* line 479, ../../app/styles/_customs.scss */
 .use-btn:hover, .use-btn:focus {
-  background-color: #73d0da;
+  background-color: #D7C966;
   color: #fff;
   text-decoration: none;
 }
@@ -9283,8 +9283,8 @@ Buttons
 
 /* line 492, ../../app/styles/_customs.scss */
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-  border-color: #73d0da;
-  color: #73d0da;
+  border-color: #34FC99;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -9403,37 +9403,37 @@ Hero
   position: relative;
   padding: 60px 0 60px 0;
   min-height: 800px;
-  background: #284666 url("../img/hero-01.jpg") no-repeat center center;
+  background: #515151;
   background-size: cover;
   color: #fff;
 }
 
-/* line 588, ../../app/styles/_customs.scss */
+/* line 589, ../../app/styles/_customs.scss */
 .hero h1 {
   margin: 200px 0 45px 0;
   font-weight: 300;
   font-size: 45px;
 }
 
-/* line 593, ../../app/styles/_customs.scss */
+/* line 594, ../../app/styles/_customs.scss */
 .hero h1 span {
   display: inline-block;
   color: #a1a9b0;
 }
 
-/* line 597, ../../app/styles/_customs.scss */
+/* line 598, ../../app/styles/_customs.scss */
 #home {
   width: 100%;
   height: 100%;
 }
 
-/* line 601, ../../app/styles/_customs.scss */
+/* line 602, ../../app/styles/_customs.scss */
 .hero {
   width: 100%;
   height: 100%;
 }
 
-/* line 605, ../../app/styles/_customs.scss */
+/* line 606, ../../app/styles/_customs.scss */
 header i {
   margin-left: 5px;
 }
@@ -9441,7 +9441,7 @@ header i {
 /* ==========================================================================
 Video
 ========================================================================== */
-/* line 612, ../../app/styles/_customs.scss */
+/* line 613, ../../app/styles/_customs.scss */
 section.video i {
   margin-right: 10px;
   color: #323a45;
@@ -9450,38 +9450,38 @@ section.video i {
   transition: color 300ms ease-in-out;
 }
 
-/* line 620, ../../app/styles/_customs.scss */
+/* line 621, ../../app/styles/_customs.scss */
 section.video h1 {
   font-weight: 400;
   font-size: 20px;
 }
 
-/* line 624, ../../app/styles/_customs.scss */
+/* line 625, ../../app/styles/_customs.scss */
 section.video {
   padding: 60px 0;
   background-color: #f6f7f9;
 }
 
-/* line 628, ../../app/styles/_customs.scss */
+/* line 629, ../../app/styles/_customs.scss */
 section.video a {
   color: #323a45;
 }
 
-/* line 631, ../../app/styles/_customs.scss */
+/* line 632, ../../app/styles/_customs.scss */
 section.video a:hover, section.video a:focus {
-  color: #73d0da;
+  color: #9900CC;
   text-decoration: none;
 }
 
-/* line 635, ../../app/styles/_customs.scss */
+/* line 636, ../../app/styles/_customs.scss */
 section.video a:hover i, section.video a:focus i {
-  color: #73d0da;
+  color: #9900CC;
 }
 
 /* ==========================================================================
 Custom Slider Controls (Flickity)
 ========================================================================== */
-/* line 642, ../../app/styles/_customs.scss */
+/* line 643, ../../app/styles/_customs.scss */
 .flickity-page-dots .dot {
   width: 13px;
   height: 13px;
@@ -9491,7 +9491,7 @@ Custom Slider Controls (Flickity)
   transition: background 0.3s;
 }
 
-/* line 651, ../../app/styles/_customs.scss */
+/* line 652, ../../app/styles/_customs.scss */
 .flickity-page-dots .dot.is-selected {
   background: white;
 }
@@ -9499,7 +9499,7 @@ Custom Slider Controls (Flickity)
 /* ==========================================================================
 Features Slider
 ========================================================================== */
-/* line 658, ../../app/styles/_customs.scss */
+/* line 659, ../../app/styles/_customs.scss */
 .features-bg {
   position: relative;
   min-height: 400px;
@@ -9507,7 +9507,7 @@ Features Slider
   background-size: cover;
 }
 
-/* line 664, ../../app/styles/_customs.scss */
+/* line 665, ../../app/styles/_customs.scss */
 .features-img {
   width: 100%;
   height: 400px;
@@ -9515,7 +9515,7 @@ Features Slider
   line-height: 400px;
 }
 
-/* line 670, ../../app/styles/_customs.scss */
+/* line 671, ../../app/styles/_customs.scss */
 .features-slider {
   position: relative;
   padding: 11% 100px 10% 100px;
@@ -9523,19 +9523,19 @@ Features Slider
   background-color: #3F6184;
 }
 
-/* line 676, ../../app/styles/_customs.scss */
+/* line 677, ../../app/styles/_customs.scss */
 .features-slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 681, ../../app/styles/_customs.scss */
+/* line 682, ../../app/styles/_customs.scss */
 .features-slider ul li {
   width: 100%;
 }
 
-/* line 684, ../../app/styles/_customs.scss */
+/* line 685, ../../app/styles/_customs.scss */
 .features-slider li h1 {
   margin-bottom: 15px;
   color: #fff;
@@ -9543,31 +9543,31 @@ Features Slider
   font-size: 22px;
 }
 
-/* line 690, ../../app/styles/_customs.scss */
+/* line 691, ../../app/styles/_customs.scss */
 .features-slider li p {
   color: #fff;
   font-size: 14px;
 }
 
-/* line 694, ../../app/styles/_customs.scss */
+/* line 695, ../../app/styles/_customs.scss */
 .features-intro-img {
   position: relative;
 }
 
-/* line 697, ../../app/styles/_customs.scss */
+/* line 698, ../../app/styles/_customs.scss */
 .slides li h1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 701, ../../app/styles/_customs.scss */
+/* line 702, ../../app/styles/_customs.scss */
 .features-slider .flickity-page-dots {
   text-align: left;
   margin-top: 50px;
   position: static;
 }
 
-/* line 706, ../../app/styles/_customs.scss */
+/* line 707, ../../app/styles/_customs.scss */
 .features-slider .flickity-page-dots .dot {
   margin: 0 12px 0 0;
 }
@@ -9575,39 +9575,39 @@ Features Slider
 /* ==========================================================================
 Features List
 ========================================================================== */
-/* line 713, ../../app/styles/_customs.scss */
+/* line 714, ../../app/styles/_customs.scss */
 .features-list {
   padding: 130px 0;
 }
 
-/* line 716, ../../app/styles/_customs.scss */
+/* line 717, ../../app/styles/_customs.scss */
 .features-list h1 {
   margin: 0 0 10px 0;
   padding: 0;
-  color: #24374b;
+  color: #9900CC;
   font-size: 20px;
 }
 
-/* line 722, ../../app/styles/_customs.scss */
+/* line 723, ../../app/styles/_customs.scss */
 .features-list p {
   margin-bottom: 20px;
-  color: #778899;
+  color: #515151;
 }
 
-/* line 726, ../../app/styles/_customs.scss */
+/* line 727, ../../app/styles/_customs.scss */
 .feature-content {
   display: inline-block;
   margin-left: 0;
   width: 65%;
 }
 
-/* line 731, ../../app/styles/_customs.scss */
+/* line 732, ../../app/styles/_customs.scss */
 .feature-icon {
   display: inline-block;
   margin-right: 25px;
   width: 90px;
   height: 90px;
-  border: solid 2px #4e9ba3;
+  border: solid 2px #34FC99;
   border-radius: 50%;
   vertical-align: top;
   text-align: center;
@@ -9615,22 +9615,22 @@ Features List
   line-height: 90px;
 }
 
-/* line 743, ../../app/styles/_customs.scss */
+/* line 744, ../../app/styles/_customs.scss */
 .feature-icon i {
-  color: #4e9ba3;
+  color: #34FC99;
 }
 
 /* ==========================================================================
 Blockquote
 ========================================================================== */
-/* line 750, ../../app/styles/_customs.scss */
+/* line 751, ../../app/styles/_customs.scss */
 blockquote {
   margin: 40px 0 0;
   padding: 0;
   border: none;
 }
 
-/* line 755, ../../app/styles/_customs.scss */
+/* line 756, ../../app/styles/_customs.scss */
 blockquote p {
   display: inline-block;
   margin: 0;
@@ -9640,7 +9640,7 @@ blockquote p {
   font-style: italic;
 }
 
-/* line 763, ../../app/styles/_customs.scss */
+/* line 764, ../../app/styles/_customs.scss */
 blockquote .avatar {
   display: inline-block;
   margin-right: 20px;
@@ -9649,7 +9649,7 @@ blockquote .avatar {
   vertical-align: middle;
 }
 
-/* line 770, ../../app/styles/_customs.scss */
+/* line 771, ../../app/styles/_customs.scss */
 blockquote .logo-quote {
   display: inline-block;
   margin: 0 0 0 90px;
@@ -9658,13 +9658,13 @@ blockquote .logo-quote {
 /* ==========================================================================
 Showcase
 ========================================================================== */
-/* line 778, ../../app/styles/_customs.scss */
+/* line 779, ../../app/styles/_customs.scss */
 .showcase {
   background: url("../img/showcase-bg-fixed-01.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* line 782, ../../app/styles/_customs.scss */
+/* line 783, ../../app/styles/_customs.scss */
 .showcase h1 {
   margin: 0 0 20px 0;
   color: #fff;
@@ -9672,13 +9672,13 @@ Showcase
   font-size: 22px;
 }
 
-/* line 788, ../../app/styles/_customs.scss */
+/* line 789, ../../app/styles/_customs.scss */
 .showcase p {
   margin-bottom: 25px;
   color: #fff;
 }
 
-/* line 792, ../../app/styles/_customs.scss */
+/* line 793, ../../app/styles/_customs.scss */
 .device {
   position: absolute;
   top: -60px;
@@ -9688,7 +9688,7 @@ Showcase
   background: url("../img/iphone-skeleton.png") no-repeat center center;
 }
 
-/* line 800, ../../app/styles/_customs.scss */
+/* line 801, ../../app/styles/_customs.scss */
 .device-content {
   position: absolute;
   top: 115px;
@@ -9698,27 +9698,27 @@ Showcase
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 808, ../../app/styles/_customs.scss */
+/* line 809, ../../app/styles/_customs.scss */
 .device-content img {
   width: 247px;
   height: 445px;
 }
 
-/* line 812, ../../app/styles/_customs.scss */
+/* line 813, ../../app/styles/_customs.scss */
 .showcase-wrap {
   position: relative;
   padding: 100px 0;
   min-height: 600px;
 }
 
-/* line 817, ../../app/styles/_customs.scss */
+/* line 818, ../../app/styles/_customs.scss */
 .showcase-slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 822, ../../app/styles/_customs.scss */
+/* line 823, ../../app/styles/_customs.scss */
 .showcase-slider .flickity-page-dots {
   bottom: 20px;
 }
@@ -9726,37 +9726,37 @@ Showcase
 /* ==========================================================================
 Screenshots Intro
 ========================================================================== */
-/* line 829, ../../app/styles/_customs.scss */
+/* line 830, ../../app/styles/_customs.scss */
 .screenshots-intro {
   padding: 170px 0 100px 0;
-  background-color: #f6f7f9;
+  background-color: #515151;
 }
 
-/* line 833, ../../app/styles/_customs.scss */
+/* line 834, ../../app/styles/_customs.scss */
 .screenshots-intro h1 {
   margin-bottom: 20px;
-  color: #24374b;
+  color: #ffffff;
   font-weight: 400;
   font-size: 22px;
 }
 
-/* line 839, ../../app/styles/_customs.scss */
+/* line 840, ../../app/styles/_customs.scss */
 .screenshots-intro p {
   margin-bottom: 25px;
-  color: #778899;
+  color: #ffffff;
 }
 
 /* ==========================================================================
 Screenshots
 ========================================================================== */
-/* line 847, ../../app/styles/_customs.scss */
+/* line 848, ../../app/styles/_customs.scss */
 .screenshots ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 852, ../../app/styles/_customs.scss */
+/* line 853, ../../app/styles/_customs.scss */
 .screenshots ul li {
   float: left;
   min-height: 100%;
@@ -9765,25 +9765,25 @@ Screenshots
   list-style: none;
 }
 
-/* line 859, ../../app/styles/_customs.scss */
+/* line 860, ../../app/styles/_customs.scss */
 .screenshots figure {
   position: relative;
   overflow: hidden;
 }
 
-/* line 863, ../../app/styles/_customs.scss */
+/* line 864, ../../app/styles/_customs.scss */
 .screenshots figure img {
   width: 100%;
   height: 100%;
   transition: all 300ms ease-in-out;
 }
 
-/* line 869, ../../app/styles/_customs.scss */
+/* line 870, ../../app/styles/_customs.scss */
 .screenshots figure:hover img, .screenshots figure:focus img {
   transform: scale(1.1);
 }
 
-/* line 874, ../../app/styles/_customs.scss */
+/* line 875, ../../app/styles/_customs.scss */
 .screenshots figcaption {
   position: absolute;
   top: 0;
@@ -9791,51 +9791,51 @@ Screenshots
   padding: 25% 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(63, 97, 132, 0.85);
+  background-color: rgba(215, 201, 102, 0.85);
   text-align: center;
   font-size: 15px;
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
 
-/* line 888, ../../app/styles/_customs.scss */
+/* line 889, ../../app/styles/_customs.scss */
 .screenshots figcaption a {
-  color: #fff;
+  color: #515151;
 }
 
-/* line 891, ../../app/styles/_customs.scss */
+/* line 892, ../../app/styles/_customs.scss */
 .screenshots figcaption a:hover, .screenshots figcaption a:focus {
-  color: #73d0da;
+  color: #9900CC;
 }
 
-/* line 894, ../../app/styles/_customs.scss */
+/* line 895, ../../app/styles/_customs.scss */
 .screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
   opacity: 1;
 }
 
-/* line 897, ../../app/styles/_customs.scss */
+/* line 898, ../../app/styles/_customs.scss */
 .visible {
   opacity: 1;
 }
 
-/* line 900, ../../app/styles/_customs.scss */
+/* line 901, ../../app/styles/_customs.scss */
 .screenshots figure.cs-hover figcaption {
   opacity: 1;
 }
 
-/* line 903, ../../app/styles/_customs.scss */
+/* line 904, ../../app/styles/_customs.scss */
 .screenshots figcaption i {
   font-size: 35px;
 }
 
-/* line 906, ../../app/styles/_customs.scss */
+/* line 907, ../../app/styles/_customs.scss */
 .screenshots figcaption p {
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-/* line 911, ../../app/styles/_customs.scss */
+/* line 912, ../../app/styles/_customs.scss */
 .screenshots figcaption .caption-content {
   position: absolute;
   top: 50%;
@@ -9847,7 +9847,7 @@ Screenshots
   transition: all 300ms ease-in-out;
 }
 
-/* line 924, ../../app/styles/_customs.scss */
+/* line 925, ../../app/styles/_customs.scss */
 .screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
   transform: translate(0px, 0px);
 }
@@ -9855,13 +9855,13 @@ Screenshots
 /* ==========================================================================
 Download Now
 ========================================================================== */
-/* line 933, ../../app/styles/_customs.scss */
+/* line 934, ../../app/styles/_customs.scss */
 .download {
   padding: 120px 0;
-  background-color: #3f6184;
+  background-color: #515151;
 }
 
-/* line 937, ../../app/styles/_customs.scss */
+/* line 938, ../../app/styles/_customs.scss */
 .download h1 {
   margin: 0 0 15px 0;
   color: #fff;
@@ -9872,23 +9872,23 @@ Download Now
 /* ==========================================================================
 Footer
 ========================================================================== */
-/* line 947, ../../app/styles/_customs.scss */
+/* line 948, ../../app/styles/_customs.scss */
 footer {
   padding: 100px 0;
 }
 
-/* line 950, ../../app/styles/_customs.scss */
+/* line 951, ../../app/styles/_customs.scss */
 footer p {
-  color: #c7cacc;
+  color: #515151;
   font-size: 12px;
 }
 
-/* line 954, ../../app/styles/_customs.scss */
+/* line 955, ../../app/styles/_customs.scss */
 footer ul {
   margin-top: 30px;
 }
 
-/* line 957, ../../app/styles/_customs.scss */
+/* line 958, ../../app/styles/_customs.scss */
 footer li {
   float: left;
   margin-right: 15%;
@@ -9897,12 +9897,12 @@ footer li {
   font-weight: 400;
 }
 
-/* line 964, ../../app/styles/_customs.scss */
+/* line 965, ../../app/styles/_customs.scss */
 footer li a {
   color: #3f6184;
 }
 
-/* line 967, ../../app/styles/_customs.scss */
+/* line 968, ../../app/styles/_customs.scss */
 footer li:last-child {
   margin-right: 0;
 }
@@ -9911,7 +9911,7 @@ footer li:last-child {
 Nav Overlay
 ========================================================================== */
 /* Overlay style */
-/* line 976, ../../app/styles/_customs.scss */
+/* line 977, ../../app/styles/_customs.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -9922,7 +9922,7 @@ Nav Overlay
 }
 
 /* Menu style */
-/* line 986, ../../app/styles/_customs.scss */
+/* line 987, ../../app/styles/_customs.scss */
 .overlay nav {
   position: relative;
   top: 50%;
@@ -9932,7 +9932,7 @@ Nav Overlay
   transform: translateY(-50%);
 }
 
-/* line 996, ../../app/styles/_customs.scss */
+/* line 997, ../../app/styles/_customs.scss */
 .overlay ul {
   position: relative;
   display: inline-block;
@@ -9941,26 +9941,26 @@ Nav Overlay
   list-style: none;
 }
 
-/* line 1003, ../../app/styles/_customs.scss */
+/* line 1004, ../../app/styles/_customs.scss */
 .overlay ul li {
   display: block;
   float: left;
   margin-right: 20px;
 }
 
-/* line 1008, ../../app/styles/_customs.scss */
+/* line 1009, ../../app/styles/_customs.scss */
 .overlay ul li:last-child {
   margin-right: 0px;
 }
 
-/* line 1011, ../../app/styles/_customs.scss */
+/* line 1012, ../../app/styles/_customs.scss */
 .overlay ul li i {
   display: block;
   margin-bottom: 10px;
   font-size: 40px;
 }
 
-/* line 1016, ../../app/styles/_customs.scss */
+/* line 1017, ../../app/styles/_customs.scss */
 .overlay ul li a {
   display: block;
   padding: 50px 0;
@@ -9975,55 +9975,55 @@ Nav Overlay
   transition: all 300ms ease-in-out;
 }
 
-/* line 1030, ../../app/styles/_customs.scss */
+/* line 1031, ../../app/styles/_customs.scss */
 .overlay ul li a:hover, .overlay ul li a:focus {
   border-color: #34FC99;
   color: #34FC99;
 }
 
 /* Effects */
-/* line 1036, ../../app/styles/_customs.scss */
+/* line 1037, ../../app/styles/_customs.scss */
 .overlay-boxify {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-/* line 1042, ../../app/styles/_customs.scss */
+/* line 1043, ../../app/styles/_customs.scss */
 .overlay-boxify.open {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-/* line 1048, ../../app/styles/_customs.scss */
+/* line 1049, ../../app/styles/_customs.scss */
 .overlay-boxify nav ul li {
   opacity: 0;
   transform: translate3d(0, -80px, 0);
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 1055, ../../app/styles/_customs.scss */
+/* line 1056, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:first-child li:first-child {
   transition-delay: 0.05s;
 }
 
-/* line 1059, ../../app/styles/_customs.scss */
+/* line 1060, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:first-child li:nth-child(2) {
   transition-delay: 0.1s;
 }
 
-/* line 1063, ../../app/styles/_customs.scss */
+/* line 1064, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:first-child {
   transition-delay: 0.15s;
 }
 
-/* line 1067, ../../app/styles/_customs.scss */
+/* line 1068, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-/* line 1071, ../../app/styles/_customs.scss */
+/* line 1072, ../../app/styles/_customs.scss */
 .overlay-boxify.open nav ul li {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -10032,24 +10032,22 @@ Nav Overlay
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-/* line 1080, ../../app/styles/_customs.scss */
+/* line 1081, ../../app/styles/_customs.scss */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
   visibility: hidden;
 }
 
-/* line 1083, ../../app/styles/_customs.scss */
+/* line 1084, ../../app/styles/_customs.scss */
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible;
 }
 
-/* line 1086, ../../app/styles/_customs.scss */
+/* line 1087, ../../app/styles/_customs.scss */
 .delay-05s {
   animation-delay: 0.5s;
 }
 
-/* line 1090, ../../app/styles/_customs.scss */
+/* line 1091, ../../app/styles/_customs.scss */
 .delay-1s {
   animation-delay: 1s;
 }
-
-/*# sourceMappingURL=main.css.map */

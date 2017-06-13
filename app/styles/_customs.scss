@@ -449,10 +449,10 @@ p {
     line-height: 25px;
 }
 a {
-    color: #73d0da
+    color: $color-secondary;
 }
 a:hover, a:focus {
-    color: #73d0da;
+    color: $color-primary;
     text-decoration: none;
 }
 .texture-overlay {
@@ -472,12 +472,12 @@ Buttons
     margin: 0 10px 10px 0;
     padding: 20px 50px;
     border-radius: 3px;
-    background-color: #fff;
-    color: #4b98a9;
+    background-color: $color-primary;
+    color: $color-white;
     font-size: 16px;
 }
 .use-btn:hover, .use-btn:focus {
-    background-color: #73d0da;
+    background-color: $color-default;
     color: #fff;
     text-decoration: none;
 }
@@ -490,8 +490,8 @@ Buttons
     font-size: 16px;
 }
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: $color-secondary;
+    color: $color-white;
     text-decoration: none;
 }
 .read-more-btn {
@@ -581,7 +581,8 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
+    // background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
+    background: $color-black;
     background-size: cover;
     color: #fff;
 }
@@ -629,11 +630,11 @@ section.video a {
     color: #323a45
 }
 section.video a:hover, section.video a:focus {
-    color: #73d0da;
+    color: $color-primary;
     text-decoration: none;
 }
 section.video a:hover i, section.video a:focus i {
-    color: #73d0da
+    color: $color-primary;
 }
 
 /* ==========================================================================
@@ -716,12 +717,12 @@ Features List
 .features-list h1 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #24374b;
+    color: $color-primary;
     font-size: 20px;
 }
 .features-list p {
     margin-bottom: 20px;
-    color: #778899;
+    color: $color-black;
 }
 .feature-content {
     display: inline-block;
@@ -733,7 +734,7 @@ Features List
     margin-right: 25px;
     width: 90px;
     height: 90px;
-    border: solid 2px #4e9ba3;
+    border: solid 2px $color-secondary;
     border-radius: 50%;
     vertical-align: top;
     text-align: center;
@@ -741,7 +742,7 @@ Features List
     line-height: 90px;
 }
 .feature-icon i {
-    color: #4e9ba3
+    color: $color-secondary;
 }
 
 /* ==========================================================================
@@ -828,17 +829,17 @@ Screenshots Intro
 ========================================================================== */
 .screenshots-intro {
     padding: 170px 0 100px 0;
-    background-color: #f6f7f9;
+    background-color: $color-black;
 }
 .screenshots-intro h1 {
     margin-bottom: 20px;
-    color: #24374b;
+    color: $color-white;
     font-weight: 400;
     font-size: 22px;
 }
 .screenshots-intro p {
     margin-bottom: 25px;
-    color: #778899;
+    color: $color-white;
 }
 
 /* ==========================================================================
@@ -878,7 +879,7 @@ Screenshots
     padding: 25% 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(63, 97, 132, 0.85);
+    background-color: rgba($color-default, 0.85);
     text-align: center;
     font-size: 15px;
     opacity: 0;
@@ -886,10 +887,10 @@ Screenshots
     transition: all 300ms ease-in-out;
 }
 .screenshots figcaption a {
-    color: #fff
+    color: $color-black;
 }
 .screenshots figcaption a:hover, .screenshots figcaption a:focus {
-    color: #73d0da
+    color: $color-primary;
 }
 .screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
     opacity: 1
@@ -932,7 +933,7 @@ Download Now
 ========================================================================== */
 .download {
     padding: 120px 0;
-    background-color: #3f6184;
+    background-color: $color-black;
 }
 .download h1 {
     margin: 0 0 15px 0;
@@ -948,7 +949,7 @@ footer {
     padding: 100px 0
 }
 footer p {
-    color: #c7cacc;
+    color: $color-black;
     font-size: 12px;
 }
 footer ul {
