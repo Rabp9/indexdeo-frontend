@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="es" class="no-js" ng-app="inexdeoFrotendApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,230 +48,33 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- open/close -->
-    <header>
-        <section class="hero">
-            <div class="texture-overlay"></div>
-            <div class="container">
-                <div class="row nav-wrapper">
-                    <div class="col-md-6 col-sm-6 col-xs-6 text-left">
-                        <a href="#"><img class="img-responsive" style="width: 240px;" src="images/logo.jpg" alt="logo"></a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-                        <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
-                    </div>
-                </div>
-                <div class="row hero-content">
-                    <div class="col-md-12">
-                        <h1 class="animated fadeInDown">
-                            Somos la mejor empresa constructora de la Región Norte del País
-                        </h1>
-                        <a href="http://tympanus.net/codrops/?p=22554" class="use-btn animated fadeInUp">
-                            Productos
-                        </a> 
-                        <a href="#about" class="learn-btn animated fadeInUp">
-                            Ver más <i class="fa fa-arrow-down"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <section class="video" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1>
-                        <a href="http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1" class="youtube-media">
-                            <i class="fa fa-play-circle-o"></i> Míra el video
-                        </a>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="screenshots-intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>In Excelsis Deo</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p><a href="#features" class="arrow-btn">¿Qué ofrecemos? <i class="fa fa-long-arrow-right"></i></a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="features-list" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="col-md-4 feature-1 wp2">
-                        <div class="feature-icon">
-                            <i class="fa fa-desktop"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h1>Productos</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ultricies elit. Pellentesque mattis condimentum nisi ac elementum. Duis ut lectus ipsum. Fusce lacinia orci at eros placerat scelerisque. Vivamus convallis
-                            </p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Más <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 feature-2 wp2 delay-05s">
-                        <div class="feature-icon">
-                            <i class="fa fa-flash"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h1>Servicios</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ultricies elit. Pellentesque mattis condimentum nisi ac elementum. Duis ut lectus ipsum. Fusce lacinia orci at eros placerat scelerisque. Vivamus convallis 
-                            </p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Más <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 feature-3 wp2 delay-1s">
-                        <div class="feature-icon">
-                            <i class="fa fa-heart"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h1>Obras</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ultricies elit. Pellentesque mattis condimentum nisi ac elementum. Duis ut lectus ipsum. Fusce lacinia orci at eros placerat scelerisque. Vivamus convallis
-                            </p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Más <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="screenshots" id="screenshots">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <div class="row">
-                <ul class="grid">
-                    <li>
-                        <figure>
-                            <img src="img/01-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/01.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Producto 1</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/02-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/02.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Proyecto 1</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/03-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/03.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Servicio 1</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/04-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/04.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Servicio 2</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive brand" style="width: 240px;" src="images/logo.jpg" alt="logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Productos <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Galería</a></li>
+                    <li><a href="#">Contáctanos</a></li>
                 </ul>
-            </div>
-            <div class="row">
-                <ul class="grid">
-                    <li>
-                        <figure>
-                            <img src="img/05-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/05.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Producto 3</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/06-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/06.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Producto 2</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/07-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/07.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Obra 3</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/08-screenshot.jpg" alt="Screenshot 01">
-                            <figcaption>
-                                <div class="caption-content">
-                                    <a href="img/large/08.jpg" class="single_image">
-                                        <i class="fa fa-search"></i><br>
-                                        <p>Producto 8</p>
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="download" id="download">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center wp4">
-                    <h1>¿Quieres contactarte con nosotros?</h1>
-                    <a href="http://tympanus.net/codrops/?p=22554" class="download-btn">Haz click aquí <i class="fa fa-send"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <ui-view ng-hide='layout.loading' ></ui-view>
     <footer>
         <div class="container">
             <div class="row">
@@ -326,6 +129,10 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
   
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/infosservice.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/services/envservice.js"></script>
     <!-- endbuild -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/min/toucheffects-min.js"></script>

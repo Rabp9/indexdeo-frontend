@@ -6006,16 +6006,16 @@ tbody.collapse.in {
 }
 /* line 397, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #515151;
+  border-color: #404040;
 }
 /* line 401, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #ffffff;
 }
 /* line 403, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   background-color: transparent;
 }
 /* line 410, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6024,17 +6024,17 @@ tbody.collapse.in {
 }
 /* line 415, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #ffffff;
 }
 /* line 418, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: #D7C966;
   background-color: transparent;
 }
 /* line 425, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: #D7C966;
+  background-color: #404040;
 }
 /* line 433, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6056,27 +6056,27 @@ tbody.collapse.in {
 /* line 453, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #404040;
 }
 /* line 462, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
-  color: #555;
+  background-color: #404040;
+  color: #D7C966;
 }
 @media (max-width: 767px) {
   /* line 473, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #ffffff;
   }
   /* line 475, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
+    color: #D7C966;
     background-color: transparent;
   }
   /* line 482, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
+    color: #D7C966;
+    background-color: #404040;
   }
   /* line 490, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -6086,19 +6086,19 @@ tbody.collapse.in {
 }
 /* line 506, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: #777;
+  color: #ffffff;
 }
 /* line 508, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
-  color: #333;
+  color: #D7C966;
 }
 /* line 513, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
-  color: #777;
+  color: #ffffff;
 }
 /* line 515, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #333;
+  color: #D7C966;
 }
 /* line 521, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
@@ -8708,7 +8708,7 @@ HTML5 display definitions
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
-/* line 11, ../../app/styles/_customs.scss */
+/* line 16, ../../app/styles/_app.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -8716,7 +8716,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 /*
 * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
-/* line 18, ../../app/styles/_customs.scss */
+/* line 23, ../../app/styles/_app.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
@@ -8727,7 +8727,7 @@ audio, canvas, video {
 * Prevents modern browsers from displaying `audio` without controls.
 * Remove excess height in iOS 5 devices.
 */
-/* line 28, ../../app/styles/_customs.scss */
+/* line 33, ../../app/styles/_app.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -8737,7 +8737,7 @@ audio:not([controls]) {
 * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
 * Known issue:no IE 6 support.
 */
-/* line 37, ../../app/styles/_customs.scss */
+/* line 42, ../../app/styles/_app.scss */
 [hidden] {
   display: none;
 }
@@ -8751,7 +8751,7 @@ Base
 * 2. Prevents iOS text size adjust after orientation change, without disabling
 *    user zoom.
 */
-/* line 51, ../../app/styles/_customs.scss */
+/* line 56, ../../app/styles/_app.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -8765,13 +8765,13 @@ html {
 * Addresses `font-family` inconsistency between `textarea` and other form
 * elements.
 */
-/* line 61, ../../app/styles/_customs.scss */
+/* line 66, ../../app/styles/_app.scss */
 html, button, input, select, textarea {
   font-family: sans-serif;
   font-family: 'Nunito', sans-serif;
 }
 
-/* line 65, ../../app/styles/_customs.scss */
+/* line 70, ../../app/styles/_app.scss */
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -8780,7 +8780,7 @@ html, body {
 /*
 * Addresses margins handled incorrectly in IE 6/7.
 */
-/* line 73, ../../app/styles/_customs.scss */
+/* line 78, ../../app/styles/_app.scss */
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
@@ -8789,7 +8789,7 @@ body {
 /*
 * Font Smoothing
 */
-/* line 81, ../../app/styles/_customs.scss */
+/* line 86, ../../app/styles/_app.scss */
 html, html a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   -webkit-font-smoothing: antialiased;
@@ -8801,7 +8801,7 @@ Links
 /*
 * Addresses `outline` inconsistency between Chrome and other browsers.
 */
-/* line 93, ../../app/styles/_customs.scss */
+/* line 98, ../../app/styles/_app.scss */
 a:focus {
   outline: thin dotted;
   text-decoration: none;
@@ -8810,7 +8810,7 @@ a:focus {
 /*
 * Improves readability when focused and also mouse hovered in all browsers.
 */
-/* line 101, ../../app/styles/_customs.scss */
+/* line 106, ../../app/styles/_app.scss */
 a:active, a:hover {
   outline: 0;
   text-decoration: none;
@@ -8823,37 +8823,37 @@ Typography
 * Addresses font sizes and margins set differently in IE 6/7.
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
 */
-/* line 114, ../../app/styles/_customs.scss */
+/* line 119, ../../app/styles/_app.scss */
 h1 {
   margin: 0.67em 0;
   font-size: 2em;
 }
 
-/* line 118, ../../app/styles/_customs.scss */
+/* line 123, ../../app/styles/_app.scss */
 h2 {
   margin: 0.83em 0;
   font-size: 1.5em;
 }
 
-/* line 122, ../../app/styles/_customs.scss */
+/* line 127, ../../app/styles/_app.scss */
 h3 {
   margin: 1em 0;
   font-size: 1.17em;
 }
 
-/* line 126, ../../app/styles/_customs.scss */
+/* line 131, ../../app/styles/_app.scss */
 h4 {
   margin: 1.33em 0;
   font-size: 1em;
 }
 
-/* line 130, ../../app/styles/_customs.scss */
+/* line 135, ../../app/styles/_app.scss */
 h5 {
   margin: 1.67em 0;
   font-size: 0.83em;
 }
 
-/* line 134, ../../app/styles/_customs.scss */
+/* line 139, ../../app/styles/_app.scss */
 h6 {
   margin: 2.33em 0;
   font-size: 0.75em;
@@ -8862,7 +8862,7 @@ h6 {
 /*
 * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
 */
-/* line 142, ../../app/styles/_customs.scss */
+/* line 147, ../../app/styles/_app.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -8870,12 +8870,12 @@ abbr[title] {
 /*
 * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
 */
-/* line 149, ../../app/styles/_customs.scss */
+/* line 154, ../../app/styles/_app.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 152, ../../app/styles/_customs.scss */
+/* line 157, ../../app/styles/_app.scss */
 blockquote {
   margin: 0px;
 }
@@ -8883,7 +8883,7 @@ blockquote {
 /*
 * Addresses styling not present in Safari 5 and Chrome.
 */
-/* line 159, ../../app/styles/_customs.scss */
+/* line 164, ../../app/styles/_app.scss */
 dfn {
   font-style: italic;
 }
@@ -8891,7 +8891,7 @@ dfn {
 /*
 * Addresses styling not present in IE 6/7/8/9.
 */
-/* line 166, ../../app/styles/_customs.scss */
+/* line 171, ../../app/styles/_app.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -8900,7 +8900,7 @@ mark {
 /*
 * Addresses margins set differently in IE 6/7.
 */
-/* line 174, ../../app/styles/_customs.scss */
+/* line 179, ../../app/styles/_app.scss */
 p, pre {
   margin: 1em 0;
 }
@@ -8908,7 +8908,7 @@ p, pre {
 /*
 * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
 */
-/* line 181, ../../app/styles/_customs.scss */
+/* line 186, ../../app/styles/_app.scss */
 code, kbd, pre, samp {
   font-size: 1em;
   font-family: monospace, serif;
@@ -8918,7 +8918,7 @@ code, kbd, pre, samp {
 /*
 * Improves readability of pre-formatted text in all browsers.
 */
-/* line 190, ../../app/styles/_customs.scss */
+/* line 195, ../../app/styles/_app.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -8928,7 +8928,7 @@ pre {
 /*
 * Addresses CSS quotes not supported in IE 6/7.
 */
-/* line 199, ../../app/styles/_customs.scss */
+/* line 204, ../../app/styles/_app.scss */
 q {
   quotes: none;
 }
@@ -8936,13 +8936,13 @@ q {
 /*
 * Addresses `quotes` property not supported in Safari 4.
 */
-/* line 206, ../../app/styles/_customs.scss */
+/* line 211, ../../app/styles/_app.scss */
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 210, ../../app/styles/_customs.scss */
+/* line 215, ../../app/styles/_app.scss */
 small {
   font-size: 75%;
 }
@@ -8950,7 +8950,7 @@ small {
 /*
 * Prevents `sub` and `sup` affecting `line-height` in all browsers.
 */
-/* line 217, ../../app/styles/_customs.scss */
+/* line 222, ../../app/styles/_app.scss */
 sub, sup {
   position: relative;
   vertical-align: baseline;
@@ -8958,12 +8958,12 @@ sub, sup {
   line-height: 0;
 }
 
-/* line 223, ../../app/styles/_customs.scss */
+/* line 228, ../../app/styles/_app.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 226, ../../app/styles/_customs.scss */
+/* line 231, ../../app/styles/_app.scss */
 sub {
   bottom: -0.25em;
 }
@@ -8974,12 +8974,12 @@ Lists
 /*
 * Addresses margins set differently in IE 6/7.
 */
-/* line 237, ../../app/styles/_customs.scss */
+/* line 242, ../../app/styles/_app.scss */
 dl, menu, ol, ul {
   margin: 1em 0;
 }
 
-/* line 240, ../../app/styles/_customs.scss */
+/* line 245, ../../app/styles/_app.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -8987,7 +8987,7 @@ dd {
 /*
 * Addresses paddings set differently in IE 6/7.
 */
-/* line 247, ../../app/styles/_customs.scss */
+/* line 252, ../../app/styles/_app.scss */
 menu, ol, ul {
   padding: 0;
 }
@@ -8995,7 +8995,7 @@ menu, ol, ul {
 /*
 * Corrects list images handled incorrectly in IE 7.
 */
-/* line 254, ../../app/styles/_customs.scss */
+/* line 259, ../../app/styles/_app.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none;
@@ -9008,7 +9008,7 @@ Embedded content
 * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
 * 2. Improves image quality when scaled in IE 7.
 */
-/* line 267, ../../app/styles/_customs.scss */
+/* line 272, ../../app/styles/_app.scss */
 img {
   border: 0;
   /* 1 */
@@ -9019,7 +9019,7 @@ img {
 /*
 * Corrects overflow displayed oddly in IE 9.
 */
-/* line 275, ../../app/styles/_customs.scss */
+/* line 280, ../../app/styles/_app.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -9030,7 +9030,7 @@ Figures
 /*
 * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
 */
-/* line 286, ../../app/styles/_customs.scss */
+/* line 291, ../../app/styles/_app.scss */
 figure {
   margin: 0;
 }
@@ -9041,7 +9041,7 @@ Forms
 /*
 * Corrects margin displayed oddly in IE 6/7.
 */
-/* line 297, ../../app/styles/_customs.scss */
+/* line 302, ../../app/styles/_app.scss */
 form {
   margin: 0;
 }
@@ -9049,7 +9049,7 @@ form {
 /*
 * Define consistent border, margin, and padding.
 */
-/* line 304, ../../app/styles/_customs.scss */
+/* line 309, ../../app/styles/_app.scss */
 fieldset {
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
@@ -9061,7 +9061,7 @@ fieldset {
 * 2. Corrects text not wrapping in Firefox 3.
 * 3. Corrects alignment displayed oddly in IE 6/7.
 */
-/* line 315, ../../app/styles/_customs.scss */
+/* line 320, ../../app/styles/_app.scss */
 legend {
   padding: 0;
   border: 0;
@@ -9077,7 +9077,7 @@ legend {
 * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
 * 3. Improves appearance and consistency in all browsers.
 */
-/* line 327, ../../app/styles/_customs.scss */
+/* line 332, ../../app/styles/_app.scss */
 button, input, select, textarea {
   margin: 0;
   /* 2 */
@@ -9093,7 +9093,7 @@ button, input, select, textarea {
 * Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
 * the UA stylesheet.
 */
-/* line 338, ../../app/styles/_customs.scss */
+/* line 343, ../../app/styles/_app.scss */
 button, input {
   line-height: normal;
 }
@@ -9107,7 +9107,7 @@ button, input {
 * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
 *    Known issue:inner spacing remains in IE 6.
 */
-/* line 351, ../../app/styles/_customs.scss */
+/* line 356, ../../app/styles/_app.scss */
 button, html input[type="button"],
 input[type="reset"], input[type="submit"] {
   cursor: pointer;
@@ -9121,7 +9121,7 @@ input[type="reset"], input[type="submit"] {
 /*
 * Re-set default cursor for disabled elements.
 */
-/* line 361, ../../app/styles/_customs.scss */
+/* line 366, ../../app/styles/_app.scss */
 button[disabled], input[disabled] {
   cursor: default;
 }
@@ -9132,7 +9132,7 @@ button[disabled], input[disabled] {
 * 3. Removes excess padding in IE 7.
 *    Known issue:excess padding remains in IE 6.
 */
-/* line 371, ../../app/styles/_customs.scss */
+/* line 376, ../../app/styles/_app.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
@@ -9149,7 +9149,7 @@ input[type="checkbox"], input[type="radio"] {
 * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
 *    (include `-moz` to future-proof).
 */
-/* line 383, ../../app/styles/_customs.scss */
+/* line 388, ../../app/styles/_app.scss */
 input[type="search"] {
   /* 2 */
   box-sizing: content-box;
@@ -9162,7 +9162,7 @@ input[type="search"] {
 * Removes inner padding and search cancel button in Safari 5 and Chrome
 * on OS X.
 */
-/* line 394, ../../app/styles/_customs.scss */
+/* line 399, ../../app/styles/_app.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -9170,7 +9170,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 /*
 * Removes inner padding and border in Firefox 3+.
 */
-/* line 401, ../../app/styles/_customs.scss */
+/* line 406, ../../app/styles/_app.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -9180,7 +9180,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 * 1. Removes default vertical scrollbar in IE 6/7/8/9.
 * 2. Improves readability and alignment in all browsers.
 */
-/* line 410, ../../app/styles/_customs.scss */
+/* line 415, ../../app/styles/_app.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -9194,7 +9194,7 @@ Tables
 /*
 * Remove most spacing between table cells.
 */
-/* line 422, ../../app/styles/_customs.scss */
+/* line 427, ../../app/styles/_app.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -9203,44 +9203,44 @@ table {
 /* ==========================================================================
 Global Styles
 ========================================================================== */
-/* line 430, ../../app/styles/_customs.scss */
+/* line 435, ../../app/styles/_app.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 435, ../../app/styles/_customs.scss */
+/* line 440, ../../app/styles/_app.scss */
 a {
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
   transition-property: color, border-color, background-color;
 }
 
-/* line 443, ../../app/styles/_customs.scss */
+/* line 448, ../../app/styles/_app.scss */
 .nopadding {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* line 447, ../../app/styles/_customs.scss */
+/* line 452, ../../app/styles/_app.scss */
 p {
   font-size: 14px;
   line-height: 25px;
 }
 
-/* line 451, ../../app/styles/_customs.scss */
+/* line 456, ../../app/styles/_app.scss */
 a {
   color: #34FC99;
 }
 
-/* line 454, ../../app/styles/_customs.scss */
+/* line 459, ../../app/styles/_app.scss */
 a:hover, a:focus {
   color: #9900CC;
   text-decoration: none;
 }
 
-/* line 458, ../../app/styles/_customs.scss */
+/* line 463, ../../app/styles/_app.scss */
 .texture-overlay {
   position: absolute;
   top: 0px;
@@ -9253,7 +9253,7 @@ a:hover, a:focus {
 /* ==========================================================================
 Buttons
 ========================================================================== */
-/* line 470, ../../app/styles/_customs.scss */
+/* line 475, ../../app/styles/_app.scss */
 .use-btn {
   display: inline-block;
   margin: 0 10px 10px 0;
@@ -9264,14 +9264,14 @@ Buttons
   font-size: 16px;
 }
 
-/* line 479, ../../app/styles/_customs.scss */
+/* line 484, ../../app/styles/_app.scss */
 .use-btn:hover, .use-btn:focus {
   background-color: #D7C966;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 484, ../../app/styles/_customs.scss */
+/* line 489, ../../app/styles/_app.scss */
 .learn-btn, .download-btn {
   display: inline-block;
   padding: 18px 46px;
@@ -9281,14 +9281,14 @@ Buttons
   font-size: 16px;
 }
 
-/* line 492, ../../app/styles/_customs.scss */
+/* line 497, ../../app/styles/_app.scss */
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
   border-color: #34FC99;
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 497, ../../app/styles/_customs.scss */
+/* line 502, ../../app/styles/_app.scss */
 .read-more-btn {
   display: inline-block;
   color: #323a45;
@@ -9296,17 +9296,17 @@ Buttons
   font-weight: 400;
 }
 
-/* line 503, ../../app/styles/_customs.scss */
+/* line 508, ../../app/styles/_app.scss */
 .read-more-btn i, .download-btn i {
   margin-left: 5px;
 }
 
-/* line 506, ../../app/styles/_customs.scss */
+/* line 511, ../../app/styles/_app.scss */
 .showcase .download-btn {
   margin-top: 50px;
 }
 
-/* line 509, ../../app/styles/_customs.scss */
+/* line 514, ../../app/styles/_app.scss */
 .download .download-btn {
   margin-top: 25px;
 }
@@ -9314,7 +9314,7 @@ Buttons
 /* ==========================================================================
 Navigation
 ========================================================================== */
-/* line 516, ../../app/styles/_customs.scss */
+/* line 521, ../../app/styles/_app.scss */
 .nav-toggle {
   position: absolute;
   top: 0;
@@ -9324,12 +9324,12 @@ Navigation
   cursor: pointer;
 }
 
-/* line 524, ../../app/styles/_customs.scss */
+/* line 529, ../../app/styles/_app.scss */
 .nav-toggle:focus {
   outline: none;
 }
 
-/* line 527, ../../app/styles/_customs.scss */
+/* line 532, ../../app/styles/_app.scss */
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   content: '';
   position: absolute;
@@ -9341,54 +9341,54 @@ Navigation
   cursor: pointer;
 }
 
-/* line 537, ../../app/styles/_customs.scss */
+/* line 542, ../../app/styles/_app.scss */
 .nav-toggle span:before {
   top: -10px;
 }
 
-/* line 540, ../../app/styles/_customs.scss */
+/* line 545, ../../app/styles/_app.scss */
 .nav-toggle span:after {
   bottom: -10px;
 }
 
-/* line 543, ../../app/styles/_customs.scss */
+/* line 548, ../../app/styles/_app.scss */
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   transition: all 300ms ease-in-out;
 }
 
-/* line 547, ../../app/styles/_customs.scss */
+/* line 552, ../../app/styles/_app.scss */
 .nav-toggle.active span {
   background-color: transparent;
 }
 
-/* line 550, ../../app/styles/_customs.scss */
+/* line 555, ../../app/styles/_app.scss */
 .nav-toggle.active span:before, .nav-toggle.active span:after {
   top: 0;
 }
 
-/* line 553, ../../app/styles/_customs.scss */
+/* line 558, ../../app/styles/_app.scss */
 .nav-toggle.active span:before {
   transform: rotate(45deg);
 }
 
-/* line 558, ../../app/styles/_customs.scss */
+/* line 563, ../../app/styles/_app.scss */
 .nav-toggle.active span:after {
   top: 10px;
   transform: translateY(-10px) rotate(-45deg);
 }
 
-/* line 564, ../../app/styles/_customs.scss */
+/* line 569, ../../app/styles/_app.scss */
 .navicon {
   position: relative;
   height: 26px;
 }
 
-/* line 568, ../../app/styles/_customs.scss */
+/* line 573, ../../app/styles/_app.scss */
 .navicon p {
   margin: 1px 50px 0 0;
 }
 
-/* line 571, ../../app/styles/_customs.scss */
+/* line 576, ../../app/styles/_app.scss */
 .navicon-fixed {
   position: fixed;
   top: 59px;
@@ -9398,7 +9398,7 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
-/* line 580, ../../app/styles/_customs.scss */
+/* line 585, ../../app/styles/_app.scss */
 .hero {
   position: relative;
   padding: 60px 0 60px 0;
@@ -9408,32 +9408,32 @@ Hero
   color: #fff;
 }
 
-/* line 589, ../../app/styles/_customs.scss */
+/* line 594, ../../app/styles/_app.scss */
 .hero h1 {
   margin: 200px 0 45px 0;
   font-weight: 300;
   font-size: 45px;
 }
 
-/* line 594, ../../app/styles/_customs.scss */
+/* line 599, ../../app/styles/_app.scss */
 .hero h1 span {
   display: inline-block;
   color: #a1a9b0;
 }
 
-/* line 598, ../../app/styles/_customs.scss */
+/* line 603, ../../app/styles/_app.scss */
 #home {
   width: 100%;
   height: 100%;
 }
 
-/* line 602, ../../app/styles/_customs.scss */
+/* line 607, ../../app/styles/_app.scss */
 .hero {
   width: 100%;
   height: 100%;
 }
 
-/* line 606, ../../app/styles/_customs.scss */
+/* line 611, ../../app/styles/_app.scss */
 header i {
   margin-left: 5px;
 }
@@ -9441,7 +9441,7 @@ header i {
 /* ==========================================================================
 Video
 ========================================================================== */
-/* line 613, ../../app/styles/_customs.scss */
+/* line 618, ../../app/styles/_app.scss */
 section.video i {
   margin-right: 10px;
   color: #323a45;
@@ -9450,30 +9450,30 @@ section.video i {
   transition: color 300ms ease-in-out;
 }
 
-/* line 621, ../../app/styles/_customs.scss */
+/* line 626, ../../app/styles/_app.scss */
 section.video h1 {
   font-weight: 400;
   font-size: 20px;
 }
 
-/* line 625, ../../app/styles/_customs.scss */
+/* line 630, ../../app/styles/_app.scss */
 section.video {
   padding: 60px 0;
   background-color: #f6f7f9;
 }
 
-/* line 629, ../../app/styles/_customs.scss */
+/* line 634, ../../app/styles/_app.scss */
 section.video a {
   color: #323a45;
 }
 
-/* line 632, ../../app/styles/_customs.scss */
+/* line 637, ../../app/styles/_app.scss */
 section.video a:hover, section.video a:focus {
   color: #9900CC;
   text-decoration: none;
 }
 
-/* line 636, ../../app/styles/_customs.scss */
+/* line 641, ../../app/styles/_app.scss */
 section.video a:hover i, section.video a:focus i {
   color: #9900CC;
 }
@@ -9481,7 +9481,7 @@ section.video a:hover i, section.video a:focus i {
 /* ==========================================================================
 Custom Slider Controls (Flickity)
 ========================================================================== */
-/* line 643, ../../app/styles/_customs.scss */
+/* line 648, ../../app/styles/_app.scss */
 .flickity-page-dots .dot {
   width: 13px;
   height: 13px;
@@ -9491,7 +9491,7 @@ Custom Slider Controls (Flickity)
   transition: background 0.3s;
 }
 
-/* line 652, ../../app/styles/_customs.scss */
+/* line 657, ../../app/styles/_app.scss */
 .flickity-page-dots .dot.is-selected {
   background: white;
 }
@@ -9499,7 +9499,7 @@ Custom Slider Controls (Flickity)
 /* ==========================================================================
 Features Slider
 ========================================================================== */
-/* line 659, ../../app/styles/_customs.scss */
+/* line 664, ../../app/styles/_app.scss */
 .features-bg {
   position: relative;
   min-height: 400px;
@@ -9507,7 +9507,7 @@ Features Slider
   background-size: cover;
 }
 
-/* line 665, ../../app/styles/_customs.scss */
+/* line 670, ../../app/styles/_app.scss */
 .features-img {
   width: 100%;
   height: 400px;
@@ -9515,7 +9515,7 @@ Features Slider
   line-height: 400px;
 }
 
-/* line 671, ../../app/styles/_customs.scss */
+/* line 676, ../../app/styles/_app.scss */
 .features-slider {
   position: relative;
   padding: 11% 100px 10% 100px;
@@ -9523,19 +9523,19 @@ Features Slider
   background-color: #3F6184;
 }
 
-/* line 677, ../../app/styles/_customs.scss */
+/* line 682, ../../app/styles/_app.scss */
 .features-slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 682, ../../app/styles/_customs.scss */
+/* line 687, ../../app/styles/_app.scss */
 .features-slider ul li {
   width: 100%;
 }
 
-/* line 685, ../../app/styles/_customs.scss */
+/* line 690, ../../app/styles/_app.scss */
 .features-slider li h1 {
   margin-bottom: 15px;
   color: #fff;
@@ -9543,31 +9543,31 @@ Features Slider
   font-size: 22px;
 }
 
-/* line 691, ../../app/styles/_customs.scss */
+/* line 696, ../../app/styles/_app.scss */
 .features-slider li p {
   color: #fff;
   font-size: 14px;
 }
 
-/* line 695, ../../app/styles/_customs.scss */
+/* line 700, ../../app/styles/_app.scss */
 .features-intro-img {
   position: relative;
 }
 
-/* line 698, ../../app/styles/_customs.scss */
+/* line 703, ../../app/styles/_app.scss */
 .slides li h1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 702, ../../app/styles/_customs.scss */
+/* line 707, ../../app/styles/_app.scss */
 .features-slider .flickity-page-dots {
   text-align: left;
   margin-top: 50px;
   position: static;
 }
 
-/* line 707, ../../app/styles/_customs.scss */
+/* line 712, ../../app/styles/_app.scss */
 .features-slider .flickity-page-dots .dot {
   margin: 0 12px 0 0;
 }
@@ -9575,12 +9575,12 @@ Features Slider
 /* ==========================================================================
 Features List
 ========================================================================== */
-/* line 714, ../../app/styles/_customs.scss */
+/* line 719, ../../app/styles/_app.scss */
 .features-list {
   padding: 130px 0;
 }
 
-/* line 717, ../../app/styles/_customs.scss */
+/* line 722, ../../app/styles/_app.scss */
 .features-list h1 {
   margin: 0 0 10px 0;
   padding: 0;
@@ -9588,20 +9588,20 @@ Features List
   font-size: 20px;
 }
 
-/* line 723, ../../app/styles/_customs.scss */
+/* line 728, ../../app/styles/_app.scss */
 .features-list p {
   margin-bottom: 20px;
   color: #515151;
 }
 
-/* line 727, ../../app/styles/_customs.scss */
+/* line 732, ../../app/styles/_app.scss */
 .feature-content {
   display: inline-block;
   margin-left: 0;
   width: 65%;
 }
 
-/* line 732, ../../app/styles/_customs.scss */
+/* line 737, ../../app/styles/_app.scss */
 .feature-icon {
   display: inline-block;
   margin-right: 25px;
@@ -9615,7 +9615,7 @@ Features List
   line-height: 90px;
 }
 
-/* line 744, ../../app/styles/_customs.scss */
+/* line 749, ../../app/styles/_app.scss */
 .feature-icon i {
   color: #34FC99;
 }
@@ -9623,14 +9623,14 @@ Features List
 /* ==========================================================================
 Blockquote
 ========================================================================== */
-/* line 751, ../../app/styles/_customs.scss */
+/* line 756, ../../app/styles/_app.scss */
 blockquote {
   margin: 40px 0 0;
   padding: 0;
   border: none;
 }
 
-/* line 756, ../../app/styles/_customs.scss */
+/* line 761, ../../app/styles/_app.scss */
 blockquote p {
   display: inline-block;
   margin: 0;
@@ -9640,7 +9640,7 @@ blockquote p {
   font-style: italic;
 }
 
-/* line 764, ../../app/styles/_customs.scss */
+/* line 769, ../../app/styles/_app.scss */
 blockquote .avatar {
   display: inline-block;
   margin-right: 20px;
@@ -9649,7 +9649,7 @@ blockquote .avatar {
   vertical-align: middle;
 }
 
-/* line 771, ../../app/styles/_customs.scss */
+/* line 776, ../../app/styles/_app.scss */
 blockquote .logo-quote {
   display: inline-block;
   margin: 0 0 0 90px;
@@ -9658,13 +9658,13 @@ blockquote .logo-quote {
 /* ==========================================================================
 Showcase
 ========================================================================== */
-/* line 779, ../../app/styles/_customs.scss */
+/* line 784, ../../app/styles/_app.scss */
 .showcase {
   background: url("../img/showcase-bg-fixed-01.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* line 783, ../../app/styles/_customs.scss */
+/* line 788, ../../app/styles/_app.scss */
 .showcase h1 {
   margin: 0 0 20px 0;
   color: #fff;
@@ -9672,13 +9672,13 @@ Showcase
   font-size: 22px;
 }
 
-/* line 789, ../../app/styles/_customs.scss */
+/* line 794, ../../app/styles/_app.scss */
 .showcase p {
   margin-bottom: 25px;
   color: #fff;
 }
 
-/* line 793, ../../app/styles/_customs.scss */
+/* line 798, ../../app/styles/_app.scss */
 .device {
   position: absolute;
   top: -60px;
@@ -9688,7 +9688,7 @@ Showcase
   background: url("../img/iphone-skeleton.png") no-repeat center center;
 }
 
-/* line 801, ../../app/styles/_customs.scss */
+/* line 806, ../../app/styles/_app.scss */
 .device-content {
   position: absolute;
   top: 115px;
@@ -9698,27 +9698,27 @@ Showcase
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 809, ../../app/styles/_customs.scss */
+/* line 814, ../../app/styles/_app.scss */
 .device-content img {
   width: 247px;
   height: 445px;
 }
 
-/* line 813, ../../app/styles/_customs.scss */
+/* line 818, ../../app/styles/_app.scss */
 .showcase-wrap {
   position: relative;
   padding: 100px 0;
   min-height: 600px;
 }
 
-/* line 818, ../../app/styles/_customs.scss */
+/* line 823, ../../app/styles/_app.scss */
 .showcase-slider ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 823, ../../app/styles/_customs.scss */
+/* line 828, ../../app/styles/_app.scss */
 .showcase-slider .flickity-page-dots {
   bottom: 20px;
 }
@@ -9726,13 +9726,13 @@ Showcase
 /* ==========================================================================
 Screenshots Intro
 ========================================================================== */
-/* line 830, ../../app/styles/_customs.scss */
+/* line 835, ../../app/styles/_app.scss */
 .screenshots-intro {
   padding: 170px 0 100px 0;
   background-color: #515151;
 }
 
-/* line 834, ../../app/styles/_customs.scss */
+/* line 839, ../../app/styles/_app.scss */
 .screenshots-intro h1 {
   margin-bottom: 20px;
   color: #ffffff;
@@ -9740,7 +9740,7 @@ Screenshots Intro
   font-size: 22px;
 }
 
-/* line 840, ../../app/styles/_customs.scss */
+/* line 845, ../../app/styles/_app.scss */
 .screenshots-intro p {
   margin-bottom: 25px;
   color: #ffffff;
@@ -9749,14 +9749,14 @@ Screenshots Intro
 /* ==========================================================================
 Screenshots
 ========================================================================== */
-/* line 848, ../../app/styles/_customs.scss */
+/* line 853, ../../app/styles/_app.scss */
 .screenshots ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 853, ../../app/styles/_customs.scss */
+/* line 858, ../../app/styles/_app.scss */
 .screenshots ul li {
   float: left;
   min-height: 100%;
@@ -9765,25 +9765,25 @@ Screenshots
   list-style: none;
 }
 
-/* line 860, ../../app/styles/_customs.scss */
+/* line 865, ../../app/styles/_app.scss */
 .screenshots figure {
   position: relative;
   overflow: hidden;
 }
 
-/* line 864, ../../app/styles/_customs.scss */
+/* line 869, ../../app/styles/_app.scss */
 .screenshots figure img {
   width: 100%;
   height: 100%;
   transition: all 300ms ease-in-out;
 }
 
-/* line 870, ../../app/styles/_customs.scss */
+/* line 875, ../../app/styles/_app.scss */
 .screenshots figure:hover img, .screenshots figure:focus img {
   transform: scale(1.1);
 }
 
-/* line 875, ../../app/styles/_customs.scss */
+/* line 880, ../../app/styles/_app.scss */
 .screenshots figcaption {
   position: absolute;
   top: 0;
@@ -9798,44 +9798,44 @@ Screenshots
   transition: all 300ms ease-in-out;
 }
 
-/* line 889, ../../app/styles/_customs.scss */
+/* line 894, ../../app/styles/_app.scss */
 .screenshots figcaption a {
   color: #515151;
 }
 
-/* line 892, ../../app/styles/_customs.scss */
+/* line 897, ../../app/styles/_app.scss */
 .screenshots figcaption a:hover, .screenshots figcaption a:focus {
   color: #9900CC;
 }
 
-/* line 895, ../../app/styles/_customs.scss */
+/* line 900, ../../app/styles/_app.scss */
 .screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
   opacity: 1;
 }
 
-/* line 898, ../../app/styles/_customs.scss */
+/* line 903, ../../app/styles/_app.scss */
 .visible {
   opacity: 1;
 }
 
-/* line 901, ../../app/styles/_customs.scss */
+/* line 906, ../../app/styles/_app.scss */
 .screenshots figure.cs-hover figcaption {
   opacity: 1;
 }
 
-/* line 904, ../../app/styles/_customs.scss */
+/* line 909, ../../app/styles/_app.scss */
 .screenshots figcaption i {
   font-size: 35px;
 }
 
-/* line 907, ../../app/styles/_customs.scss */
+/* line 912, ../../app/styles/_app.scss */
 .screenshots figcaption p {
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-/* line 912, ../../app/styles/_customs.scss */
+/* line 917, ../../app/styles/_app.scss */
 .screenshots figcaption .caption-content {
   position: absolute;
   top: 50%;
@@ -9847,7 +9847,7 @@ Screenshots
   transition: all 300ms ease-in-out;
 }
 
-/* line 925, ../../app/styles/_customs.scss */
+/* line 930, ../../app/styles/_app.scss */
 .screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
   transform: translate(0px, 0px);
 }
@@ -9855,13 +9855,13 @@ Screenshots
 /* ==========================================================================
 Download Now
 ========================================================================== */
-/* line 934, ../../app/styles/_customs.scss */
+/* line 939, ../../app/styles/_app.scss */
 .download {
   padding: 120px 0;
   background-color: #515151;
 }
 
-/* line 938, ../../app/styles/_customs.scss */
+/* line 943, ../../app/styles/_app.scss */
 .download h1 {
   margin: 0 0 15px 0;
   color: #fff;
@@ -9872,23 +9872,23 @@ Download Now
 /* ==========================================================================
 Footer
 ========================================================================== */
-/* line 948, ../../app/styles/_customs.scss */
+/* line 953, ../../app/styles/_app.scss */
 footer {
   padding: 100px 0;
 }
 
-/* line 951, ../../app/styles/_customs.scss */
+/* line 956, ../../app/styles/_app.scss */
 footer p {
   color: #515151;
   font-size: 12px;
 }
 
-/* line 955, ../../app/styles/_customs.scss */
+/* line 960, ../../app/styles/_app.scss */
 footer ul {
   margin-top: 30px;
 }
 
-/* line 958, ../../app/styles/_customs.scss */
+/* line 963, ../../app/styles/_app.scss */
 footer li {
   float: left;
   margin-right: 15%;
@@ -9897,12 +9897,12 @@ footer li {
   font-weight: 400;
 }
 
-/* line 965, ../../app/styles/_customs.scss */
+/* line 970, ../../app/styles/_app.scss */
 footer li a {
   color: #3f6184;
 }
 
-/* line 968, ../../app/styles/_customs.scss */
+/* line 973, ../../app/styles/_app.scss */
 footer li:last-child {
   margin-right: 0;
 }
@@ -9911,7 +9911,7 @@ footer li:last-child {
 Nav Overlay
 ========================================================================== */
 /* Overlay style */
-/* line 977, ../../app/styles/_customs.scss */
+/* line 982, ../../app/styles/_app.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -9922,7 +9922,7 @@ Nav Overlay
 }
 
 /* Menu style */
-/* line 987, ../../app/styles/_customs.scss */
+/* line 992, ../../app/styles/_app.scss */
 .overlay nav {
   position: relative;
   top: 50%;
@@ -9932,7 +9932,7 @@ Nav Overlay
   transform: translateY(-50%);
 }
 
-/* line 997, ../../app/styles/_customs.scss */
+/* line 1002, ../../app/styles/_app.scss */
 .overlay ul {
   position: relative;
   display: inline-block;
@@ -9941,26 +9941,26 @@ Nav Overlay
   list-style: none;
 }
 
-/* line 1004, ../../app/styles/_customs.scss */
+/* line 1009, ../../app/styles/_app.scss */
 .overlay ul li {
   display: block;
   float: left;
   margin-right: 20px;
 }
 
-/* line 1009, ../../app/styles/_customs.scss */
+/* line 1014, ../../app/styles/_app.scss */
 .overlay ul li:last-child {
   margin-right: 0px;
 }
 
-/* line 1012, ../../app/styles/_customs.scss */
+/* line 1017, ../../app/styles/_app.scss */
 .overlay ul li i {
   display: block;
   margin-bottom: 10px;
   font-size: 40px;
 }
 
-/* line 1017, ../../app/styles/_customs.scss */
+/* line 1022, ../../app/styles/_app.scss */
 .overlay ul li a {
   display: block;
   padding: 50px 0;
@@ -9975,55 +9975,55 @@ Nav Overlay
   transition: all 300ms ease-in-out;
 }
 
-/* line 1031, ../../app/styles/_customs.scss */
+/* line 1036, ../../app/styles/_app.scss */
 .overlay ul li a:hover, .overlay ul li a:focus {
   border-color: #34FC99;
   color: #34FC99;
 }
 
 /* Effects */
-/* line 1037, ../../app/styles/_customs.scss */
+/* line 1042, ../../app/styles/_app.scss */
 .overlay-boxify {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-/* line 1043, ../../app/styles/_customs.scss */
+/* line 1048, ../../app/styles/_app.scss */
 .overlay-boxify.open {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-/* line 1049, ../../app/styles/_customs.scss */
+/* line 1054, ../../app/styles/_app.scss */
 .overlay-boxify nav ul li {
   opacity: 0;
   transform: translate3d(0, -80px, 0);
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 1056, ../../app/styles/_customs.scss */
+/* line 1061, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:first-child li:first-child {
   transition-delay: 0.05s;
 }
 
-/* line 1060, ../../app/styles/_customs.scss */
+/* line 1065, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:first-child li:nth-child(2) {
   transition-delay: 0.1s;
 }
 
-/* line 1064, ../../app/styles/_customs.scss */
+/* line 1069, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:first-child {
   transition-delay: 0.15s;
 }
 
-/* line 1068, ../../app/styles/_customs.scss */
+/* line 1073, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-/* line 1072, ../../app/styles/_customs.scss */
+/* line 1077, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul li {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -10032,24 +10032,38 @@ Nav Overlay
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-/* line 1081, ../../app/styles/_customs.scss */
+/* line 1086, ../../app/styles/_app.scss */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
   visibility: hidden;
 }
 
-/* line 1084, ../../app/styles/_customs.scss */
+/* line 1089, ../../app/styles/_app.scss */
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible;
 }
 
-/* line 1087, ../../app/styles/_customs.scss */
+/* line 1092, ../../app/styles/_app.scss */
 .delay-05s {
   animation-delay: 0.5s;
 }
 
-/* line 1091, ../../app/styles/_customs.scss */
+/* line 1096, ../../app/styles/_app.scss */
 .delay-1s {
   animation-delay: 1s;
+}
+
+/* line 1, ../../app/styles/_customs.scss */
+.brand {
+  border-radius: 0px 0px 30px 30px;
+  -moz-border-radius: 0px 0px 30px 30px;
+  -webkit-border-radius: 0px 0px 30px 30px;
+  border: 0px none #000000;
+  box-shadow: 0px 8px 30px -1px rgba(0, 0, 0, 0.75);
+}
+
+/* line 12, ../../app/styles/_customs.scss */
+.navbar-brand {
+  padding: 0px 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
