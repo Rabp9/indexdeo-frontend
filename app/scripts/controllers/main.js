@@ -13,7 +13,7 @@ angular.module('inexdeoFrotendApp')
     
     function init() {
         // $rootScope.layout.loading = true;
-        var search = ['promo_inexdeo'];
+        var search = ['promo_inexdeo', 'quienes_somos'];
         $scope.infos = {};
         
         return $q.all([

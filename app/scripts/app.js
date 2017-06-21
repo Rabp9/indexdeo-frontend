@@ -27,22 +27,22 @@ angular
         title: 'Home'
     };
 
-    var quienesSomosState = {
-        name: 'quienesSomos',
-        url: '/quienes-somos',
-        templateUrl: 'views/quienes-somos.html',
-        controller: 'QuienesSomosCtrl',
-        controllerAs: 'quienesSomos',
-        title: '¿Quiènes somos?'
+    var nosotrosState = {
+        name: 'nosotros',
+        url: '/nosotros',
+        templateUrl: 'views/nosotros.html',
+        controller: 'NosotrosCtrl',
+        controllerAs: 'nosotros',
+        title: 'Nosotros'
     };
     
-    var politicasState = {
-        name: 'politicas',
-        url: '/politicas',
-        templateUrl: 'views/politicas.html',
-        controller: 'PoliticasCtrl',
-        controllerAs: 'politicas',
-        title: 'Políticas'
+    var contactanosState = {
+        name: 'contactanos',
+        url: '/contactanos',
+        templateUrl: 'views/contactanos.html',
+        controller: 'ContactanosCtrl',
+        controllerAs: 'contactanos',
+        title: 'Contáctanos'
     };
 
     var productosState = {
@@ -161,8 +161,8 @@ angular
     };
     
     $stateProvider.state(mainState);
-    $stateProvider.state(quienesSomosState);
-    $stateProvider.state(politicasState);
+    $stateProvider.state(nosotrosState);
+    $stateProvider.state(contactanosState);
     $stateProvider.state(productosState);
     $stateProvider.state(productosDetailState);
     $stateProvider.state(clientesState);
