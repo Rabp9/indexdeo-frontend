@@ -10066,4 +10066,9 @@ Waypoints
   padding: 0px 15px;
 }
 
+/* line 17, ../../app/styles/_customs.scss */
+.grid li {
+  height: 178px;
+}
+
 /*# sourceMappingURL=main.css.map */
