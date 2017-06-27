@@ -48,7 +48,7 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- open/close -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -69,6 +69,7 @@
                     <li ui-sref-active="active"><a ui-sref="nosotros">Nosotros</a></li>
                     <li><a href="#">Productos</a></li>
                     <li><a href="#">Servicios</a></li>
+                    <li ui-sref-active="active"><a ui-sref="proyectos">Proyectos</a></li>
                     <li><a href="#">Galería</a></li>
                     <li ui-sref-active="active"><a ui-sref="contactanos">Contáctanos</a></li>
                 </ul>
@@ -88,12 +89,13 @@
                         <li><a ui-sref="nosotros">Nosotros</a></li>
                         <li><a href="#about">Productos</a></li>
                         <li><a href="#features">Servicios</a></li>
+                        <li><a ui-sref="proyectos">Proyectos</a></li>
                         <li><a href="#screenshots">Galería</a></li>
                         <li><a ui-sref="contactanos">Contáctanos</a></li>
                     </ul>
                 </div>
                 <div class="col-md-12">
-                    <p>© Copyright - Todos los Derechos Reservados - In Excelsis Deo - 2017</p>
+                    <p class="text-center">© Copyright - Todos los Derechos Reservados - In Excelsis Deo - 2017</p>
                 </div>
             </div>
         </div>
@@ -130,6 +132,7 @@
     <script src="scripts/services/envservice.js"></script>
     <script src="scripts/controllers/nosotros.js"></script>
     <script src="scripts/controllers/contactanos.js"></script>
+    <script src="scripts/controllers/proyectos.js"></script>
     <!-- endbuild -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/min/toucheffects-min.js"></script>

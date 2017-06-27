@@ -1,5 +1,10 @@
 $(document).ready(function() {    
-    $(".wp1").waypoint(function(){
+    $(".wp1").waypoint(function(direction){
+        if (direction === 'down') {
+            $('nav.navbar').removeClass('navbar-transparent');
+        } else if (direction === 'up') {
+            $('nav.navbar').addClass('navbar-transparent');
+        }
         $(".wp1").addClass("animated fadeInLeft")
     }, {
         offset:"75%"

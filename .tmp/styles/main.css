@@ -9403,7 +9403,7 @@ Hero
   position: relative;
   padding: 60px 0 60px 0;
   min-height: 800px;
-  background: #284666 url("../img/logo.jpg") no-repeat center center;
+  background: #284666 url("../images/bg2.png") no-repeat center center;
   background-size: cover;
   color: #fff;
 }
@@ -9891,7 +9891,7 @@ footer ul {
 /* line 963, ../../app/styles/_app.scss */
 footer li {
   float: left;
-  margin-right: 15%;
+  margin-right: 10%;
   list-style: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -10069,6 +10069,12 @@ Waypoints
 /* line 17, ../../app/styles/_customs.scss */
 .grid li {
   height: 178px;
+}
+
+/* line 22, ../../app/styles/_customs.scss */
+.navbar-transparent {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */

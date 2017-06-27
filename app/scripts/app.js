@@ -76,6 +76,15 @@ angular
         title: 'Clientes'
     };
     
+    var proyectosState = {
+        name: 'proyectos',
+        url: '/proyectos',
+        templateUrl: 'views/proyectos.html',
+        controller: 'ProyectosCtrl',
+        controllerAs: 'proyectos',
+        title: 'Proyectos'
+    };
+    
     var obrasState = {
         name: 'obras',
         url: '/obras',
@@ -174,6 +183,7 @@ angular
     $stateProvider.state(bolsaTrabajoState);
     $stateProvider.state(sugerenciasState);
     $stateProvider.state(plantaIndustrialState);
+    $stateProvider.state(proyectosState);
     $urlRouterProvider.when('', '/');
     /*
     ngImageGalleryOptsProvider.setOpts({

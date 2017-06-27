@@ -14,8 +14,8 @@ angular.module('inexdeoFrotendApp')
             switch (window.location.hostname) {
                 case 'localhost':
                     return 'http://localhost:8000/inexdeo-backend/';
-                case 'tuplast.robertobocanegra.com':
-                    return 'http://tuplast.robertobocanegra.com/api/';
+                case 'inexdeo.robertobocanegra.com':
+                    return 'http://inexdeo.robertobocanegra.com/api/';
             }
         }
     };
