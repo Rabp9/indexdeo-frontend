@@ -1,0 +1,115 @@
+.carousel {
+    @media (min-width: $screen-sm-min) {
+        height: -webkit-calc(100vh - #{$navbar-height + $navbar-header-top-height + ($navbar-header-top-margin * 2)});
+        height:    -moz-calc(100vh - #{$navbar-height + $navbar-header-top-height + ($navbar-header-top-margin * 2)});
+        height:         calc(100vh - #{$navbar-height + $navbar-header-top-height + ($navbar-header-top-margin * 2)});
+
+        min-height: 400px;
+    }
+    @media (max-width: $screen-xs-max) {
+        height: 200px;
+    }
+    .item {
+        @extend .carousel;
+    }
+    .active {
+        @extend .carousel;
+    }
+}
+
+.carousel {
+    .carousel-inner, .carousel-inner img, div.text-center {
+        @media (min-width: $screen-sm-min) {
+            height: 100%;
+            min-height: 400px;
+        }
+        @media (max-width: $screen-xs-max) {
+            height: 100%;
+        }
+    }
+}
+
+.carousel-indicators {
+    bottom: $carousel-indicators-bottom;
+    li, .active {
+        width:  $carousel-indicators-size;
+        height: $carousel-indicators-size;
+        margin: $carousel-indicators-size / 2;
+        border-color: $color-default;
+        border-width: 2px;
+    };
+    .active {
+        background-color: $color-default;
+    }
+}
+
+.carousel-caption {
+    /*background: rgba($color-default, .8);*/
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    color: $color-primary;
+    margin: 0 auto;
+    h1 {
+        @media (max-width: $screen-xs-max) {
+            font-size: 100% !important;
+        }
+        a {
+            color: $color-primary;
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+    p {
+        @media (max-width: $screen-xs-max) {
+            font-size: 75% !important;
+        }
+    }
+}
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            opacity: 0;
+            -webkit-transition-property: opacity;
+            -moz-transition-property: opacity;
+            -o-transition-property: opacity;
+            transition-property: opacity;
+        }
+        .active {
+            opacity: 1;
+            transition-property: opacity;
+            &.left, &.right {
+                left: 0;
+                opacity: 0;
+                z-index: 1;
+                display: none;
+            }
+        }
+        .next.left, .prev.right {
+            opacity: 1;
+        }
+    }
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+.img-slider {
+    margin: auto; 
+    width: 100%;
+}
+
+.uib-slide {
+    &:hover {
+        .carousel-caption {
+            background: rgba($color-default, 0.8);
+            display: block;
+        }
+    }
+}

@@ -216,7 +216,7 @@ CREATE TABLE `infos` (
   `data` varchar(60) DEFAULT NULL,
   `value` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,62 +225,8 @@ CREATE TABLE `infos` (
 
 LOCK TABLES `infos` WRITE;
 /*!40000 ALTER TABLE `infos` DISABLE KEYS */;
-INSERT INTO `infos` VALUES (1,'nuestraHistoria','<p>Hace 6 a&ntilde;os, El Sr. Guillermo Vel&aacute;squez Castro en su af&aacute;n de realizar Negocios emprendedores y dar respuesta a la necesidad de mejorar el saneamiento y agua de la poblaci&oacute;n crea en conjunto con su socio la planta de fabrica...'),(2,'vision','Que nuestra empresa sea reconocida nacional e internacionalmente implementado procesos de calidad en nuestros productos y servicios.'),(3,'mision','Sobrepasar las expectativas de todos los requerimientos de nuestros clientes tanto en la construcción de obra civiles como en la extracción de minerales.'),(4,'valor1','Trabajo en equipo'),(5,'valor2','Unidad'),(6,'valor3','Profesionalismo'),(7,'valor4','Lealtad'),(8,'valor5','Acción'),(9,'valor6','Servicio'),(10,'valor7','Tenacidad'),(11,'resumen_tuplast','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a finibus sapien, vel tristique nulla. Cras a velit tincidunt, euismod dolor non, posuere nulla. Nam blandit id massa ac maximus. Nam vel justo augue. Proin pharetra nunc lacus, laoreet posuere nisi dapibus in. Aliquam gravida nulla ante, eu aliquam tellus efficitur vel. In ac mauris lacinia, pellentesque odio sed, sagittis turpis. Integer luctus fermentum urna, eget eleifend mauris malesuada tristique. Fusce id pretium sapien. Pellentesque maximus nulla ac dui lacinia ornare.'),(12,'mensaje_clientes_1','Nuestros clientes confian en la calidad de nuestros productos'),(13,'mensaje_clientes_2','Son más de 40 empresas con las que trabajamos conjuntamente'),(14,'facebook_link','facebook-link'),(15,'linkedin_link','linkedin_link'),(16,'telf_oficina','044-659230'),(17,'email_1','ventas@tuberiasplasticas.com'),(18,'email_2','info@tuberiasplasticas.com'),(19,'telf_area_tecnica','982579831'),(20,'brochure','brochure'),(21,'telf_area_ventas','991904900'),(22,'promo_inexdeo','Somos la empresa líder de Minería y Construcción del norte del país'),(23,'quienes_somos','Somos una empresa fundada desde el 2011 dedica al rubro de minería y construcción de obras civiles en todo el territorio nacional. Contamos con un staff de experimentados colaboradores que diseñan, ejecutan y dirigen nuestros proyectos; además nos dedicamos a la extracción de minerales metálicos y no metálicos.'),(24,'direccion','Jr. Diego de Almagro 270 Int. 101 Centro Cívico de Trujillo');
+INSERT INTO `infos` VALUES (1,'nuestraHistoria','<p>Hace 6 a&ntilde;os, El Sr. Guillermo Vel&aacute;squez Castro en su af&aacute;n de realizar Negocios emprendedores y dar respuesta a la necesidad de mejorar el saneamiento y agua de la poblaci&oacute;n crea en conjunto con su socio la planta de fabrica...'),(2,'vision','<p class=\"MsoNormal\">Que nuestra instituci&oacute;n sea reconocida como una empresa l&iacute;der en el mercado local, nacional y mundial en el rubro de la construcci&oacute;n y miner&iacute;a, a trav&eacute;s de compromisos con responsabilidad social y respeto por el medio ambiente; y valores de &eacute;tica profesional.&nbsp;</p>'),(3,'mision','<p class=\"MsoNormal\" style=\"text-align: justify;\">Sobrepasar las expectativas de todos los requerimientos de nuestros clientes tanto en el rubro de la construcci&oacute;n de obras civiles como en la extracci&oacute;n de minerales, a trav&eacute;s de la implementaci&oacute;n de procesos de calidad en nuestros productos y servicios.</p>'),(4,'valor1','Trabajo en equipo'),(5,'valor2','Unidad'),(6,'valor3','Profesionalismo'),(7,'valor4','Lealtad'),(8,'valor5','Acción'),(9,'valor6','Servicio'),(10,'valor7','Tenacidad'),(11,'resumen_tuplast','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a finibus sapien, vel tristique nulla. Cras a velit tincidunt, euismod dolor non, posuere nulla. Nam blandit id massa ac maximus. Nam vel justo augue. Proin pharetra nunc lacus, laoreet posu...'),(12,'mensaje_clientes_1','Nuestros clientes confian en la calidad de nuestros productos'),(13,'mensaje_clientes_2','Son más de 40 empresas con las que trabajamos conjuntamente'),(14,'facebook_link','http://www.facebook.com/inexcelsisdeosa/'),(15,'linkedin_link','linkedin_link'),(16,'telf_oficina','044-659230'),(17,'email','in.excelsis.deo@outlook.es'),(18,'email_2','info@tuberiasplasticas.com'),(19,'telf_area_tecnica','982579831'),(20,'brochure','brochure'),(21,'telf','044-278699'),(22,'promo_inexdeo','Somos la empresa líder en Minería y Construcción del norte del país'),(23,'quienes_somos','Somos una empresa fundada desde el 2011 dedica al rubro de minería y construcción de obras civiles en todo el territorio nacional. Contamos con un staff de experimentados colaboradores que diseñan, ejecutan y dirigen nuestros proyectos; además nos de...'),(24,'direccion','Jr. Diego de Almagro 270 Int. 101 Centro Cívico de Trujillo'),(25,'historia','<p class=\"MsoNormal\">Nuestra instituci&oacute;n empez&oacute; sus operaciones en el a&ntilde;o 2011, fundada por la familia Rodr&iacute;guez Ruiz. Conformada en sus inicios por diez socios se comenz&oacute; a trabajar en el rubro de la miner&iacute;a en la sierra liberte&ntilde;a, para luego en el 2014 incursionar en el rubro de la construcci&oacute;n de obras civiles.</p>\n<p class=\"MsoNormal\">Observando la demanda de los servicios de construcci&oacute;n, la empresa decidi&oacute; ampliar sus operaciones en el a&ntilde;o 2014 a varias regiones del norte del pa&iacute;s, entre ellas las regiones de Cajamarca, Chimbote y La Libertad.</p>\n<p>&nbsp;En la actualidad nuestra empresa viene evolucionando sus procesos de mejora continua para brindar servicios y productos de la mejor calidad y consolidarnos como una empresa de prestigio en la regi&oacute;n.</p>'),(26,'productos_mensaje','<p class=\"MsoNormal\">Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral &nbsp;cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</p>'),(27,'servicios_mensaje','<p class=\"MsoNormal\">Nuestra instituci&oacute;n cuenta con un staff de profesionales dedicados a la formulaci&oacute;n y elaboraci&oacute;n de proyectos de todo tipo de envergadura.</p>'),(28,'proyectos_mensaje','<p class=\"MsoNormal\">A lo largo del tiempo vamos construyendo sue&ntilde;os de familias y comunidades, por ello ponemos a su disposici&oacute;n toda nuestra experiencia, log&iacute;stica y conocimiento para la realizaci&oacute;n de esos proyectos que tanto anhelan.</p>');
 /*!40000 ALTER TABLE `infos` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `obra_images`
---
-
-DROP TABLE IF EXISTS `obra_images`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `obra_images` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `obra_id` int(11) NOT NULL,
-  `url` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`,`obra_id`),
-  KEY `fk_obra_images_obras1_idx` (`obra_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `obra_images`
---
-
-LOCK TABLES `obra_images` WRITE;
-/*!40000 ALTER TABLE `obra_images` DISABLE KEYS */;
-INSERT INTO `obra_images` VALUES (1,1,'img-EShXC9'),(2,1,'img-y0lHmD'),(3,2,'img-rzUrWM'),(4,3,'img-ciXnc7');
-/*!40000 ALTER TABLE `obra_images` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `obras`
---
-
-DROP TABLE IF EXISTS `obras`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `obras` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(100) NOT NULL,
-  `body` longtext NOT NULL,
-  `resumen` varchar(300) NOT NULL,
-  `estado_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`,`estado_id`),
-  KEY `fk_obras_estados1_idx` (`estado_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `obras`
---
-
-LOCK TABLES `obras` WRITE;
-/*!40000 ALTER TABLE `obras` DISABLE KEYS */;
-INSERT INTO `obras` VALUES (1,'Obra 1','<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut lacus et tellus convallis fringilla. Quisque venenatis magna vitae vestibulum tincidunt. Proin porttitor nibh eget tortor commodo fermentum. Morbi blandit nunc mi. Nam nec arcu id velit laoreet venenatis. Aliquam mattis dictum urna, id hendrerit massa imperdiet eu. Proin ut venenatis eros. Proin egestas nunc nec libero euismod lobortis. Donec ultricies magna ac elit lacinia, id tincidunt nisl semper. Vestibulum volutpat, quam et lobortis porta, tellus eros dictum risus, in dapibus ipsum sem eu mi. Etiam vestibulum massa at leo convallis scelerisque. Vivamus et nibh scelerisque neque pharetra aliquam. Nunc molestie, nunc a dictum imperdiet, nisi odio lacinia nibh, eget tempor quam tortor eu neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sollicitudin condimentum metus, eget porta odio venenatis in.</p>\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif;\">Donec a elit ullamcorper, accumsan velit non, mollis urna. Praesent sed euismod justo. Curabitur sit amet diam ullamcorper, condimentum dolor vel, luctus lacus. Donec aliquam blandit nibh vel dapibus. Nullam id eros ac elit consectetur hendrerit. Aenean aliquam tortor risus. Ut egestas eget lorem eu posuere.</p>','Donec a elit ullamcorper, accumsan velit non, mollis urna. Praesent sed euismod justo. Curabitur sit amet diam ullamcorper, condimentum dolor vel, luctus.',1),(2,'Obra 2','<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut lacus et tellus convallis fringilla. Quisque venenatis magna vitae vestibulum tincidunt. Proin porttitor nibh eget tortor commodo fermentum. Morbi blandit nunc mi. Nam nec arcu id velit laoreet venenatis. Aliquam mattis dictum urna, id hendrerit massa imperdiet eu. Proin ut venenatis eros. Proin egestas nunc nec libero euismod lobortis. Donec ultricies magna ac elit lacinia, id tincidunt nisl semper. Vestibulum volutpat, quam et lobortis porta, tellus eros dictum risus, in dapibus ipsum sem eu mi. Etiam vestibulum massa at leo convallis scelerisque. Vivamus et nibh scelerisque neque pharetra aliquam. Nunc molestie, nunc a dictum imperdiet, nisi odio lacinia nibh, eget tempor quam tortor eu neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sollicitudin condimentum metus, eget porta odio venenatis in.</p>\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif;\">Donec a elit ullamcorper, accumsan velit non, mollis urna. Praesent sed euismod justo. Curabitur sit amet diam ullamcorper, condimentum dolor vel, luctus lacus. Donec aliquam blandit nibh vel dapibus. Nullam id eros ac elit consectetur hendrerit. Aenean aliquam tortor risus. Ut egestas eget lorem eu posuere.</p>','Donec a elit ullamcorper, accumsan velit non, mollis urna. Praesent sed euismod justo. Curabitur sit amet diam ullamcorper, condimentum dolor vel',1),(3,'Obra 3','<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut lacus et tellus convallis fringilla. Quisque venenatis magna vitae vestibulum tincidunt. Proin porttitor nibh eget tortor commodo fermentum. Morbi blandit nunc mi. Nam nec arcu id velit laoreet venenatis. Aliquam mattis dictum urna, id hendrerit massa imperdiet eu. Proin ut venenatis eros. Proin egestas nunc nec libero euismod lobortis. Donec ultricies magna ac elit lacinia, id tincidunt nisl semper. Vestibulum volutpat, quam et lobortis porta, tellus eros dictum risus, in dapibus ipsum sem eu mi. Etiam vestibulum massa at leo convallis scelerisque. Vivamus et nibh scelerisque neque pharetra aliquam. Nunc molestie, nunc a dictum imperdiet, nisi odio lacinia nibh, eget tempor quam tortor eu neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sollicitudin condimentum metus, eget porta odio venenatis in.</p>\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif;\">Donec a elit ullamcorper, accumsan velit non, mollis urna. Praesent sed euismod justo. Curabitur sit amet diam ullamcorper, condimentum dolor vel, luctus lacus. Donec aliquam blandit nibh vel dapibus. Nullam id eros ac elit consectetur hendrerit. Aenean aliquam tortor risus. Ut egestas eget lorem eu posuere.</p>','Donec a elit ullamcorper, accumsan velit non, mollis urna. Praesent sed euismod justo. Curabitur sit amet diam ullamcorper, condimentum dolor vel, luctus lacus.',1);
-/*!40000 ALTER TABLE `obras` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -350,10 +296,9 @@ CREATE TABLE `producto_images` (
   `producto_id` int(11) NOT NULL,
   `url` varchar(100) NOT NULL,
   `title` varchar(40) DEFAULT NULL,
-  `tipo` varchar(1) DEFAULT NULL,
   PRIMARY KEY (`id`,`producto_id`),
   KEY `fk_images_productos1_idx` (`producto_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -362,7 +307,7 @@ CREATE TABLE `producto_images` (
 
 LOCK TABLES `producto_images` WRITE;
 /*!40000 ALTER TABLE `producto_images` DISABLE KEYS */;
-INSERT INTO `producto_images` VALUES (1,2,'img-9Di3H5',NULL,NULL),(2,2,'img-yJpPdl',NULL,NULL),(3,2,'img-jXRnNK',NULL,NULL),(4,3,'img-z3Wic8',NULL,NULL),(5,4,'img-IdJZxt',NULL,NULL),(6,5,'img-tIe8v9',NULL,NULL);
+INSERT INTO `producto_images` VALUES (1,1,'producto-111111',''),(2,1,'producto-222222',''),(5,1,'producto-333333',NULL);
 /*!40000 ALTER TABLE `producto_images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -378,16 +323,14 @@ CREATE TABLE `productos` (
   `title` varchar(100) NOT NULL,
   `subtitle` varchar(60) DEFAULT NULL,
   `body` longtext NOT NULL,
-  `type` char(1) NOT NULL,
   `resumen` varchar(300) NOT NULL,
   `brochure` varchar(60) DEFAULT NULL,
-  `parent_id` varchar(45) DEFAULT NULL,
-  `lft` int(11) DEFAULT NULL,
-  `rght` int(11) DEFAULT NULL,
+  `img_portada` varchar(90) DEFAULT NULL,
+  `portada` tinyint(1) DEFAULT NULL,
   `estado_id` int(11) NOT NULL,
   PRIMARY KEY (`id`,`estado_id`),
   KEY `fk_productos_estados1_idx` (`estado_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -396,7 +339,66 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
+INSERT INTO `productos` VALUES (1,'Productos',NULL,'<p>Dedicados a la exploración y explotación de oro, comercializamos el mineral  cumpliendo todas las normas y políticas de la gerencia de energía y minas. Por lo cual puede contratar acciones comerciales con nosotros, todo bajo el estricto orden de las leyes vigentes. Para Mayor información contáctenos en nuestras múltiples plataformas digitales o visítenos en nuestra oficina principal que gustosamente le atenderemos.</p>','<p>Dedicados a la exploración y explotación de oro, comercializamos el mineral  cumpliendo todas las normas y políticas de la gerencia de energía y minas. </p>',NULL,'producto-123456',1,1);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `proyecto_images`
+--
+
+DROP TABLE IF EXISTS `proyecto_images`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `proyecto_images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `proyecto_id` int(11) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`,`proyecto_id`),
+  KEY `fk_proyecto_images_proyectos1_idx` (`proyecto_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `proyecto_images`
+--
+
+LOCK TABLES `proyecto_images` WRITE;
+/*!40000 ALTER TABLE `proyecto_images` DISABLE KEYS */;
+INSERT INTO `proyecto_images` VALUES (1,1,'proyecto-111111'),(2,1,'proyecto-222222'),(3,2,'proyecto-333333'),(4,2,'proyecto-444444'),(5,4,'proyecto-555555'),(6,4,'proyecto-666666'),(7,4,'proyecto-777777'),(8,4,'proyecto-888888'),(9,4,'proyecto-999999'),(10,4,'proyecto-111112'),(11,4,'proyecto-111113'),(12,4,'proyecto-111114');
+/*!40000 ALTER TABLE `proyecto_images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `proyectos`
+--
+
+DROP TABLE IF EXISTS `proyectos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `proyectos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `subtitle` varchar(60) DEFAULT NULL,
+  `body` longtext NOT NULL,
+  `resumen` varchar(300) NOT NULL,
+  `brochure` varchar(60) DEFAULT NULL,
+  `img_portada` varchar(90) DEFAULT NULL,
+  `portada` tinyint(1) DEFAULT NULL,
+  `estado_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`estado_id`),
+  KEY `fk_obras_estados1_idx` (`estado_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `proyectos`
+--
+
+LOCK TABLES `proyectos` WRITE;
+/*!40000 ALTER TABLE `proyectos` DISABLE KEYS */;
+INSERT INTO `proyectos` VALUES (1,'Mejoramiento vial comunidad de San Ignacio, Jaén, Cajamarca',NULL,'','',NULL,'proyecto-123456',0,1),(2,'Oficina Administrativa Urb. California',NULL,'','',NULL,'proyecto-654321',0,1),(3,'Viviendas Unifamiliares',NULL,'','',NULL,'proyecto-457824',1,1),(4,'Proyecto de habilitación urbana “La Colina”',NULL,'<p>Conjunto habitacional de más de 250 casas de 3 pisos cada una, perímetro cercado, vigilado las 24 horas y control de acceso biométrico; entre otros beneficios que le brindará nuestro proyecto, el más moderno de la región norte del país.</p><p><h3>Ubicación del Proyecto</h3><dl><dt>Distrito</dt><dd>Nuevo Chimbote</dd><dt>Provincia</dt><dd>Santa</dd><dt>Región</dt><dd>Ancash</dd></dl></p>','<p>Conjunto habitacional de más de 250 casas de 3 pisos cada una, perímetro cercado, vigilado las 24 horas y control de acceso biométrico</p>',NULL,'proyecto-456785',0,1);
+/*!40000 ALTER TABLE `proyectos` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -426,6 +428,64 @@ INSERT INTO `roles` VALUES (1,'Administrador',1);
 UNLOCK TABLES;
 
 --
+-- Table structure for table `servicio_images`
+--
+
+DROP TABLE IF EXISTS `servicio_images`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `servicio_images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `servicio_id` int(11) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`,`servicio_id`),
+  KEY `fk_servicio_images_servicios1_idx` (`servicio_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `servicio_images`
+--
+
+LOCK TABLES `servicio_images` WRITE;
+/*!40000 ALTER TABLE `servicio_images` DISABLE KEYS */;
+INSERT INTO `servicio_images` VALUES (1,1,'servicio-111111'),(2,1,'servicio-222222'),(3,1,'servicio-333333'),(4,1,'servicio-444444');
+/*!40000 ALTER TABLE `servicio_images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `servicios`
+--
+
+DROP TABLE IF EXISTS `servicios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `servicios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `subtitle` varchar(60) DEFAULT NULL,
+  `body` longtext NOT NULL,
+  `resumen` varchar(300) NOT NULL,
+  `brochure` varchar(60) DEFAULT NULL,
+  `img_portada` varchar(90) DEFAULT NULL,
+  `portada` tinyint(1) DEFAULT NULL,
+  `estado_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`estado_id`),
+  KEY `fk_obras_estados1_idx` (`estado_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `servicios`
+--
+
+LOCK TABLES `servicios` WRITE;
+/*!40000 ALTER TABLE `servicios` DISABLE KEYS */;
+INSERT INTO `servicios` VALUES (1,'Servicios',NULL,'<p>Nuestra institución cuenta con un staff de profesionales dedicados a la formulación y elaboración de proyectos de todo tipo de envergadura. Formulamos el sustento técnico de obras civiles así como el diseño arquitectónico de los proyectos solicitados por nuestros clientes. Visite nuestra galería para conocer un poco más de nuestros trabajos.</p>','<p>Nuestra institución cuenta con un staff de profesionales dedicados a la formulación y elaboración de proyectos de todo tipo de envergadura.</p>',NULL,'servicio-123456',NULL,1);
+/*!40000 ALTER TABLE `servicios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `slides`
 --
 
@@ -440,6 +500,7 @@ CREATE TABLE `slides` (
   `orden` int(11) DEFAULT NULL,
   `color` varchar(6) DEFAULT NULL,
   `color_bg` varchar(6) DEFAULT NULL,
+  `portada` tinyint(1) DEFAULT NULL,
   `estado_id` int(11) NOT NULL,
   PRIMARY KEY (`id`,`estado_id`),
   KEY `fk_slides_estados_idx` (`estado_id`)
@@ -452,7 +513,7 @@ CREATE TABLE `slides` (
 
 LOCK TABLES `slides` WRITE;
 /*!40000 ALTER TABLE `slides` DISABLE KEYS */;
-INSERT INTO `slides` VALUES (1,'Slide 1','img-YIARgG','Slide 1',NULL,NULL,NULL,1),(2,NULL,'img-NaBazb',NULL,NULL,NULL,NULL,1);
+INSERT INTO `slides` VALUES (1,'Slide 1','img-YIARgG','Slide 1',NULL,NULL,NULL,NULL,1),(2,NULL,'img-NaBazb',NULL,NULL,NULL,NULL,NULL,1);
 /*!40000 ALTER TABLE `slides` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -522,4 +583,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-21 17:17:43
+-- Dump completed on 2017-07-03  3:02:02

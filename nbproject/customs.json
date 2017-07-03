@@ -1,6 +1,9 @@
 {
     "elements": {},
     "attributes": {
+        "uib-carousel": {
+            "context": "div"
+        },
         "ui-sref-active": {
             "context": "li"
         },

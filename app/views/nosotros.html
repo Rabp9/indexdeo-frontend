@@ -1,25 +1,25 @@
 <section class="screenshots-intro">
-    <div class="container wp1">
+    <div class="container wp3" zum-waypoint="waypoints" down="wp3.on" offset="75%" ng-class="{'animated bounceInDown': waypoints.wp3.on}">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>Misión</h1>
-                <p>{{ infos.mision }}</p>
+                <p ng-bind-html="infos.mision"></p>
             </div>
         </div>
     </div>
 </section>
 <section class="video" id="about">
-    <div class="container wp2 delay-05s">
+    <div class="container wp2 delay-05s" zum-waypoint="waypoints" down="wp3.on" offset="75%" ng-class="{'animated fadeInDown': waypoints.wp3.on}">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>Visión</h1>
-                <p>{{ infos.vision }}</p>
+                <p ng-bind-html="infos.vision"></p>
             </div>
         </div>
     </div>
 </section>
 <section class="screenshots-intro">
-    <div class="container wp1">
+    <div class="container wp3" zum-waypoint="waypoints" down="wp3.on" offset="75%" ng-class="{'animated bounceInDown': waypoints.wp3.on}">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>Historia</h1>

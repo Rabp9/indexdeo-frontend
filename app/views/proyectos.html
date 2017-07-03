@@ -1,43 +1,27 @@
-<section class="screenshots-intro" style="background: url('../images/6.png'); ">
-    <div class="container wp1">
+<section>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Condominio La Colina</h1>
-                
-                <label>Ubicación</label>
-                <p>Sector Los Alamos s/n</p>
-                
-                <label>Distrito</label>
-                <p>Nuevo Chimbote</p>
-                
-                <label>Provincia</label>
-                <p>Santa</p>
-                
-                <label>Región</label>
-                <p>Ancash</p>
+            <div ng-show="!loading && proyectos.length === 0" class="text-center"><h1>No existen Proyectos por mostrar</h1></div>
+            <div ng-show="!loading && proyectos.length !== 0" class="col-sm-12" ng-repeat="proyecto in proyectos">
+                <div ng-if="proyecto.portada" class="uib-slide">
+                    <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ proyecto.img_portada }}">
+                    <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
+                        <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
+                        <small>{{ proyecto.subtitle }}</small>
+                        <p>{{ proyecto.resumen }}</p>
+                    </div>
+                </div>
+                <div ng-if="!proyecto.portada" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade">
+                    <div class="uib-slide" uib-slide ng-repeat="image in proyecto.proyecto_images track by image.index" index="image.index">
+                        <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ image.url }}">       
+                        <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
+                            <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
+                            <small>{{ proyecto.subtitle }}</small>
+                            <p>{{ proyecto.resumen }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section class="video" style="background: url('../images/7.png'); ">
-    <div class="container wp2 delay-05s">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Proyecto 2</h1>
-                
-                <label>Ubicación</label>
-                <p>XXXXXXX</p>
-                
-                <label>Distrito</label>
-                <p>XXXXXXX</p>
-                
-                <label>Provincia</label>
-                <p>XXXXXXX</p>
-                
-                <label>Región</label>
-                <p>XXXXXXX</p>
-            </div>
-        </div>
-    </div>
-</section>
-<script src="js/scripts.js"></script>

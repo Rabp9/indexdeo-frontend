@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name inexdeoFrotendApp.controller:ProyectosCtrl
+ * @name inexdeoFrotendApp.controller:ServiciosCtrl
  * @description
- * # ProyectosCtrl
+ * # ServiciosCtrl
  * Controller of the inexdeoFrotendApp
  */
 angular.module('inexdeoFrotendApp')
-.controller('ProyectosCtrl', function ($scope, proyectosservice, $state, ngProgressFactory) {
-    $scope.proyectos = [];
+.controller('ServiciosCtrl', function ($scope, serviciosservice, $state, ngProgressFactory) {
+    $scope.servicios = [];
     $scope.loading = false;
     $scope.myInterval = 4000;
     $scope.noWrapSlides = false;
@@ -20,15 +20,15 @@ angular.module('inexdeoFrotendApp')
         $scope.progressbar.start();
         
         $scope.loading = true;
-        proyectosservice.get(function(data) {
-            $scope.proyectos = data.proyectos;
-            if ($scope.proyectos.length === 1) {
-                $state.go('proyectos-detail', {id: $scope.proyectos[0].id});
+        serviciosservice.get(function(data) {
+            $scope.servicios = data.servicios;
+            if ($scope.servicios.length === 1) {
+                $state.go('servicios-detail', {id: $scope.servicios[0].id});
             } else {
-                angular.forEach($scope.proyectos, function(value, key) {
+                angular.forEach($scope.servicios, function(value, key) {
                     if (!value.portada) {
                         var i = 0;
-                        angular.forEach(value.proyecto_images, function(value, key) {
+                        angular.forEach(value.servicio_images, function(value, key) {
                             value.index = i;
                             i++;
                         });

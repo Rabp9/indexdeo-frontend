@@ -1,5 +1,5 @@
 $(document).ready(function() {    
-    $(".wp1").waypoint(function(direction){
+/*    $(".wp1").waypoint(function(direction){
         if (direction === 'down') {
             $('nav.navbar').removeClass('navbar-transparent');
         } else if (direction === 'up') {
@@ -23,7 +23,7 @@ $(document).ready(function() {
         $(".wp4").addClass("animated fadeInDown")
     }, {
         offset:"75%"
-    });
+    });*/
     
     /***************** Flickity ******************/
     $('#featuresSlider').flickity({

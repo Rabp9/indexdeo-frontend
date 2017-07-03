@@ -8090,7 +8090,7 @@ button.close {
 }
 
 /* line 7, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_carousel.scss */
-.carousel {
+.carousel, .carousel .item, .carousel .active {
   position: relative;
 }
 
@@ -10076,3 +10076,150 @@ Waypoints
   background-color: transparent;
   border-color: transparent;
 }
+
+/* line 27, ../../app/styles/_customs.scss */
+.img-sn-link-md {
+  width: 18px;
+  top: -4px;
+}
+
+/* line 32, ../../app/styles/_customs.scss */
+#ngProgress {
+  background-color: #D7C966 !important;
+}
+
+/* line 1, ../../app/styles/_normalize.scss */
+body.margin {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  /* line 1, ../../app/styles/_normalize.scss */
+  body.margin {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1, ../../app/styles/_normalize.scss */
+  body.margin {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 1, ../../app/styles/_carousel.scss */
+  .carousel, .carousel .item, .carousel .active {
+    height: calc(100vh - 50px);
+    min-height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1, ../../app/styles/_carousel.scss */
+  .carousel, .carousel .item, .carousel .active {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 21, ../../app/styles/_carousel.scss */
+  .carousel .carousel-inner, .carousel .carousel-inner img, .carousel div.text-center {
+    height: 100%;
+    min-height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 21, ../../app/styles/_carousel.scss */
+  .carousel .carousel-inner, .carousel .carousel-inner img, .carousel div.text-center {
+    height: 100%;
+  }
+}
+
+/* line 32, ../../app/styles/_carousel.scss */
+.carousel-indicators {
+  bottom: -40px;
+}
+/* line 34, ../../app/styles/_carousel.scss */
+.carousel-indicators li, .carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+  margin: 7.5px;
+  border-color: #D7C966;
+  border-width: 2px;
+}
+/* line 41, ../../app/styles/_carousel.scss */
+.carousel-indicators .active {
+  background-color: #D7C966;
+}
+
+/* line 46, ../../app/styles/_carousel.scss */
+.carousel-caption {
+  /*background: rgba($color-default, .8);*/
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  text-align: center;
+  padding: 10px;
+  display: none;
+  color: #9900CC;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  /* line 57, ../../app/styles/_carousel.scss */
+  .carousel-caption h1 {
+    font-size: 100% !important;
+  }
+}
+/* line 61, ../../app/styles/_carousel.scss */
+.carousel-caption h1 a {
+  color: #9900CC;
+}
+/* line 63, ../../app/styles/_carousel.scss */
+.carousel-caption h1 a:hover {
+  color: #34FC99;
+}
+@media (max-width: 767px) {
+  /* line 68, ../../app/styles/_carousel.scss */
+  .carousel-caption p {
+    font-size: 75% !important;
+  }
+}
+
+/* line 77, ../../app/styles/_carousel.scss */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+/* line 84, ../../app/styles/_carousel.scss */
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+  transition-property: opacity;
+}
+/* line 87, ../../app/styles/_carousel.scss */
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  display: none;
+}
+/* line 94, ../../app/styles/_carousel.scss */
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+/* line 98, ../../app/styles/_carousel.scss */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* line 103, ../../app/styles/_carousel.scss */
+.img-slider {
+  margin: auto;
+  width: 100%;
+}
+
+/* line 110, ../../app/styles/_carousel.scss */
+.uib-slide:hover .carousel-caption {
+  background: rgba(215, 201, 102, 0.8);
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */

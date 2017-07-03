@@ -1,0 +1,21 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="text-center">
+                <h1>{{ producto.title }}</h1>
+                <small>{{ producto.subtitle }}</small>
+                <p ng-bind-html="producto.body"></p>
+            </div>
+            <div ng-if="producto.producto_images.length !== 0" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade">
+                <div class="uib-slide" uib-slide ng-repeat="image in producto.producto_images track by image.index" index="image.index">
+                    <img class="img-slider" ng-src="{{ path_location}}img/productos/{{ image.url }}">
+                </div>
+            </div>
+            <div class="text-center">
+                <a ng-show="!loading && producto.brochure !== null" ng-href="{{ path_location + 'productos/download/' + producto.id }}" target="_blank">
+                    <span class="glyphicon glyphicon-list-alt"></span> Descarga el Brochure
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
