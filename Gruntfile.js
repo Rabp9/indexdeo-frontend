@@ -434,7 +434,8 @@ module.exports = function (grunt) {
             'css/**',
             'fonts/**',
             'img/**',
-            'js/**'
+            'js/**',
+            'uib/**'
           ]
         }]
       },
