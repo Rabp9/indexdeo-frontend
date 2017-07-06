@@ -10,7 +10,7 @@
                     <a ui-sref="productos" class="use-btn animated fadeInUp">
                         Productos
                     </a> 
-                    <a href="#about" class="learn-btn animated fadeInUp">
+                    <a href="#resumen" class="learn-btn animated fadeInUp">
                         Ver más <i class="fa fa-arrow-down"></i>
                     </a>
                 </div>
@@ -18,7 +18,7 @@
         </div>
     </section>
 </header>
-<section class="video" id="about">
+<section class="video" id="resumen">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -37,12 +37,12 @@
             <div class="col-md-12">
                 <h1>In Excelsis Deo</h1>
                 <p ng-bind-html="infos.quienes_somos"></p>
-                <p><a href="#features" class="arrow-btn">¿Qué ofrecemos? <i class="fa fa-long-arrow-right"></i></a></p>
+                <p><a href="#ofrecer" class="arrow-btn">¿Qué ofrecemos? <i class="fa fa-long-arrow-right"></i></a></p>
             </div>
         </div>
     </div>
 </section>
-<section class="features-list" id="features">
+<section class="features-list" id="ofrecer">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -76,23 +76,29 @@
                         <a ui-sref="proyectos" class="read-more-btn">Más <i class="fa fa-chevron-circle-right"></i></a>
                     </div>
                 </div>
-
+                <div class="col-md-12 text-center link-slider">
+                    <a href="#slider" class="use-btn animated fadeInUp">
+                        Ver más <i class="fa fa-arrow-down"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section>
+<section id="slider">
     <div class="container-fluid">
         <div class="row">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade">
                 <div class="uib-slide" uib-slide ng-repeat="slide in slides track by slide.index" index="slide.index">
                     <img class="img-slider" ng-src="{{ path_location}}img/{{ slide.tipo }}/{{ slide.img_portada }}">
                     <div class="carousel-caption animated fadeInLeft" ng-if="slide.title !== null && slide.title !== undefined && slide.title !== ''">
-                        <h1 ng-show="{{ slide.tipo === 'productos'}}"><a ui-sref="productos-detail({ id: slide.id })">{{ slide.title }}</a></h1>
-                        <h1 ng-show="{{ slide.tipo === 'servicios'}}"><a ui-sref="servicios.detail({ id: slide.id })">{{ slide.title }}</a></h1>
-                        <h1 ng-show="{{ slide.tipo === 'proyectos'}}"><a ui-sref="proyectos.detail({ id: slide.id })">{{ slide.title }}</a></h1>
-                        <small>{{ slide.subtitle }}</small>
-                        <p ng-bind-html="slide.resumen"></p>
+                        <div class="wrapper">
+                            <h1 ng-show="{{ slide.tipo === 'productos'}}"><a ui-sref="productos-detail({ id: slide.id })">{{ slide.title }}</a></h1>
+                            <h1 ng-show="{{ slide.tipo === 'servicios'}}"><a ui-sref="servicios-detail({ id: slide.id })">{{ slide.title }}</a></h1>
+                            <h1 ng-show="{{ slide.tipo === 'proyectos'}}"><a ui-sref="proyectos-detail({ id: slide.id })">{{ slide.title }}</a></h1>
+                            <small>{{ slide.subtitle }}</small>
+                            <p ng-bind-html="slide.resumen"></p>
+                        </div>
                     </div>
                 </div>
             </div>

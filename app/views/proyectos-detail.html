@@ -1,11 +1,18 @@
-<section>
+<section class="screenshots-intro">
     <div class="container-fluid">
         <div class="row">
-            <div class="text-center">
+            <img class="img-responsive bg" ng-src="{{ path_location }}img/proyectos/{{ proyecto.img_portada }}">
+            <div class="text-center div-center">
                 <h1>{{ proyecto.title }}</h1>
                 <small>{{ proyecto.subtitle }}</small>
                 <p ng-bind-html="proyecto.body"></p>
             </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row">
             <div ng-if="proyecto.proyecto_images.length !== 0" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade">
                 <div class="uib-slide" uib-slide ng-repeat="image in proyecto.proyecto_images track by image.index" index="image.index">
                     <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ image.url }}">

@@ -15,9 +15,11 @@
                     <div class="uib-slide" uib-slide ng-repeat="image in proyecto.proyecto_images track by image.index" index="image.index">
                         <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ image.url }}">       
                         <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
-                            <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
-                            <small>{{ proyecto.subtitle }}</small>
-                            <p>{{ proyecto.resumen }}</p>
+                            <div class="wrapper">
+                                <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
+                                <small>{{ proyecto.subtitle }}</small>
+                                <p>{{ proyecto.resumen }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,18 @@
-<section>
+<section class="screenshots-intro">
     <div class="container-fluid">
         <div class="row">
-            <div class="text-center">
+            <img class="img-responsive bg" ng-src="{{ path_location }}img/servicios/{{ servicio.img_portada }}">
+            <div class="text-center div-center">
                 <h1>{{ servicio.title }}</h1>
                 <small>{{ servicio.subtitle }}</small>
                 <p ng-bind-html="servicio.body"></p>
             </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row">
             <div ng-if="servicio.servicio_images.length !== 0" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade">
                 <div class="uib-slide" uib-slide ng-repeat="image in servicio.servicio_images track by image.index" index="image.index">
                     <img class="img-slider" ng-src="{{ path_location}}img/servicios/{{ image.url }}">

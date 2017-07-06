@@ -53,21 +53,28 @@
     padding: 10px;
     display: none;
     color: $color-primary;
-    margin: 0 auto;
-    h1 {
-        @media (max-width: $screen-xs-max) {
-            font-size: 100% !important;
-        }
-        a {
-            color: $color-primary;
-            &:hover {
-                color: $color-secondary;
+    font-size: 160%;
+    .wrapper {
+        margin: auto;
+        width: $width-slider;
+        h1 {
+            @media (max-width: $screen-xs-max) {
+                font-size: 100% !important;
+            }
+            a {
+                color: $color-primary;
+                &:hover {
+                    color: $color-secondary;
+                }
             }
         }
-    }
-    p {
-        @media (max-width: $screen-xs-max) {
-            font-size: 75% !important;
+        p {
+            @media (min-width: $screen-xs-max) {
+                font-size: 90% !important;
+            }
+            @media (max-width: $screen-xs-max) {
+                font-size: 75% !important;
+            }
         }
     }
 }
@@ -109,7 +116,9 @@
     &:hover {
         .carousel-caption {
             background: rgba($color-default, 0.8);
-            display: block;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
 }
