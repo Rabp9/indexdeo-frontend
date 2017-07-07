@@ -2,23 +2,25 @@
     <div class="container-fluid">
         <div class="row">
             <div ng-show="!loading && proyectos.length === 0" class="text-center"><h1>No existen Proyectos por mostrar</h1></div>
-            <div ng-show="!loading && proyectos.length !== 0" class="col-sm-12" ng-repeat="proyecto in proyectos">
-                <div ng-if="proyecto.portada" class="uib-slide">
+            <div ng-show="!loading && proyectos.length !== 0" class="col-sm-4" ng-repeat="proyecto in proyectos">
+                <div ng-if="proyecto.portada" class="uib-slide carousel x3">
                     <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ proyecto.img_portada }}">
                     <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
-                        <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
-                        <small>{{ proyecto.subtitle }}</small>
-                        <p>{{ proyecto.resumen }}</p>
+                        <div class="wrapper">
+                            <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
+                            <small>{{ proyecto.subtitle }}</small>
+                            <p ng-bind-html="proyecto.resumen"></p>
+                        </div>
                     </div>
                 </div>
-                <div ng-if="!proyecto.portada" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade">
+                <div ng-if="!proyecto.portada" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
                     <div class="uib-slide" uib-slide ng-repeat="image in proyecto.proyecto_images track by image.index" index="image.index">
                         <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ image.url }}">       
                         <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
                             <div class="wrapper">
                                 <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
                                 <small>{{ proyecto.subtitle }}</small>
-                                <p>{{ proyecto.resumen }}</p>
+                                <p ng-bind-html="proyecto.resumen"></p>
                             </div>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ angular.module('inexdeoFrotendApp')
 .controller('ProyectosCtrl', function ($scope, proyectosservice, $state, ngProgressFactory) {
     $scope.proyectos = [];
     $scope.loading = false;
-    $scope.myInterval = 4000;
+    $scope.myInterval = 20000000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
     

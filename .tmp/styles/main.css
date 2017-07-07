@@ -10272,3 +10272,23 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+@media (min-width: 768px) {
+  /* line 126, ../../app/styles/_carousel.scss */
+  .x3, .x3 .item, .x3 .active {
+    height: calc(33vh - 50px);
+    min-height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 126, ../../app/styles/_carousel.scss */
+  .x3, .x3 .item, .x3 .active {
+    height: 200px;
+  }
+}
+/* line 143, ../../app/styles/_carousel.scss */
+.x3 .carousel-caption {
+  font-size: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

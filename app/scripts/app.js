@@ -114,6 +114,15 @@ angular
         }
     };
     
+    var galeriaState = {
+        name: 'galeria',
+        url: '/galeria',
+        templateUrl: 'views/galeria.html',
+        controller: 'GaleriaCtrl',
+        controllerAs: 'galeria',
+        title: 'Galería'
+    };
+    
     var pagesState = {
         name: 'pages',
         url: '/pages/{id}',
@@ -136,6 +145,7 @@ angular
     $stateProvider.state(serviciosDetailState);
     $stateProvider.state(proyectosState);
     $stateProvider.state(proyectosDetailState);
+    $stateProvider.state(galeriaState);
     $stateProvider.state(pagesState);
     $urlRouterProvider.when('', '/');
     /*

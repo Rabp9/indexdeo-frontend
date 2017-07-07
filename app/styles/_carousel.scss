@@ -122,3 +122,25 @@
         }
     }
 }
+
+.x3 {
+    @media (min-width: $screen-sm-min) {
+        height: -webkit-calc(33vh - #{$navbar-height + $navbar-header-top-height + ($navbar-header-top-margin * 2)});
+        height:    -moz-calc(33vh - #{$navbar-height + $navbar-header-top-height + ($navbar-header-top-margin * 2)});
+        height:         calc(33vh - #{$navbar-height + $navbar-header-top-height + ($navbar-header-top-margin * 2)});
+
+        min-height: 400px;
+    }
+    @media (max-width: $screen-xs-max) {
+        height: 200px;
+    }
+    .item {
+        @extend .x3;
+    }
+    .active {
+        @extend .x3;
+    }
+    .carousel-caption {
+        font-size: 100%;
+    }
+}
