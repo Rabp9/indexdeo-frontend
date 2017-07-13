@@ -33,6 +33,9 @@ module.exports = function(config) {
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/angular-waypoints/dist/angular-waypoints.js',
       'bower_components/ngprogress/build/ngprogress.min.js',
+      'bower_components/jquery.easing/js/jquery.easing.min.js',
+      'bower_components/fancybox-plus/src/jquery.fancybox-plus.js',
+      'bower_components/angular-fancybox-plus/js/angular-fancybox-plus.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
