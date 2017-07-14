@@ -16,6 +16,10 @@ angular.module('inexdeoFrotendApp')
                     return 'http://localhost:8000/inexdeo-backend/';
                 case 'inexdeo.robertobocanegra.com':
                     return 'http://inexdeo.robertobocanegra.com/api/';
+                case 'iedsa.com.pe':
+                    return 'http://iedsa.com.pe/api/';
+                case 'www.iedsa.com.pe':
+                    return 'http://iedsa.com.pe/api/';
             }
         }
     };
