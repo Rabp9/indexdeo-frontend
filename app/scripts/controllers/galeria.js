@@ -8,28 +8,22 @@
  * Controller of the inexdeoFrotendApp
  */
 angular.module('inexdeoFrotendApp')
-.controller('GaleriaCtrl', function () {
-$(document).ready(function() {
-
-    /* This is basic - uses default settings */
-
-    $("a#single_image").fancyboxPlus();
-
-    /* Using custom settings */
-
-    $("a#inline").fancyboxPlus({
-    'hideOnContentClick': true
-    });
-
-    /* Apply fancybox to multiple items */
-
-    $("a.grouped_elements").fancyboxPlus({
-    'transitionIn' : 'elastic',
-    'transitionOut' : 'elastic',
-    'speedIn' : 600,
-    'speedOut' : 200,
-    'overlayShow' : false
-    });
-
+.controller('GaleriaCtrl', function ($scope, albumesservice) {
+    $scope.loading = false;
+    $scope.myInterval = 20000000;
+    $scope.noWrapSlides = false;
+    $scope.active = 0;
+    
+    albumesservice.get(function(data) {
+        $scope.albumes = data.albumes;
+        angular.forEach($scope.productos, function(value, key) {
+            if (!value.portada) {
+                var i = 0;
+                angular.forEach(value.producto_images, function(value, key) {
+                    value.index = i;
+                    i++;
+                });
+            }
+        });
     });
 });

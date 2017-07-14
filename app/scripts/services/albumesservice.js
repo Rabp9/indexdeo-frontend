@@ -8,16 +8,7 @@
  * Factory in the inexdeoFrotendApp.
  */
 angular.module('inexdeoFrotendApp')
-  .factory('albumesservice', function () {
-    // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
-    // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
-  });
+.factory('albumesservice', function($resource, envservice) {
+    return $resource(envservice.getHost() + 'albumes/:id.json', {}, {
+    });
+});
