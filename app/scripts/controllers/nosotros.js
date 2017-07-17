@@ -12,10 +12,10 @@ angular.module('inexdeoFrotendApp')
     $scope.infos = {};
     
     // $rootScope.layout.loading = true;
-    var search = ['mision', 'vision', 'historia'];
+    var search = ['mision', 'vision', 'historia', 'bg_mision', 'bg_historia'];
     $scope.infos = {};
 
-    function getInfos() {
+    function init() {
         $scope.progressbar = ngProgressFactory.createInstance();
         $scope.progressbar.start();
         infosservice.getDataMany(search, function(data) {
@@ -26,5 +26,5 @@ angular.module('inexdeoFrotendApp')
         });
     }
     
-    getInfos();
+    init();
 });

@@ -9730,9 +9730,10 @@ Screenshots Intro
 .screenshots-intro {
   padding: 170px 0 100px 0;
   background-color: #515151;
+  position: relative;
 }
 
-/* line 839, ../../app/styles/_app.scss */
+/* line 840, ../../app/styles/_app.scss */
 .screenshots-intro h1 {
   margin-bottom: 20px;
   color: #ffffff;
@@ -9740,7 +9741,7 @@ Screenshots Intro
   font-size: 22px;
 }
 
-/* line 845, ../../app/styles/_app.scss */
+/* line 846, ../../app/styles/_app.scss */
 .screenshots-intro p {
   margin-bottom: 25px;
   color: #ffffff;
@@ -9749,14 +9750,14 @@ Screenshots Intro
 /* ==========================================================================
 Screenshots
 ========================================================================== */
-/* line 853, ../../app/styles/_app.scss */
+/* line 854, ../../app/styles/_app.scss */
 .screenshots ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-/* line 858, ../../app/styles/_app.scss */
+/* line 859, ../../app/styles/_app.scss */
 .screenshots ul li {
   float: left;
   min-height: 100%;
@@ -9765,25 +9766,25 @@ Screenshots
   list-style: none;
 }
 
-/* line 865, ../../app/styles/_app.scss */
+/* line 866, ../../app/styles/_app.scss */
 .screenshots figure {
   position: relative;
   overflow: hidden;
 }
 
-/* line 869, ../../app/styles/_app.scss */
+/* line 870, ../../app/styles/_app.scss */
 .screenshots figure img {
   width: 100%;
   height: 100%;
   transition: all 300ms ease-in-out;
 }
 
-/* line 875, ../../app/styles/_app.scss */
+/* line 876, ../../app/styles/_app.scss */
 .screenshots figure:hover img, .screenshots figure:focus img {
   transform: scale(1.1);
 }
 
-/* line 880, ../../app/styles/_app.scss */
+/* line 881, ../../app/styles/_app.scss */
 .screenshots figcaption {
   position: absolute;
   top: 0;
@@ -9798,44 +9799,44 @@ Screenshots
   transition: all 300ms ease-in-out;
 }
 
-/* line 894, ../../app/styles/_app.scss */
+/* line 895, ../../app/styles/_app.scss */
 .screenshots figcaption a {
   color: #515151;
 }
 
-/* line 897, ../../app/styles/_app.scss */
+/* line 898, ../../app/styles/_app.scss */
 .screenshots figcaption a:hover, .screenshots figcaption a:focus {
   color: #9900CC;
 }
 
-/* line 900, ../../app/styles/_app.scss */
+/* line 901, ../../app/styles/_app.scss */
 .screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
   opacity: 1;
 }
 
-/* line 903, ../../app/styles/_app.scss */
+/* line 904, ../../app/styles/_app.scss */
 .visible {
   opacity: 1;
 }
 
-/* line 906, ../../app/styles/_app.scss */
+/* line 907, ../../app/styles/_app.scss */
 .screenshots figure.cs-hover figcaption {
   opacity: 1;
 }
 
-/* line 909, ../../app/styles/_app.scss */
+/* line 910, ../../app/styles/_app.scss */
 .screenshots figcaption i {
   font-size: 35px;
 }
 
-/* line 912, ../../app/styles/_app.scss */
+/* line 913, ../../app/styles/_app.scss */
 .screenshots figcaption p {
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-/* line 917, ../../app/styles/_app.scss */
+/* line 918, ../../app/styles/_app.scss */
 .screenshots figcaption .caption-content {
   position: absolute;
   top: 50%;
@@ -9847,7 +9848,7 @@ Screenshots
   transition: all 300ms ease-in-out;
 }
 
-/* line 930, ../../app/styles/_app.scss */
+/* line 931, ../../app/styles/_app.scss */
 .screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
   transform: translate(0px, 0px);
 }
@@ -9855,13 +9856,14 @@ Screenshots
 /* ==========================================================================
 Download Now
 ========================================================================== */
-/* line 939, ../../app/styles/_app.scss */
+/* line 940, ../../app/styles/_app.scss */
 .download {
   padding: 120px 0;
   background-color: #515151;
+  position: relative;
 }
 
-/* line 943, ../../app/styles/_app.scss */
+/* line 945, ../../app/styles/_app.scss */
 .download h1 {
   margin: 0 0 15px 0;
   color: #fff;
@@ -9872,23 +9874,23 @@ Download Now
 /* ==========================================================================
 Footer
 ========================================================================== */
-/* line 953, ../../app/styles/_app.scss */
+/* line 955, ../../app/styles/_app.scss */
 footer {
   padding: 100px 0;
 }
 
-/* line 956, ../../app/styles/_app.scss */
+/* line 958, ../../app/styles/_app.scss */
 footer p {
   color: #515151;
   font-size: 12px;
 }
 
-/* line 960, ../../app/styles/_app.scss */
+/* line 962, ../../app/styles/_app.scss */
 footer ul {
   margin-top: 30px;
 }
 
-/* line 963, ../../app/styles/_app.scss */
+/* line 965, ../../app/styles/_app.scss */
 footer li {
   float: left;
   margin-right: 10%;
@@ -9897,12 +9899,12 @@ footer li {
   font-weight: 400;
 }
 
-/* line 970, ../../app/styles/_app.scss */
+/* line 972, ../../app/styles/_app.scss */
 footer li a {
   color: #3f6184;
 }
 
-/* line 973, ../../app/styles/_app.scss */
+/* line 975, ../../app/styles/_app.scss */
 footer li:last-child {
   margin-right: 0;
 }
@@ -9911,7 +9913,7 @@ footer li:last-child {
 Nav Overlay
 ========================================================================== */
 /* Overlay style */
-/* line 982, ../../app/styles/_app.scss */
+/* line 984, ../../app/styles/_app.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -9922,7 +9924,7 @@ Nav Overlay
 }
 
 /* Menu style */
-/* line 992, ../../app/styles/_app.scss */
+/* line 994, ../../app/styles/_app.scss */
 .overlay nav {
   position: relative;
   top: 50%;
@@ -9932,7 +9934,7 @@ Nav Overlay
   transform: translateY(-50%);
 }
 
-/* line 1002, ../../app/styles/_app.scss */
+/* line 1004, ../../app/styles/_app.scss */
 .overlay ul {
   position: relative;
   display: inline-block;
@@ -9941,26 +9943,26 @@ Nav Overlay
   list-style: none;
 }
 
-/* line 1009, ../../app/styles/_app.scss */
+/* line 1011, ../../app/styles/_app.scss */
 .overlay ul li {
   display: block;
   float: left;
   margin-right: 20px;
 }
 
-/* line 1014, ../../app/styles/_app.scss */
+/* line 1016, ../../app/styles/_app.scss */
 .overlay ul li:last-child {
   margin-right: 0px;
 }
 
-/* line 1017, ../../app/styles/_app.scss */
+/* line 1019, ../../app/styles/_app.scss */
 .overlay ul li i {
   display: block;
   margin-bottom: 10px;
   font-size: 40px;
 }
 
-/* line 1022, ../../app/styles/_app.scss */
+/* line 1024, ../../app/styles/_app.scss */
 .overlay ul li a {
   display: block;
   padding: 50px 0;
@@ -9975,55 +9977,55 @@ Nav Overlay
   transition: all 300ms ease-in-out;
 }
 
-/* line 1036, ../../app/styles/_app.scss */
+/* line 1038, ../../app/styles/_app.scss */
 .overlay ul li a:hover, .overlay ul li a:focus {
   border-color: #34FC99;
   color: #34FC99;
 }
 
 /* Effects */
-/* line 1042, ../../app/styles/_app.scss */
+/* line 1044, ../../app/styles/_app.scss */
 .overlay-boxify {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-/* line 1048, ../../app/styles/_app.scss */
+/* line 1050, ../../app/styles/_app.scss */
 .overlay-boxify.open {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-/* line 1054, ../../app/styles/_app.scss */
+/* line 1056, ../../app/styles/_app.scss */
 .overlay-boxify nav ul li {
   opacity: 0;
   transform: translate3d(0, -80px, 0);
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 1061, ../../app/styles/_app.scss */
+/* line 1063, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:first-child li:first-child {
   transition-delay: 0.05s;
 }
 
-/* line 1065, ../../app/styles/_app.scss */
+/* line 1067, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:first-child li:nth-child(2) {
   transition-delay: 0.1s;
 }
 
-/* line 1069, ../../app/styles/_app.scss */
+/* line 1071, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:first-child {
   transition-delay: 0.15s;
 }
 
-/* line 1073, ../../app/styles/_app.scss */
+/* line 1075, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-/* line 1077, ../../app/styles/_app.scss */
+/* line 1079, ../../app/styles/_app.scss */
 .overlay-boxify.open nav ul li {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -10032,22 +10034,22 @@ Nav Overlay
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-/* line 1086, ../../app/styles/_app.scss */
+/* line 1088, ../../app/styles/_app.scss */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
   visibility: hidden;
 }
 
-/* line 1089, ../../app/styles/_app.scss */
+/* line 1091, ../../app/styles/_app.scss */
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible;
 }
 
-/* line 1092, ../../app/styles/_app.scss */
+/* line 1094, ../../app/styles/_app.scss */
 .delay-05s {
   animation-delay: 0.5s;
 }
 
-/* line 1096, ../../app/styles/_app.scss */
+/* line 1098, ../../app/styles/_app.scss */
 .delay-1s {
   animation-delay: 1s;
 }
@@ -10061,34 +10063,36 @@ Waypoints
   box-shadow: 0px 8px 30px -1px rgba(0, 0, 0, 0.75);
 }
 
-/* line 12, ../../app/styles/_customs.scss */
-.navbar-brand {
-  padding: 0px 15px;
+@media (min-width: 768px) {
+  /* line 12, ../../app/styles/_customs.scss */
+  .navbar-brand {
+    padding: 0px 15px;
+  }
 }
 
-/* line 17, ../../app/styles/_customs.scss */
+/* line 19, ../../app/styles/_customs.scss */
 .grid li {
   height: 178px;
 }
 
-/* line 22, ../../app/styles/_customs.scss */
+/* line 24, ../../app/styles/_customs.scss */
 .navbar-transparent {
   background-color: transparent;
   border-color: transparent;
 }
 
-/* line 27, ../../app/styles/_customs.scss */
+/* line 29, ../../app/styles/_customs.scss */
 .img-sn-link-md {
   width: 18px;
   top: -4px;
 }
 
-/* line 32, ../../app/styles/_customs.scss */
+/* line 34, ../../app/styles/_customs.scss */
 #ngProgress {
   background-color: #D7C966 !important;
 }
 
-/* line 36, ../../app/styles/_customs.scss */
+/* line 38, ../../app/styles/_customs.scss */
 img.bg {
   opacity: 0.2;
   position: absolute;
@@ -10097,15 +10101,95 @@ img.bg {
   width: 100%;
 }
 
-/* line 44, ../../app/styles/_customs.scss */
+/* line 46, ../../app/styles/_customs.scss */
 .div-center {
-  width: 500px;
+  width: 650px;
   margin: auto;
 }
 
-/* line 49, ../../app/styles/_customs.scss */
+/* line 51, ../../app/styles/_customs.scss */
 .link-slider {
   margin: 35px 0px;
+}
+
+/* line 56, ../../app/styles/_customs.scss */
+.albumes .album-carousel {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 59, ../../app/styles/_customs.scss */
+.albumes .album-carousel .albumes-header {
+  background-color: #D7C966;
+  margin: 0px !important;
+  line-height: 50px;
+}
+/* line 63, ../../app/styles/_customs.scss */
+.albumes .album-carousel .albumes-header a {
+  color: #9900CC;
+}
+
+/* line 70, ../../app/styles/_customs.scss */
+.para-description {
+  font-size: 115%;
+  text-align: justify !important;
+}
+
+/* line 76, ../../app/styles/_customs.scss */
+.list-links {
+  padding: 0px;
+  background-color: #D7C966;
+  border: solid 1px;
+}
+/* line 80, ../../app/styles/_customs.scss */
+.list-links li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  color: #9900CC;
+  line-height: 30px;
+  border-bottom: solid 1px;
+  box-shadow: 0px 1px 5px;
+}
+/* line 89, ../../app/styles/_customs.scss */
+.list-links li.active {
+  background-color: #9900CC;
+  color: #D7C966;
+  box-shadow: 0px 1px 5px;
+}
+/* line 94, ../../app/styles/_customs.scss */
+.list-links li:hover {
+  background-color: #9900CC;
+  color: #D7C966;
+}
+/* line 98, ../../app/styles/_customs.scss */
+.list-links li:last-child {
+  border-bottom: none;
+}
+/* line 101, ../../app/styles/_customs.scss */
+.list-links li span.active {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  /* line 107, ../../app/styles/_customs.scss */
+  .navbar {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 113, ../../app/styles/_customs.scss */
+  .hero-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 120, ../../app/styles/_customs.scss */
+  #ofrecer .wp2 {
+    text-align: center;
+  }
 }
 
 /* line 1, ../../app/styles/_normalize.scss */
@@ -10290,5 +10374,3 @@ body::-webkit-scrollbar-thumb {
 .x3 .carousel-caption {
   font-size: 100%;
 }
-
-/*# sourceMappingURL=main.css.map */

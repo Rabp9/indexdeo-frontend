@@ -8,7 +8,7 @@
  * Controller of the inexdeoFrotendApp
  */
 angular.module('inexdeoFrotendApp')
-.controller('ProductosDetailCtrl', function ($scope, $stateParams, $rootScope, productosservice) {
+.controller('ProductosDetailCtrl', function ($scope, $stateParams, $rootScope, productosservice, ngProgressFactory) {
     var id = $stateParams.id;
     $scope.loading = false;
     $scope.myInterval = 4000;
@@ -16,6 +16,9 @@ angular.module('inexdeoFrotendApp')
     $scope.active = 0;
     
     function init() {
+        $scope.progressbar = ngProgressFactory.createInstance();
+        $scope.progressbar.start();
+        
         $scope.loading = true;
         productosservice.get({id: id}, function(data) {
             $scope.producto = data.producto;    
@@ -28,6 +31,7 @@ angular.module('inexdeoFrotendApp')
             
             $rootScope.title = $scope.producto.title;
             $scope.loading = false;
+            $scope.progressbar.complete();
         });
     }
     

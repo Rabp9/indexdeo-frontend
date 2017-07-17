@@ -10,7 +10,9 @@
 }
 
 .navbar-brand {
-    padding: 0px 15px;
+    @media (min-width: $screen-sm-min) {
+        padding: 0px 15px;
+    }
 }
 
 .grid {
@@ -42,10 +44,82 @@ img.bg {
 }
 
 .div-center {
-    width: 500px;
+    width: 650px;
     margin: auto;
 }
 
 .link-slider {
     margin: 35px 0px;
+}
+
+.albumes {
+    .album-carousel {
+        padding-left: 0px;
+        padding-right: 0px;
+        .albumes-header {
+            background-color: $color-default;
+            margin: 0px !important;
+            line-height: 50px;  
+            a {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.para-description {
+    font-size: 115%;
+    text-align: justify !important;
+}
+
+
+.list-links {
+    padding: 0px;
+    background-color: $color-default;
+    border: solid 1px;
+    li {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px 5px 0px 5px;
+        cursor: pointer;
+        color: $color-primary;
+        line-height: 30px;
+        border-bottom: solid 1px;
+        box-shadow: 0px 1px 5px;
+        &.active {
+            background-color: $color-primary;
+            color: $color-default;
+            box-shadow: 0px 1px 5px;
+        }
+        &:hover {
+            background-color: $color-primary;
+            color: $color-default;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+        span.active {
+            display: none;
+        }
+    }
+}
+
+.navbar {
+    @media (max-width: $screen-xs-max) {
+        margin-top: 0px;
+    }
+}
+
+.hero-content {
+    @media (max-width: $screen-xs-max) {
+        text-align: center;
+    }
+}
+
+#ofrecer {
+    .wp2 {
+        @media (max-width: $screen-xs-max) {
+            text-align: center;
+        }
+    }
 }

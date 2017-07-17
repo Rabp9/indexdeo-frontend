@@ -15,6 +15,14 @@ angular.module('inexdeoFrotendApp')
     $scope.noWrapSlides = false;
     $scope.active = 0;
     $scope.infos = {};
+    $scope.video = {
+        width: '75%',
+        height: '75%',
+        autoScale: false,
+        transitionIn: 'none',
+        transitionOut: 'none',
+        type: 'iframe'
+    };
       
     function shuffleArray(array) {
         for (var i = array.length - 1; i > 0; i--) {
@@ -38,7 +46,8 @@ angular.module('inexdeoFrotendApp')
         $scope.progressbar = ngProgressFactory.createInstance();
         $scope.progressbar.start();
         $rootScope.layout.loading = true;
-        var search = ['promo_inexdeo', 'quienes_somos', 'productos_mensaje', 'servicios_mensaje', 'proyectos_mensaje'];
+        var search = ['promo_inexdeo', 'quienes_somos', 'productos_mensaje', 'servicios_mensaje', 
+            'proyectos_mensaje', 'video', 'bg_quienes_somos', 'bg_contactanos'];
         $scope.infos = {};
         
         return $q.all([

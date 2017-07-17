@@ -18,7 +18,8 @@ angular
     'ui.router',
     'ui.bootstrap',
     'zumba.angular-waypoints',
-    'ngProgress'
+    'ngProgress',
+    'fancyboxplus'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
     var mainState = {
@@ -123,6 +124,19 @@ angular
         title: 'Galería'
     };
     
+    var galeriaDetailState = {
+        name: 'galeria.detail',
+        url: '/{id}',
+        templateUrl: 'views/galeria-detail.html',
+        controller: 'GaleriaDetailCtrl',
+        controllerAs: 'galeriaDetail',
+        params: {
+            id: {
+                value: '1'
+            }
+        }
+    };
+    
     var pagesState = {
         name: 'pages',
         url: '/pages/{id}',
@@ -146,6 +160,7 @@ angular
     $stateProvider.state(proyectosState);
     $stateProvider.state(proyectosDetailState);
     $stateProvider.state(galeriaState);
+    $stateProvider.state(galeriaDetailState);
     $stateProvider.state(pagesState);
     $urlRouterProvider.when('', '/');
     /*
@@ -175,6 +190,10 @@ angular
         });
     }
     
+    $('.nav  a:last-child').on('click', function() {
+        $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+    });
+       
     $rootScope.$on('$stateChangeSuccess', function(event, toParams, fromState, fromParams) {
       
         $rootScope.title = $state.current.title;

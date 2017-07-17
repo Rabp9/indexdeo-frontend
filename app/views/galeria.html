@@ -1,11 +1,16 @@
-<section>
-    <div class="container-fluid">
+<section class="albumes">
+    <div class="container">
         <div class="row">
-            <div ng-repeat="album in albumes" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
-                <div class="uib-slide" uib-slide ng-repeat="imagen in album.imagenes track by imagen.index" index="imagen.index">
-                    <img class="img-slider" ng-src="{{ path_location}}img/galeria/1/{{ imagen.url }}">       
-                </div>
+            <h1 class="text-center">Álbumes</h1>
+            <div class="col-sm-2">
+                <ul class="list-links">
+                    <li ui-sref="galeria.detail({ id: album.id })" ui-sref-active="active" ng-repeat="album in albumes">
+                        {{ album.descripcion }} <span style="margin-top: 7px;" class="glyphicon glyphicon-chevron-right pull-right"></span>
+                    </li>
+                </ul>
             </div>
+            <ui-view class="col-sm-10">
+            </ui-view>
         </div>
     </div>
 </section>

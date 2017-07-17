@@ -12,7 +12,7 @@ angular.module('inexdeoFrotendApp')
     $scope.infos = {};
     
     // $rootScope.layout.loading = true;
-    var search = ['direccion'];
+    var search = ['direccion', 'bg_contactanos'];
     $scope.infos = {};
 
     function getInfos() {

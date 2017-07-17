@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
--- Host: robertobocanegra.com    Database: rabp99_inexdeo
+-- Host: localhost    Database: inexdeo
 -- ------------------------------------------------------
--- Server version	5.5.51-38.2
+-- Server version	5.7.14
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -14,6 +14,33 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `albumes`
+--
+
+DROP TABLE IF EXISTS `albumes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `albumes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(90) NOT NULL,
+  `estado_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`estado_id`),
+  UNIQUE KEY `descripcion_UNIQUE` (`descripcion`),
+  KEY `fk_albumes_estados1_idx` (`estado_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `albumes`
+--
+
+LOCK TABLES `albumes` WRITE;
+/*!40000 ALTER TABLE `albumes` DISABLE KEYS */;
+INSERT INTO `albumes` VALUES (1,'Álbum 1',1),(2,'Álbum 2',1);
+/*!40000 ALTER TABLE `albumes` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `asesorias`
@@ -205,6 +232,35 @@ INSERT INTO `estados` VALUES (1,'activo'),(2,'inactivo');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `imagenes`
+--
+
+DROP TABLE IF EXISTS `imagenes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `imagenes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `album_id` int(11) NOT NULL,
+  `descripcion` varchar(90) NOT NULL,
+  `url` varchar(120) NOT NULL,
+  `estado_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`album_id`,`estado_id`),
+  KEY `fk_imagenes_estados1_idx` (`estado_id`),
+  KEY `fk_imagenes_albumes1_idx` (`album_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `imagenes`
+--
+
+LOCK TABLES `imagenes` WRITE;
+/*!40000 ALTER TABLE `imagenes` DISABLE KEYS */;
+INSERT INTO `imagenes` VALUES (1,1,'imagen 1','1.png',1),(2,1,'imagen 2','2.png',1),(3,2,'imagen 3','3.png',1),(4,2,'imagen 4','4.png',1);
+/*!40000 ALTER TABLE `imagenes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `infos`
 --
 
@@ -216,7 +272,7 @@ CREATE TABLE `infos` (
   `data` varchar(60) DEFAULT NULL,
   `value` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,7 +281,7 @@ CREATE TABLE `infos` (
 
 LOCK TABLES `infos` WRITE;
 /*!40000 ALTER TABLE `infos` DISABLE KEYS */;
-INSERT INTO `infos` VALUES (1,'nuestraHistoria','<p>Hace 6 a&ntilde;os, El Sr. Guillermo Vel&aacute;squez Castro en su af&aacute;n de realizar Negocios emprendedores y dar respuesta a la necesidad de mejorar el saneamiento y agua de la poblaci&oacute;n crea en conjunto con su socio la planta de fabrica...'),(2,'vision','<p class=\"MsoNormal\">Que nuestra instituci&oacute;n sea reconocida como una empresa l&iacute;der en el mercado local, nacional y mundial en el rubro de la construcci&oacute;n y miner&iacute;a, a trav&eacute;s de compromisos con responsabilidad social y respeto por el medio ambiente; y valores de &eacute;tica profesional.&nbsp;</p>'),(3,'mision','<p class=\"MsoNormal\" style=\"text-align: justify;\">Sobrepasar las expectativas de todos los requerimientos de nuestros clientes tanto en el rubro de la construcci&oacute;n de obras civiles como en la extracci&oacute;n de minerales, a trav&eacute;s de la implementaci&oacute;n de procesos de calidad en nuestros productos y servicios.</p>'),(4,'valor1','Trabajo en equipo'),(5,'valor2','Unidad'),(6,'valor3','Profesionalismo'),(7,'valor4','Lealtad'),(8,'valor5','Acción'),(9,'valor6','Servicio'),(10,'valor7','Tenacidad'),(11,'resumen_tuplast','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a finibus sapien, vel tristique nulla. Cras a velit tincidunt, euismod dolor non, posuere nulla. Nam blandit id massa ac maximus. Nam vel justo augue. Proin pharetra nunc lacus, laoreet posu...'),(12,'mensaje_clientes_1','Nuestros clientes confian en la calidad de nuestros productos'),(13,'mensaje_clientes_2','Son más de 40 empresas con las que trabajamos conjuntamente'),(14,'facebook_link','http://www.facebook.com/inexcelsisdeosa/'),(15,'linkedin_link','linkedin_link'),(16,'telf_oficina','044-659230'),(17,'email','in.excelsis.deo@outlook.es'),(18,'email_2','info@tuberiasplasticas.com'),(19,'telf_area_tecnica','982579831'),(20,'brochure','brochure'),(21,'telf','044-278699'),(22,'promo_inexdeo','Somos la empresa líder en Minería y Construcción del norte del país'),(23,'quienes_somos','Somos una empresa fundada desde el 2011 dedica al rubro de minería y construcción de obras civiles en todo el territorio nacional. Contamos con un staff de experimentados colaboradores que diseñan, ejecutan y dirigen nuestros proyectos; además nos dedicamos a la extracción de minerales metálicos y no metálicos.'),(24,'direccion','Jr. Diego de Almagro 270 Int. 101 Centro Cívico de Trujillo'),(25,'historia','<p class=\"MsoNormal\">Nuestra instituci&oacute;n empez&oacute; sus operaciones en el a&ntilde;o 2011, fundada por la familia Rodr&iacute;guez Ruiz. Conformada en sus inicios por diez socios se comenz&oacute; a trabajar en el rubro de la miner&iacute;a en la sierra liberte&ntilde;a, para luego en el 2014 incursionar en el rubro de la construcci&oacute;n de obras civiles.</p>\n<p class=\"MsoNormal\">Observando la demanda de los servicios de construcci&oacute;n, la empresa decidi&oacute; ampliar sus operaciones en el a&ntilde;o 2014 a varias regiones del norte del pa&iacute;s, entre ellas las regiones de Cajamarca, Ancash&nbsp;y La Libertad.</p>\n<p>&nbsp;En la actualidad nuestra empresa viene evolucionando sus procesos de mejora continua para brindar servicios y productos de la mejor calidad y consolidarnos como una empresa de prestigio en la regi&oacute;n.</p>'),(26,'productos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</span></p>'),(27,'servicios_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Nuestra instituci&oacute;n cuenta con un staff de profesionales dedicados a la formulaci&oacute;n y elaboraci&oacute;n de proyectos de todo tipo de envergadura.</span></p>'),(28,'proyectos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">A lo largo del tiempo vamos construyendo sue&ntilde;os de familias y comunidades, por ello ponemos a su disposici&oacute;n toda nuestra experiencia, log&iacute;stica y conocimiento para la realizaci&oacute;n de esos proyectos que tanto anhelan.</span></p>');
+INSERT INTO `infos` VALUES (1,'nuestraHistoria','<p>Hace 6 a&ntilde;os, El Sr. Guillermo Vel&aacute;squez Castro en su af&aacute;n de realizar Negocios emprendedores y dar respuesta a la necesidad de mejorar el saneamiento y agua de la poblaci&oacute;n crea en conjunto con su socio la planta de fabrica...'),(2,'vision','<p class=\"MsoNormal\">Que nuestra instituci&oacute;n sea reconocida como una empresa l&iacute;der en el mercado local, nacional y mundial en el rubro de la construcci&oacute;n y miner&iacute;a, a trav&eacute;s de compromisos con responsabilidad social y respeto por el medio ambiente; y valores de &eacute;tica profesional.&nbsp;</p>'),(3,'mision','<p class=\"MsoNormal\" style=\"text-align: justify;\">Sobrepasar las expectativas de todos los requerimientos de nuestros clientes tanto en el rubro de la construcci&oacute;n de obras civiles como en la extracci&oacute;n de minerales, a trav&eacute;s de la implementaci&oacute;n de procesos de calidad en nuestros productos y servicios.</p>'),(4,'valor1','Trabajo en equipo'),(5,'valor2','Unidad'),(6,'valor3','Profesionalismo'),(7,'valor4','Lealtad'),(8,'valor5','Acción'),(9,'valor6','Servicio'),(10,'valor7','Tenacidad'),(11,'resumen_tuplast','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a finibus sapien, vel tristique nulla. Cras a velit tincidunt, euismod dolor non, posuere nulla. Nam blandit id massa ac maximus. Nam vel justo augue. Proin pharetra nunc lacus, laoreet posu...'),(12,'mensaje_clientes_1','Nuestros clientes confian en la calidad de nuestros productos'),(13,'mensaje_clientes_2','Son más de 40 empresas con las que trabajamos conjuntamente'),(14,'facebook_link','http://www.facebook.com/inexcelsisdeosa/'),(15,'linkedin_link','linkedin_link'),(16,'telf_oficina','044-659230'),(17,'email','in.excelsis.deo@outlook.es'),(18,'email_2','info@tuberiasplasticas.com'),(19,'telf_area_tecnica','982579831'),(20,'brochure','brochure'),(21,'telf','044-278699'),(22,'promo_inexdeo','Somos la empresa líder en Minería y Construcción del norte del país'),(23,'quienes_somos','Somos una empresa fundada desde el 2011 dedica al rubro de minería y construcción de obras civiles en todo el territorio nacional. Contamos con un staff de experimentados colaboradores que diseñan, ejecutan y dirigen nuestros proyectos; además nos dedicamos a la extracción de minerales metálicos y no metálicos.'),(24,'direccion','Jr. Diego de Almagro 270 Int. 101 Centro Cívico de Trujillo'),(25,'historia','<p class=\"MsoNormal\">Nuestra instituci&oacute;n empez&oacute; sus operaciones en el a&ntilde;o 2011, fundada por la familia Rodr&iacute;guez Ruiz. Conformada en sus inicios por diez socios se comenz&oacute; a trabajar en el rubro de la miner&iacute;a en la sierra liberte&ntilde;a, para luego en el 2014 incursionar en el rubro de la construcci&oacute;n de obras civiles.</p>\n<p class=\"MsoNormal\">Observando la demanda de los servicios de construcci&oacute;n, la empresa decidi&oacute; ampliar sus operaciones en el a&ntilde;o 2014 a varias regiones del norte del pa&iacute;s, entre ellas las regiones de Cajamarca, Ancash&nbsp;y La Libertad.</p>\n<p>&nbsp;En la actualidad nuestra empresa viene evolucionando sus procesos de mejora continua para brindar servicios y productos de la mejor calidad y consolidarnos como una empresa de prestigio en la regi&oacute;n.</p>'),(26,'productos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</span></p>'),(27,'servicios_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Nuestra instituci&oacute;n cuenta con un staff de profesionales dedicados a la formulaci&oacute;n y elaboraci&oacute;n de proyectos de todo tipo de envergadura.</span></p>'),(28,'proyectos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">A lo largo del tiempo vamos construyendo sue&ntilde;os de familias y comunidades, por ello ponemos a su disposici&oacute;n toda nuestra experiencia, log&iacute;stica y conocimiento para la realizaci&oacute;n de esos proyectos que tanto anhelan.</span></p>'),(29,'video',NULL),(30,'bg_quienes_somos',NULL),(31,'bg_contactanos',NULL),(32,'bg_mision',NULL),(33,'bg_historia',NULL);
 /*!40000 ALTER TABLE `infos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -330,7 +386,7 @@ CREATE TABLE `productos` (
   `estado_id` int(11) NOT NULL,
   PRIMARY KEY (`id`,`estado_id`),
   KEY `fk_productos_estados1_idx` (`estado_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -472,7 +528,7 @@ CREATE TABLE `servicios` (
   `estado_id` int(11) NOT NULL,
   PRIMARY KEY (`id`,`estado_id`),
   KEY `fk_obras_estados1_idx` (`estado_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -583,4 +639,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-07-13 12:32:20
+-- Dump completed on 2017-07-17  2:47:03
