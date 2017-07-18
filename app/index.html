@@ -71,9 +71,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li ui-sref-active="active"><a ui-sref="nosotros">Nosotros</a></li>
-                    <li ui-sref-active="active"><a ui-sref="productos">Productos</a></li>
-                    <li ui-sref-active="active"><a ui-sref="servicios">Servicios</a></li>
-                    <li ui-sref-active="active"><a ui-sref="proyectos">Proyectos</a></li>
+                    <li ng-class="{active: ('productos-detail' | includedByState)}" ui-sref-active="active"><a ui-sref="productos">Productos</a></li>
+                    <li ng-class="{active: ('servicios-detail' | includedByState)}" ui-sref-active="active"><a ui-sref="servicios">Servicios</a></li>
+                    <li ng-class="{active: ('proyectos-detail' | includedByState)}" ui-sref-active="active"><a ui-sref="proyectos">Proyectos</a></li>
                     <li ui-sref-active="active"><a ui-sref="galeria">Galería</a></li>
                     <li ui-sref-active="active"><a ui-sref="contactanos">Contáctanos</a></li>
                     <li class="hidden-lg hidden-md hidden-sm"><a href="tel:{{ infosRoot.telf }}"><span class="glyphicon glyphicon-phone"></span> {{ infosRoot.telf }}</a></li>
