@@ -1,5 +1,5 @@
 <section class="screenshots-intro">
-    <img class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.bg_mision}}">
+    <img ng-if="{{ infos.bg_mision !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.bg_mision}}">
     <div class="container wp3" zum-waypoint="waypoints" down="wp3.on" offset="75%" ng-class="{'animated bounceInDown': waypoints.wp3.on}">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -20,7 +20,7 @@
     </div>
 </section>
 <section class="screenshots-intro">
-    <img class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.bg_historia}}">
+    <img ng-if="{{ infos.bg_historia !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.bg_historia}}">
     <div class="container wp3" zum-waypoint="waypoints" down="wp3.on" offset="75%" ng-class="{'animated bounceInDown': waypoints.wp3.on}">
         <div class="row">
             <div class="col-md-12 text-center">

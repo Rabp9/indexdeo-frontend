@@ -1,8 +1,8 @@
 <section class="screenshots-intro">
     <div class="container-fluid">
         <div class="row">
-            <img class="img-responsive bg" ng-src="{{ path_location }}img/proyectos/{{ proyecto.img_portada }}">
-            <div class="text-center div-center">
+            <img ng-if="{{ proyecto.img_portada !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/proyectos/{{ proyecto.img_portada }}">
+            <div class="text-center col-sm-6 col-sm-offset-3">
                 <h1>{{ proyecto.title }}</h1>
                 <small>{{ proyecto.subtitle }}</small>
                 <p class="para-description" ng-bind-html="proyecto.body"></p>

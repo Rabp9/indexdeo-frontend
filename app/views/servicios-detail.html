@@ -1,8 +1,8 @@
 <section class="screenshots-intro">
     <div class="container-fluid">
         <div class="row">
-            <img class="img-responsive bg" ng-src="{{ path_location }}img/servicios/{{ servicio.img_portada }}">
-            <div class="text-center div-center">
+            <img ng-if="{{ servicio.img_portada !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/servicios/{{ servicio.img_portada }}">
+            <div class="text-center col-sm-6 col-sm-offset-3">
                 <h1>{{ servicio.title }}</h1>
                 <small>{{ servicio.subtitle }}</small>
                 <p class="para-description" ng-bind-html="servicio.body"></p>

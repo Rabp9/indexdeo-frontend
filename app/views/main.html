@@ -32,7 +32,7 @@
     </div>
 </section>
 <section class="screenshots-intro">
-    <img class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.bg_quienes_somos}}">
+    <img ng-if="{{ infos.bg_quienes_somos !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.bg_quienes_somos}}">
     <div class="container">
         <div class="row wp1" zum-waypoint="waypoints" down="wp1.on" up="wp1.off" offset="75%" ng-class="{'animated fadeInLeft': waypoints.wp1.on}">
             <div class="col-md-12">
@@ -107,7 +107,7 @@
     </div>
 </section>
 <section class="download" id="download">
-    <img class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.contactanos}}">
+    <img ng-if="{{ infos.contactanos !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.contactanos}}">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center wp4" zum-waypoint="waypoints" down="wp4.on" offset="75%" ng-class="{'animated fadeInDown': waypoints.wp4.on}">

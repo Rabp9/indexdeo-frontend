@@ -2,15 +2,18 @@
     <div class="container">
         <div class="row">
             <h1 class="text-center">Álbumes</h1>
-            <div class="col-sm-2">
-                <ul class="list-links">
-                    <li ui-sref="galeria.detail({ id: album.id })" ui-sref-active="active" ng-repeat="album in albumes">
-                        {{ album.descripcion }} <span style="margin-top: 7px;" class="glyphicon glyphicon-chevron-right pull-right"></span>
-                    </li>
-                </ul>
+            <hr>
+            <div class="col-sm-12" style="border: solid 1px; padding: 10px;">
+                <div class="col-sm-2">
+                    <ul class="list-links">
+                        <li ui-sref="galeria.detail({ id: album.id })" ui-sref-active="active" ng-repeat="album in albumes">
+                            {{ album.descripcion }} <span style="margin-top: 7px;" class="glyphicon glyphicon-chevron-right pull-right"></span>
+                        </li>
+                    </ul>
+                </div>
+                <ui-view style="border-left: solid 1px;" class="col-sm-10">
+                </ui-view>
             </div>
-            <ui-view class="col-sm-10">
-            </ui-view>
         </div>
     </div>
 </section>

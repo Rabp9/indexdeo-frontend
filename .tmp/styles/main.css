@@ -10302,7 +10302,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* line 66, ../../app/styles/_carousel.scss */
 .carousel-caption .wrapper h1 a:hover {
-  color: #34FC99;
+  color: #515151;
 }
 @media (min-width: 767px) {
   /* line 71, ../../app/styles/_carousel.scss */

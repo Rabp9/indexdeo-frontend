@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <img class="img-responsive bg" ng-src="{{ path_location }}img/productos/{{ producto.img_portada }}">
-            <div class="text-center div-center">
+            <div class="text-center col-sm-6 col-sm-offset-3">
                 <h1>{{ producto.title }}</h1>
                 <small>{{ producto.subtitle }}</small>
                 <p class="para-description" ng-bind-html="producto.body"></p>
