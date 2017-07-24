@@ -1,10 +1,12 @@
 <section>
     <div class="container-fluid">
         <div class="row">
+            <h2 class="text-center">Servicios</h2>
+            <hr>
             <div ng-show="!loading && proyectos.length === 0" class="text-center"><h1>No existen Proyectos por mostrar</h1></div>
-            <div ng-show="!loading && proyectos.length !== 0" class="col-sm-4" ng-repeat="proyecto in proyectos">
+            <div ng-show="!loading && proyectos.length !== 0" class="col-sm-4 item-object" ng-repeat="proyecto in proyectos">
                 <div ng-if="proyecto.portada" class="uib-slide carousel x3">
-                    <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ proyecto.img_portada }}">
+                    <img class="img-slider portada-img" ng-src="{{ path_location}}img/proyectos/{{ proyecto.img_portada }}">
                     <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
                         <div class="wrapper">
                             <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>

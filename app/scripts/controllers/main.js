@@ -9,7 +9,7 @@
  */
 angular.module('inexdeoFrotendApp')
 .controller('MainCtrl', function ($scope, infosservice, $q, productosservice, 
-    serviciosservice, proyectosservice, ngProgressFactory, $rootScope) {
+    serviciosservice, proyectosservice, ngProgressFactory, $rootScope, imgResponsiveFilter, $sce) {
     
     $scope.myInterval = 4000;
     $scope.noWrapSlides = false;
@@ -47,7 +47,7 @@ angular.module('inexdeoFrotendApp')
         $scope.progressbar.start();
         $rootScope.layout.loading = true;
         var search = ['promo_inexdeo', 'quienes_somos', 'productos_mensaje', 'servicios_mensaje', 
-            'proyectos_mensaje', 'video', 'bg_quienes_somos', 'bg_contactanos'];
+            'proyectos_mensaje', 'video', 'bg_quienes_somos', 'bg_contactanos', 'bg_hero'];
         $scope.infos = {};
         
         return $q.all([
@@ -86,4 +86,14 @@ angular.module('inexdeoFrotendApp')
     }
     
     init();
+    
+    $scope.getSlideSrc = function(slide, size) {
+        var src = $rootScope.path_location + 'img/' + slide.tipo + '/' + slide.img_portada;
+        return $sce.trustAsResourceUrl(imgResponsiveFilter(src, size));
+    }
+    
+    $scope.getBgSrc = function(bg, size) {
+        var src = $rootScope.path_location + 'img/bg/' + bg;
+        return $sce.trustAsResourceUrl(imgResponsiveFilter(src, size));
+    }
 });

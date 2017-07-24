@@ -19,7 +19,8 @@ angular
     'ui.bootstrap',
     'zumba.angular-waypoints',
     'ngProgress',
-    'fancyboxplus'
+    'fancyboxplus',
+    'ngPicturefill'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
     var mainState = {
@@ -190,10 +191,13 @@ angular
         });
     }
     
-    $('.nav  a:last-child').on('click', function() {
-        $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+    var mq = window.matchMedia("(max-width: 767px)");
+    $('.nav').on('click', function() {
+        if (mq.matches) {
+            $('.navbar-toggle').click();
+        }
     });
-       
+    
     $rootScope.$on('$stateChangeSuccess', function(event, toParams, fromState, fromParams) {
       
         $rootScope.title = $state.current.title;

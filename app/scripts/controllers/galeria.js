@@ -8,7 +8,7 @@
  * Controller of the inexdeoFrotendApp
  */
 angular.module('inexdeoFrotendApp')
-.controller('GaleriaCtrl', function ($scope, albumesservice) {
+.controller('GaleriaCtrl', function ($scope, albumesservice, $state) {
     $scope.loading = false;
     $scope.myInterval = 3000;
     $scope.noWrapSlides = false;
@@ -16,12 +16,8 @@ angular.module('inexdeoFrotendApp')
     
     albumesservice.get(function(data) {
         $scope.albumes = data.albumes;
-        angular.forEach($scope.albumes, function(value, key) {
-            var i = 0;
-            angular.forEach(value.imagenes, function(value, key) {
-                value.index = i;
-                i++;
-            });
-        });
+        if ($scope.albumes.length > 0) {
+            $state.go('galeria.detail', {id: $scope.albumes[0].id});
+        }
     });
 });

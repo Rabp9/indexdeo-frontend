@@ -1,10 +1,12 @@
 <section>
     <div class="container-fluid">
         <div class="row">
+            <h2 class="text-center">Servicios</h2>
+            <hr>
             <div ng-show="!loading && productos.length === 0" class="text-center"><h1>No existen Productos por mostrar</h1></div>
-            <div ng-show="!loading && productos.length !== 0" class="col-sm-4" ng-repeat="producto in productos">
+            <div ng-show="!loading && productos.length !== 0" class="col-sm-4 item-object" ng-repeat="producto in productos">
                 <div ng-if="producto.portada" class="uib-slide carousel x3">
-                    <img class="img-slider" ng-src="{{ path_location}}img/productos/{{ producto.img_portada }}">
+                    <img class="img-slider portada-img" ng-src="{{ path_location}}img/productos/{{ producto.img_portada }}">
                     <div class="carousel-caption animated fadeInLeft" ng-if="producto.title !== null && producto.title !== undefined && producto.title !== ''">
                         <div class="wrapper">
                             <h1><a ui-sref="productos-detail({id: producto.id})">{{ producto.title }}</a></h1>

@@ -8,7 +8,8 @@
  * Controller of the inexdeoFrotendApp
  */
 angular.module('inexdeoFrotendApp')
-.controller('ContactanosCtrl', function ($scope, infosservice, ngProgressFactory) {
+.controller('ContactanosCtrl', function ($scope, infosservice, ngProgressFactory,
+    imgResponsiveFilter, $sce, $rootScope) {
     $scope.infos = {};
     
     // $rootScope.layout.loading = true;
@@ -28,4 +29,9 @@ angular.module('inexdeoFrotendApp')
     }
     
     getInfos();
+    
+    $scope.getBgSrc = function(bg, size) {
+        var src = $rootScope.path_location + 'img/bg/' + bg;
+        return $sce.trustAsResourceUrl(imgResponsiveFilter(src, size));
+    };
 });

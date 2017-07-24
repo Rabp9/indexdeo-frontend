@@ -586,15 +586,25 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(40, 70, 102) url('../images/bg2.png') no-repeat center center;
+    background: rgb(40, 70, 102);
     // background: $color-black;
     background-size: cover;
     color: #fff;
+    
+    @media (max-width: $screen-xs-max) {
+        padding: 30px 0 30px 0;
+        min-height: 300px;
+    }
 }
 .hero h1 {
     margin: 200px 0 45px 0;
     font-weight: 300;
     font-size: 45px;
+    
+    @media (max-width: $screen-xs-max) {
+        margin: 50px 0 40px 0;
+        font-size: 25px;
+    }
 }
 .hero h1 span {
     display: inline-block;

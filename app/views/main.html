@@ -1,5 +1,10 @@
 <header>
     <section class="hero">
+        <picture picturefill>
+            <source media='(max-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_hero, '_large') }}">
+            <source media='(min-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_hero, '_large') }}">
+            <img ng-show="{{ infos.bg_hero !== null }}" class="img-responsive bg"  ng-src="{{ getBgSrc(infos.bg_hero, '_large') }}">
+        </picture>
         <div class="texture-overlay"></div>
         <div class="container">
             <div class="row hero-content">
@@ -32,7 +37,11 @@
     </div>
 </section>
 <section class="screenshots-intro">
-    <img ng-if="{{ infos.bg_quienes_somos !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.bg_quienes_somos}}">
+    <picture picturefill>
+        <source media='(max-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_quienes_somos, '_large') }}">
+        <source media='(min-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_quienes_somos, '_large') }}">
+        <img ng-show="{{ infos.bg_quienes_somos !== null }}" class="img-responsive bg"  ng-src="{{ getBgSrc(infos.bg_quienes_somos, '_large') }}">
+    </picture>
     <div class="container">
         <div class="row wp1" zum-waypoint="waypoints" down="wp1.on" up="wp1.off" offset="75%" ng-class="{'animated fadeInLeft': waypoints.wp1.on}">
             <div class="col-md-12">
@@ -91,7 +100,11 @@
         <div class="row">
             <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade">
                 <div class="uib-slide" uib-slide ng-repeat="slide in slides track by slide.index" index="slide.index">
-                    <img class="img-slider" ng-src="{{ path_location}}img/{{ slide.tipo }}/{{ slide.img_portada }}">
+                    <picture picturefill>
+                        <source media='(max-width: 767px)' ng-attr-srcset="{{ getSlideSrc(slide, '_small') }}">
+                        <source media='(min-width: 767px)' ng-attr-srcset="{{ getSlideSrc(slide, '_large') }}">
+                        <img class="img-slider" ng-src="{{ getSlideSrc(slide, '_large') }}">
+                    </picture>
                     <div class="carousel-caption animated fadeInLeft" ng-if="slide.title !== null && slide.title !== undefined && slide.title !== ''">
                         <div class="wrapper">
                             <h1 ng-show="{{ slide.tipo === 'productos'}}"><a ui-sref="productos-detail({ id: slide.id })">{{ slide.title }}</a></h1>
@@ -107,7 +120,11 @@
     </div>
 </section>
 <section class="download" id="download">
-    <img ng-if="{{ infos.contactanos !== null }}" class="img-responsive bg" ng-src="{{ path_location }}img/bg/{{ infos.contactanos}}">
+    <picture picturefill>
+        <source media='(max-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_contactanos, '_large') }}">
+        <source media='(min-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_contactanos, '_large') }}">
+        <img ng-show="{{ infos.bg_contactanos !== null }}" class="img-responsive bg"  ng-src="{{ getBgSrc(infos.bg_contactanos, '_large') }}">
+    </picture>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center wp4" zum-waypoint="waypoints" down="wp4.on" offset="75%" ng-class="{'animated fadeInDown': waypoints.wp4.on}">

@@ -1,10 +1,12 @@
 <section>
     <div class="container-fluid">
         <div class="row">
+            <h2 class="text-center">Servicios</h2>
+            <hr>
             <div ng-show="!loading && servicios.length === 0" class="text-center"><h1>No existen Servicios por mostrar</h1></div>
-            <div ng-show="!loading && servicios.length !== 0" class="col-sm-4" ng-repeat="servicio in servicios">
+            <div ng-show="!loading && servicios.length !== 0" class="col-sm-4 item-object" ng-repeat="servicio in servicios">
                 <div ng-if="servicio.portada" class="uib-slide carousel x3">
-                    <img class="img-slider" ng-src="{{ path_location}}img/servicios/{{ servicio.img_portada }}">
+                    <img class="img-slider portada-img" ng-src="{{ path_location}}img/servicios/{{ servicio.img_portada }}">
                     <div class="carousel-caption animated fadeInLeft" ng-if="servicio.title !== null && servicio.title !== undefined && servicio.title !== ''">
                         <div class="wrapper">
                             <h1><a ui-sref="servicios-detail({id: servicio.id})">{{ servicio.title }}</a></h1>
