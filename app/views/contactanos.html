@@ -2,7 +2,7 @@
     <picture picturefill>
         <source media='(max-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_contactanos, '_large') }}">
         <source media='(min-width: 767px)' ng-attr-srcset="{{ getBgSrc(infos.bg_contactanos, '_large') }}">
-        <img ng-show="{{ infos.bg_mision !== null }}" class="img-responsive bg"  ng-src="{{ getBgSrc(infos.bg_contactanos, '_large') }}">
+        <img ng-show="{{ infos.bg_contactanos !== null }}" class="img-responsive bg"  ng-src="{{ getBgSrc(infos.bg_contactanos, '_large') }}">
     </picture>
     <div class="container wp3" zum-waypoint="waypoints" down="wp3.on" offset="75%" ng-class="{'animated fadeInLeft': waypoints.wp3.on}">
         <div class="row">
