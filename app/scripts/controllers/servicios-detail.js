@@ -21,7 +21,7 @@ angular.module('inexdeoFrotendApp')
         
         $scope.loading = true;
         serviciosservice.get({id: id}, function(data) {
-            $scope.servicio = data.servicio;    
+            $scope.servicio = data.servicio;
             
             var i = 0;
             angular.forEach($scope.servicio.servicio_images, function(value, key) {

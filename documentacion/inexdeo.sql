@@ -154,7 +154,7 @@ DROP TABLE IF EXISTS `imagenes`;
 CREATE TABLE `imagenes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `album_id` int(11) NOT NULL,
-  `descripcion` varchar(90) NOT NULL,
+  `descripcion` varchar(90) DEFAULT NULL,
   `url` varchar(120) NOT NULL,
   `estado_id` int(11) NOT NULL,
   PRIMARY KEY (`id`,`album_id`,`estado_id`),
@@ -239,7 +239,7 @@ CREATE TABLE `producto_images` (
   `title` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`id`,`producto_id`),
   KEY `fk_images_productos1_idx` (`producto_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -248,7 +248,7 @@ CREATE TABLE `producto_images` (
 
 LOCK TABLES `producto_images` WRITE;
 /*!40000 ALTER TABLE `producto_images` DISABLE KEYS */;
-INSERT INTO `producto_images` VALUES (1,1,'producto-111111',''),(2,1,'producto-222222',''),(5,1,'producto-333333',NULL);
+INSERT INTO `producto_images` VALUES (1,1,'producto-B7355ccQ.jpg',NULL),(2,1,'producto-am1PDoZ6.jpg',NULL),(3,1,'producto-1HqSJrWa.jpg',NULL);
 /*!40000 ALTER TABLE `producto_images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -280,7 +280,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'Productos',NULL,'<p>Dedicados a la exploración y explotación de oro, comercializamos el mineral  cumpliendo todas las normas y políticas de la gerencia de energía y minas. Por lo cual puede contratar acciones comerciales con nosotros, todo bajo el estricto orden de las leyes vigentes. Para Mayor información contáctenos en nuestras múltiples plataformas digitales o visítenos en nuestra oficina principal que gustosamente le atenderemos.</p>','<p>Dedicados a la exploración y explotación de oro, comercializamos el mineral  cumpliendo todas las normas y políticas de la gerencia de energía y minas. </p>',NULL,'producto-123456',1,1);
+INSERT INTO `productos` VALUES (1,'Productos',NULL,'<p>Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral &nbsp;cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas. Por lo cual puede contratar acciones comerciales con nosotros, todo bajo el estricto orden de las leyes vigentes. Para Mayor informaci&oacute;n cont&aacute;ctenos en nuestras m&uacute;ltiples plataformas digitales o vis&iacute;tenos en nuestra oficina principal que gustosamente le atenderemos.</p>','<p>Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral &nbsp;cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</p>',NULL,'producto-kh25V5XO.jpg',1,1);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -298,7 +298,7 @@ CREATE TABLE `proyecto_images` (
   `title` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`id`,`proyecto_id`),
   KEY `fk_proyecto_images_proyectos1_idx` (`proyecto_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,7 +307,7 @@ CREATE TABLE `proyecto_images` (
 
 LOCK TABLES `proyecto_images` WRITE;
 /*!40000 ALTER TABLE `proyecto_images` DISABLE KEYS */;
-INSERT INTO `proyecto_images` VALUES (1,1,'proyecto-111111',NULL),(2,1,'proyecto-222222',NULL),(3,2,'proyecto-333333',NULL),(4,2,'proyecto-444444',NULL),(5,4,'proyecto-555555',NULL),(6,4,'proyecto-666666',NULL),(7,4,'proyecto-777777',NULL),(8,4,'proyecto-888888',NULL),(9,4,'proyecto-999999',NULL),(10,4,'proyecto-111112',NULL),(11,4,'proyecto-111113',NULL),(12,4,'proyecto-111114',NULL);
+INSERT INTO `proyecto_images` VALUES (13,1,'proyecto-jwAK88Oi.jpg',NULL),(14,1,'proyecto-z5uuDuYf.jpg',NULL);
 /*!40000 ALTER TABLE `proyecto_images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -383,7 +383,7 @@ CREATE TABLE `servicio_images` (
   `title` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`id`,`servicio_id`),
   KEY `fk_servicio_images_servicios1_idx` (`servicio_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -392,7 +392,7 @@ CREATE TABLE `servicio_images` (
 
 LOCK TABLES `servicio_images` WRITE;
 /*!40000 ALTER TABLE `servicio_images` DISABLE KEYS */;
-INSERT INTO `servicio_images` VALUES (1,1,'servicio-111111',NULL),(2,1,'servicio-222222',NULL),(3,1,'servicio-333333',NULL),(4,1,'servicio-444444',NULL);
+INSERT INTO `servicio_images` VALUES (5,1,'servicio-2ceWUmLS.jpg',NULL),(6,1,'servicio-6mZu0XbK.jpg',NULL),(7,1,'servicio-9E4VRNMQ.jpg',NULL),(8,1,'servicio-8kP6qJot.jpg',NULL);
 /*!40000 ALTER TABLE `servicio_images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -424,7 +424,7 @@ CREATE TABLE `servicios` (
 
 LOCK TABLES `servicios` WRITE;
 /*!40000 ALTER TABLE `servicios` DISABLE KEYS */;
-INSERT INTO `servicios` VALUES (1,'Servicios',NULL,'<p>Nuestra institución cuenta con un staff de profesionales dedicados a la formulación y elaboración de proyectos de todo tipo de envergadura. Formulamos el sustento técnico de obras civiles así como el diseño arquitectónico de los proyectos solicitados por nuestros clientes. Visite nuestra galería para conocer un poco más de nuestros trabajos.</p>','<p>Nuestra institución cuenta con un staff de profesionales dedicados a la formulación y elaboración de proyectos de todo tipo de envergadura.</p>',NULL,'servicio-123456',NULL,1);
+INSERT INTO `servicios` VALUES (1,'Servicios',NULL,'<p>Nuestra institución cuenta con un staff de profesionales dedicados a la formulación y elaboración de proyectos de todo tipo de envergadura. Formulamos el sustento técnico de obras civiles así como el diseño arquitectónico de los proyectos solicitados por nuestros clientes. Visite nuestra galería para conocer un poco más de nuestros trabajos.</p>','<p>Nuestra institución cuenta con un staff de profesionales dedicados a la formulación y elaboración de proyectos de todo tipo de envergadura.</p>',NULL,'servicio-KtDIMjL2.jpg',1,1);
 /*!40000 ALTER TABLE `servicios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -494,4 +494,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-08-16 11:12:14
+-- Dump completed on 2017-08-18 15:44:44
