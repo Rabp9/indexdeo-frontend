@@ -3,10 +3,10 @@
         <div class="row">
             <h1 class="text-center">{{ album.descripcion }}</h1>
             <div class="col-sm-3" ng-repeat="imagen in album.imagenes">
-                <a class="grouped_elements" rel="group1" ng-href="{{ path_location }}img/galeria/{{ album.id }}/{{ imagen.url }}" 
+                <a class="grouped_elements" rel="group1" ng-href="{{ path_location }}img/galeria/{{ imagen.url }}" 
                     fancyboxable="{title:'{{ imagen.descripcion }}', padding: 0, 
                     transitionIn: 'elastic', transitionOut: 'elastic'}">
-                    <img class="img-responsive" ng-src="{{ path_location }}img/galeria/{{ album.id }}/{{ imagen.url }}" alt="{{ imagen.descripcion }}"/>
+                    <img class="img-responsive" ng-src="{{ path_location }}img/galeria/{{ imagen.url }}" alt="{{ imagen.descripcion }}"/>
                 </a>
             </div>
         </div>
