@@ -12,7 +12,8 @@ angular.module('inexdeoFrotendApp')
 .filter('imgResponsive', function () {
     return function (input, size) {
         var ext = input.split('.').pop();
-        input = input.replace(/\..+$/, '');
+        input = input.slice(0, (input.length - ext.length - 1));
+        //input = input.replace(/\..+$/, '');
         input = input + size + '.' + ext;
         return input;
     };
