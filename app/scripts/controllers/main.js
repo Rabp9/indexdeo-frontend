@@ -47,7 +47,7 @@ angular.module('inexdeoFrotendApp')
         $scope.progressbar.start();
         $rootScope.layout.loading = true;
         var search = ['promo_inexdeo', 'quienes_somos', 'productos_mensaje', 'servicios_mensaje', 
-            'proyectos_mensaje', 'video', 'bg_quienes_somos', 'bg_contactanos', 'bg_hero'];
+            'proyectos_mensaje', 'video', 'bg_quienes_somos', 'bg_contactanos', 'bg_hero', 'video'];
         $scope.infos = {};
         
         return $q.all([
@@ -95,5 +95,13 @@ angular.module('inexdeoFrotendApp')
     $scope.getBgSrc = function(bg, size) {
         var src = $rootScope.path_location + 'img/bg/' + bg;
         return $sce.trustAsResourceUrl(imgResponsiveFilter(src, size));
-    }
+    }       
+    $scope.video = {
+        'width'				: '75%',
+        'height'			: '75%',
+        'autoScale'     	: false,
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none',
+        'type'				: 'iframe'
+    };
 });
