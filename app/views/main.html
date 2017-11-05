@@ -12,12 +12,21 @@
                     <h1 class="animated fadeInDown">
                         {{ infos.promo_inexdeo }}
                     </h1>
-                    <a ui-sref="productos" class="use-btn animated fadeInUp">
-                        Productos
-                    </a> 
-                    <a href="#resumen" class="learn-btn animated fadeInUp">
-                        Ver más <i class="fa fa-arrow-down"></i>
-                    </a>
+                    
+                    <div class="btn-group">
+                        <a href="#" class="use-btn animated fadeInUp dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ofrecemos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a ui-sref="productos">Productos</a></li>
+                            <li><a ui-sref="servicios">Servicios</a></li>
+                            <li><a ui-sref="proyectos">Proyectos</a></li>
+                        </ul>
+                        <a href="#resumen" class="learn-btn animated fadeInUp">
+                            Ver más <i class="fa fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </div>

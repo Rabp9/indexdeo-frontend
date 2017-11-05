@@ -197,15 +197,20 @@ angular
             $('.navbar-toggle').click();
         }
     });
-    
+        
     $rootScope.$on('$stateChangeSuccess', function(event, toParams, fromState, fromParams) {
       
         $rootScope.title = $state.current.title;
         $window.scrollTo(0, 0);
         
         if ($state.current.name === 'main') {
-            $('body').removeClass('margin');
-            $('nav.navbar').addClass('navbar-transparent');
+            if (!mq.matches) {
+                $('body').removeClass('margin');
+                $('nav.navbar').addClass('navbar-transparent');
+            } else {
+                $('body').addClass('margin');
+                $('nav.navbar').removeClass('navbar-transparent');
+            }
         } else {
             $('body').addClass('margin');
             $('nav.navbar').removeClass('navbar-transparent');

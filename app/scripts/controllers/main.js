@@ -11,6 +11,7 @@ angular.module('inexdeoFrotendApp')
 .controller('MainCtrl', function ($scope, infosservice, $q, productosservice, 
     serviciosservice, proyectosservice, ngProgressFactory, $rootScope, imgResponsiveFilter, $sce) {
     
+    var mq = window.matchMedia("(max-width: 767px)");
     $scope.myInterval = 4000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
@@ -38,7 +39,9 @@ angular.module('inexdeoFrotendApp')
         if (newValue) {
             $('nav.navbar').removeClass('navbar-transparent');
         } else {
-            $('nav.navbar').addClass('navbar-transparent');
+            if (!mq.matches) {
+                $('nav.navbar').addClass('navbar-transparent');
+            }
         }
     });
     function init() {
