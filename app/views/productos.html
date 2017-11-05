@@ -1,32 +1,32 @@
 <section>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <h2 class="text-center">Productos</h2>
             <hr>
             <div ng-show="!loading && productos.length === 0" class="text-center"><h1>No existen Productos por mostrar</h1></div>
-            <div ng-show="!loading && productos.length !== 0" class="col-sm-4 item-object" ng-repeat="producto in productos">
-                <div ng-if="producto.portada" class="uib-slide carousel x3">
-                    <img class="img-slider portada-img" ng-src="{{ path_location}}img/productos/{{ producto.img_portada }}">
-                    <div class="carousel-caption animated fadeInLeft" ng-if="producto.title !== null && producto.title !== undefined && producto.title !== ''">
-                        <div class="wrapper">
-                            <h1><a ui-sref="productos-detail({id: producto.id})">{{ producto.title }}</a></h1>
+            <div class="row hidden-xs">
+                <div ng-show="loading"><img class="img-loading center-block img-responsive" src="images/loading.gif" alt="Cargando..."></div>
+                <ul class="media-list">
+                    <div class="showcase-list-item not-visible" ng-repeat="producto in productos">
+                        <div class="showcase-list-item-description">
+                            <h2>
+                                <a ui-sref="productos-detail({id: producto.id})">{{ producto.title }}</a>
+                            </h2>
                             <small>{{ producto.subtitle }}</small>
+                            <hr>
                             <p ng-bind-html="producto.resumen"></p>
+                            <a ui-sref="productos-detail({id: producto.id})" class="use-btn animated fadeInUp pull-right">Conoce más</a>
                         </div>
-                    </div>
-                </div>
-                <div ng-if="!producto.portada" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
-                    <div class="uib-slide" uib-slide ng-repeat="image in producto.producto_images track by image.index" index="image.index">
-                        <img class="img-slider" ng-src="{{ path_location}}img/productos/{{ image.url }}">       
-                        <div class="carousel-caption animated fadeInLeft" ng-if="producto.title !== null && producto.title !== undefined && producto.title !== ''">
-                            <div class="wrapper">
-                                <h1><a ui-sref="productos-detail({id: producto.id})">{{ producto.title }}</a></h1>
-                                <small>{{ producto.subtitle }}</small>
-                                <p ng-bind-html="producto.resumen"></p>
+                        <div class="showcase-list-item-imagen">
+                            <img ng-if="producto.img_portada !== null" ng-src="{{ path_location}}img/productos/{{ producto.img_portada }}" class="img-responsive img-obra">
+                            <div ng-if="producto.img_portada === null" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
+                                <div class="uib-slide" uib-slide ng-repeat="image in producto.producto_images track by image.index" index="image.index">
+                                    <img class="img-slider" ng-src="{{ path_location}}img/productos/{{ image.url }}">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </ul>
             </div>
         </div>
     </div>
