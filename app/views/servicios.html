@@ -1,26 +1,51 @@
 <section>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <h2 class="text-center">Servicios</h2>
             <hr>
             <div ng-show="!loading && servicios.length === 0" class="text-center"><h1>No existen Servicios por mostrar</h1></div>
-            <div ng-show="!loading && servicios.length !== 0" class="col-sm-4 item-object" ng-repeat="servicio in servicios">
-                <div ng-if="servicio.portada" class="uib-slide carousel x3">
-                    <img class="img-slider portada-img" ng-src="{{ path_location}}img/servicios/{{ servicio.img_portada }}">
-                    <div class="carousel-caption animated fadeInLeft" ng-if="servicio.title !== null && servicio.title !== undefined && servicio.title !== ''">
-                        <div class="wrapper">
-                            <h1><a ui-sref="servicios-detail({id: servicio.id})">{{ servicio.title }}</a></h1>
+            <div class="row hidden-xs">
+                <div ng-show="loading"><img class="img-loading center-block img-responsive" src="images/loading.gif" alt="Cargando..."></div>
+                <ul class="media-list">
+                    <div class="showcase-list-item not-visible" when-visible="animateElementIn"
+                        when-not-visible="animateElementOut" ng-repeat="servicio in servicios">
+                        <div class="showcase-list-item-description">
+                            <h2>
+                                <a ui-sref="servicios-detail({id: servicio.id})">{{ servicio.title }}</a>
+                            </h2>
                             <small>{{ servicio.subtitle }}</small>
-                            <p>{{ servicio.resumen }}</p>
+                            <hr>
+                            <p ng-bind-html="servicio.resumen"></p>
+                            <a ui-sref="servicios-detail({id: servicio.id})" class="use-btn animated pull-right">Conoce más</a>
+                        </div>
+                        <div class="showcase-list-item-imagen">
+                            <img ng-if="servicio.img_portada !== null" ng-src="{{ path_location}}img/servicios/{{ servicio.img_portada }}" class="img-responsive">
+                            <div ng-if="servicio.img_portada === null" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
+                                <div class="uib-slide" uib-slide ng-repeat="image in servicio.servicio_images track by image.index" index="image.index">
+                                    <img class="img-slider" ng-src="{{ path_location}}img/servicios/{{ image.url }}">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div ng-if="!servicio.portada" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
-                    <div class="uib-slide" uib-slide ng-repeat="image in servicio.servicio_images track by image.index" index="image.index">
-                        <img class="img-slider" ng-src="{{ path_location}}img/servicios/{{ image.url }}">       
-                        <div class="carousel-caption animated fadeInLeft" ng-if="servicio.title !== null && servicio.title !== undefined && servicio.title !== ''">
-                            <div class="wrapper">
-                                <h1><a ui-sref="servicios-detail({id: servicio.id})">{{ servicio.title }}</a></h1>
+                </ul>
+            </div>
+            <div class="container hidden-sm hidden-md hidden-lg">
+                <div class="row">
+                    <div class="col-sm-4" ng-repeat="servicio in servicios">
+                        <div class="showcase-list-item-xs not-visible" when-visible="animateElementIn"
+                            when-not-visible="animateElementOut">
+                            <div class="showcase-list-item-xs-imagen">
+                                <img ng-if="servicio.img_portada !== null" ng-src="{{ path_location}}img/servicios/{{ servicio.img_portada }}" class="img-responsive">
+                                <div ng-if="servicio.img_portada === null" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
+                                    <div class="uib-slide" uib-slide ng-repeat="image in servicio.servicio_images track by image.index" index="image.index">
+                                        <img class="img-slider" ng-src="{{ path_location}}img/servicios/{{ image.url }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase-list-item-xs-description">
+                                <h2>
+                                    <a ui-sref="servicios-detail({id: servicio.id})">{{ servicio.title }}</a>
+                                </h2>
                                 <small>{{ servicio.subtitle }}</small>
                                 <p ng-bind-html="servicio.resumen"></p>
                             </div>

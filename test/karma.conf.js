@@ -38,6 +38,7 @@ module.exports = function(config) {
       'bower_components/angular-fancybox-plus/js/angular-fancybox-plus.js',
       'bower_components/picturefill/dist/picturefill.js',
       'bower_components/angular-picture/src/angular-picture.js',
+      'bower_components/angular-scroll-animate/dist/angular-scroll-animate.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

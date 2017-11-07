@@ -14,6 +14,7 @@ angular.module('inexdeoFrotendApp')
     $scope.myInterval = 20000000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
+    var controladorWhenVisible = 0;
     
     function init() {
         $scope.progressbar = ngProgressFactory.createInstance();
@@ -40,4 +41,17 @@ angular.module('inexdeoFrotendApp')
         });
     }
     init();
+    
+    $scope.animateElementIn = function($el) {
+        $el.removeClass('not-visible');
+        $el.addClass('animated fadeInUp');
+    };
+
+    $scope.animateElementOut = function($el) {
+        if (controladorWhenVisible !== 5) {
+            $el.addClass('not-visible');
+            $el.removeClass('animated fadeInUp');
+            controladorWhenVisible++;
+        }
+    };
 });

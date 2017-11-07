@@ -20,7 +20,8 @@ angular
     'zumba.angular-waypoints',
     'ngProgress',
     'fancyboxplus',
-    'ngPicturefill'
+    'ngPicturefill',
+    'angular-scroll-animate',
 ])
 .config(function($stateProvider, $urlRouterProvider) {
     var mainState = {

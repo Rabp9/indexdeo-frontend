@@ -6,6 +6,9 @@
         "uib-carousel": {
             "context": "div"
         },
+        "when-visible": {
+            "context": "div"
+        },
         "ui-sref-active": {
             "context": "li"
         },

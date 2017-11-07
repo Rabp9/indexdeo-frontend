@@ -1,26 +1,51 @@
 <section>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <h2 class="text-center">Proyectos</h2>
             <hr>
             <div ng-show="!loading && proyectos.length === 0" class="text-center"><h1>No existen Proyectos por mostrar</h1></div>
-            <div ng-show="!loading && proyectos.length !== 0" class="col-sm-4 item-object" ng-repeat="proyecto in proyectos">
-                <div ng-if="proyecto.portada" class="uib-slide carousel x3">
-                    <img class="img-slider portada-img" ng-src="{{ path_location}}img/proyectos/{{ proyecto.img_portada }}">
-                    <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
-                        <div class="wrapper">
-                            <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
+            <div class="row hidden-xs">
+                <div ng-show="loading"><img class="img-loading center-block img-responsive" src="images/loading.gif" alt="Cargando..."></div>
+                <ul class="media-list">
+                    <div class="showcase-list-item not-visible" when-visible="animateElementIn"
+                        when-not-visible="animateElementOut" ng-repeat="proyecto in proyectos">
+                        <div class="showcase-list-item-description">
+                            <h2>
+                                <a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a>
+                            </h2>
                             <small>{{ proyecto.subtitle }}</small>
+                            <hr>
                             <p ng-bind-html="proyecto.resumen"></p>
+                            <a ui-sref="proyectos-detail({id: proyecto.id})" class="use-btn animated pull-right">Conoce más</a>
+                        </div>
+                        <div class="showcase-list-item-imagen">
+                            <img ng-if="proyecto.img_portada !== null" ng-src="{{ path_location}}img/proyectos/{{ proyecto.img_portada }}" class="img-responsive">
+                            <div ng-if="proyecto.img_portada === null" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
+                                <div class="uib-slide" uib-slide ng-repeat="image in proyecto.proyecto_images track by image.index" index="image.index">
+                                    <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ image.url }}">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div ng-if="!proyecto.portada" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
-                    <div class="uib-slide" uib-slide ng-repeat="image in proyecto.proyecto_images track by image.index" index="image.index">
-                        <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ image.url }}">       
-                        <div class="carousel-caption animated fadeInLeft" ng-if="proyecto.title !== null && proyecto.title !== undefined && proyecto.title !== ''">
-                            <div class="wrapper">
-                                <h1><a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a></h1>
+                </ul>
+            </div>
+            <div class="container hidden-sm hidden-md hidden-lg">
+                <div class="row">
+                    <div class="col-sm-4" ng-repeat="proyecto in proyectos">
+                        <div class="showcase-list-item-xs not-visible" when-visible="animateElementIn"
+                            when-not-visible="animateElementOut">
+                            <div class="showcase-list-item-xs-imagen">
+                                <img ng-if="proyecto.img_portada !== null" ng-src="{{ path_location}}img/proyectos/{{ proyecto.img_portada }}" class="img-responsive">
+                                <div ng-if="proyecto.img_portada === null" uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" class="slide carousel-fade x3">
+                                    <div class="uib-slide" uib-slide ng-repeat="image in proyecto.proyecto_images track by image.index" index="image.index">
+                                        <img class="img-slider" ng-src="{{ path_location}}img/proyectos/{{ image.url }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="showcase-list-item-xs-description">
+                                <h2>
+                                    <a ui-sref="proyectos-detail({id: proyecto.id})">{{ proyecto.title }}</a>
+                                </h2>
                                 <small>{{ proyecto.subtitle }}</small>
                                 <p ng-bind-html="proyecto.resumen"></p>
                             </div>

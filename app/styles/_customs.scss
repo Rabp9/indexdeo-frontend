@@ -191,3 +191,39 @@ img.bg {
         }
     }
 }
+
+.showcase-list-item-xs {
+    justify-content: space-between;
+    margin: 5px;
+    color: $color-black;
+    
+    @media (min-width: $screen-sm-min) {
+        height: 500px;
+    }
+    @media (max-width: $screen-xs-max) {
+        max-height: 500px;
+    }
+    .showcase-list-item-xs-imagen {
+        background: $color-default;
+        position: relative;
+    }
+    .showcase-list-item-xs-description {
+        padding: 12px;
+        padding-top: 0px;
+        h2 {
+            min-height: 30px;
+            text-align: center;
+            a {
+                color: $color-black;
+                font-weight: bold;
+            }
+        }
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+.not-visible {
+    visibility: hidden;
+}
