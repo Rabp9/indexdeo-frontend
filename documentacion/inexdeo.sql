@@ -29,7 +29,7 @@ CREATE TABLE `albumes` (
   PRIMARY KEY (`id`,`estado_id`),
   UNIQUE KEY `descripcion_UNIQUE` (`descripcion`),
   KEY `fk_albumes_estados1_idx` (`estado_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +186,7 @@ CREATE TABLE `infos` (
   `value` longtext,
   `tipo` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -195,7 +195,7 @@ CREATE TABLE `infos` (
 
 LOCK TABLES `infos` WRITE;
 /*!40000 ALTER TABLE `infos` DISABLE KEYS */;
-INSERT INTO `infos` VALUES (21,'telf','044-278699','t'),(22,'promo_inexdeo','Somos la empresa líder en Minería y Construcción del norte del país','t'),(23,'quienes_somos','Somos una empresa fundada desde el 2011 dedica al rubro de minería y construcción de obras civiles en todo el territorio nacional. Contamos con un staff de experimentados colaboradores que diseñan, ejecutan y dirigen nuestros proyectos; además nos dedicamos a la extracción de minerales metálicos y no metálicos.','t'),(24,'direccion','Jr. Diego de Almagro 270 Int. 101 Centro Cívico de Trujillo','t'),(25,'historia','<p class=\"MsoNormal\">Nuestra instituci&oacute;n empez&oacute; sus operaciones en el a&ntilde;o 2011, fundada por la familia Rodr&iacute;guez Ruiz. Conformada en sus inicios por diez socios se comenz&oacute; a trabajar en el rubro de la miner&iacute;a en la sierra liberte&ntilde;a, para luego en el 2014 incursionar en el rubro de la construcci&oacute;n de obras civiles.</p>\n<p class=\"MsoNormal\">Observando la demanda de los servicios de construcci&oacute;n, la empresa decidi&oacute; ampliar sus operaciones en el a&ntilde;o 2014 a varias regiones del norte del pa&iacute;s, entre ellas las regiones de Cajamarca, Ancash&nbsp;y La Libertad.</p>\n<p>&nbsp;En la actualidad nuestra empresa viene evolucionando sus procesos de mejora continua para brindar servicios y productos de la mejor calidad y consolidarnos como una empresa de prestigio en la regi&oacute;n.</p>','p'),(26,'productos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</span></p>','p'),(27,'servicios_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Nuestra instituci&oacute;n cuenta con un staff de profesionales dedicados a la formulaci&oacute;n y elaboraci&oacute;n de proyectos de todo tipo de envergadura.</span></p>','p'),(28,'proyectos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">A lo largo del tiempo vamos construyendo sue&ntilde;os de familias y comunidades, por ello ponemos a su disposici&oacute;n toda nuestra experiencia, log&iacute;stica y conocimiento para la realizaci&oacute;n de esos proyectos que tanto anhelan.</span></p>','p'),(29,'video','http://www.youtube.com/embed/zhhYIZJj6rk?autoplay=1','t'),(30,'bg_quienes_somos','sdasd','b'),(31,'bg_contactanos','dasdas','b'),(32,'bg_mision',NULL,'b'),(33,'bg_historia',NULL,'b'),(34,'bg_hero','bg.jpg','b');
+INSERT INTO `infos` VALUES (21,'telf','044-278699','t'),(22,'promo_inexdeo','Somos la empresa líder en Minería y Construcción del norte del país','t'),(23,'quienes_somos','Somos una empresa fundada desde el 2011 dedica al rubro de minería y construcción de obras civiles en todo el territorio nacional. Contamos con un staff de experimentados colaboradores que diseñan, ejecutan y dirigen nuestros proyectos; además nos dedicamos a la extracción de minerales metálicos y no metálicos.','t'),(24,'direccion','Jr. Diego de Almagro 270 Int. 101 Centro Cívico de Trujillo','t'),(25,'historia','<p class=\"MsoNormal\">Nuestra instituci&oacute;n empez&oacute; sus operaciones en el a&ntilde;o 2011, fundada por la familia Rodr&iacute;guez Ruiz. Conformada en sus inicios por diez socios se comenz&oacute; a trabajar en el rubro de la miner&iacute;a en la sierra liberte&ntilde;a, para luego en el 2014 incursionar en el rubro de la construcci&oacute;n de obras civiles.</p>\n<p class=\"MsoNormal\">Observando la demanda de los servicios de construcci&oacute;n, la empresa decidi&oacute; ampliar sus operaciones en el a&ntilde;o 2014 a varias regiones del norte del pa&iacute;s, entre ellas las regiones de Cajamarca, Ancash&nbsp;y La Libertad.</p>\n<p>&nbsp;En la actualidad nuestra empresa viene evolucionando sus procesos de mejora continua para brindar servicios y productos de la mejor calidad y consolidarnos como una empresa de prestigio en la regi&oacute;n.</p>','p'),(26,'productos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</span></p>','p'),(27,'servicios_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">Nuestra instituci&oacute;n cuenta con un staff de profesionales dedicados a la formulaci&oacute;n y elaboraci&oacute;n de proyectos de todo tipo de envergadura.</span></p>','p'),(28,'proyectos_mensaje','<p class=\"MsoNormal\"><span style=\"font-size: 16pt;\">A lo largo del tiempo vamos construyendo sue&ntilde;os de familias y comunidades, por ello ponemos a su disposici&oacute;n toda nuestra experiencia, log&iacute;stica y conocimiento para la realizaci&oacute;n de esos proyectos que tanto anhelan.</span></p>','p'),(29,'video','http://www.youtube.com/embed/zhhYIZJj6rk?autoplay=1','t'),(30,'bg_quienes_somos','sdasd','b'),(31,'bg_contactanos','dasdas','b'),(32,'bg_mision',NULL,'b'),(33,'bg_historia',NULL,'b'),(34,'bg_hero','bg.jpg','b'),(35,'brochure','brochure.pdf','f');
 /*!40000 ALTER TABLE `infos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -281,7 +281,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-INSERT INTO `productos` VALUES (1,'Productos',NULL,'<p>Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral &nbsp;cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas. Por lo cual puede contratar acciones comerciales con nosotros, todo bajo el estricto orden de las leyes vigentes. Para Mayor informaci&oacute;n cont&aacute;ctenos en nuestras m&uacute;ltiples plataformas digitales o vis&iacute;tenos en nuestra oficina principal que gustosamente le atenderemos.</p>','<p>Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral &nbsp;cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</p>',NULL,'producto-kh25V5XO.jpg',1,1),(4,'kñk','kkl','<p>kllkl</p>',NULL,NULL,NULL,0,1);
+INSERT INTO `productos` VALUES (1,'Productos','ddsa asdd sa','<p>Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral &nbsp;cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas. Por lo cual puede contratar acciones comerciales con nosotros, todo bajo el estricto orden de las leyes vigentes. Para Mayor informaci&oacute;n cont&aacute;ctenos en nuestras m&uacute;ltiples plataformas digitales o vis&iacute;tenos en nuestra oficina principal que gustosamente le atenderemos.</p>','<p>Dedicados a la exploraci&oacute;n y explotaci&oacute;n de oro, comercializamos el mineral &nbsp;cumpliendo todas las normas y pol&iacute;ticas de la gerencia de energ&iacute;a y minas.</p>',NULL,'producto-kh25V5XO.jpg',1,1),(4,'kñk','sdsa dsa dasdas das','<p>kllkl</p>',NULL,NULL,NULL,0,1);
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -495,4 +495,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-08-20 15:39:09
+-- Dump completed on 2017-12-13 23:36:59
