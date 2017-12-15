@@ -165,17 +165,6 @@ angular
     $stateProvider.state(galeriaDetailState);
     $stateProvider.state(pagesState);
     $urlRouterProvider.when('', '/');
-    /*
-    ngImageGalleryOptsProvider.setOpts({
-        thumbnails: true,
-        inline:   false,
-        imgBubbles:   false, 
-        bgClose:   true,
-        bubbles:   true, 
-        imgAnim:   'fadeup',
-        thumbSize: 160
-    });
-    */
 })
 .run(function($rootScope, infosservice, envservice, $window, $state) {
     $rootScope.infosRoot = {};
@@ -183,13 +172,14 @@ angular
     $rootScope.layout = {};
     
     function init() {
-        var search = ['telf', 'email', 'facebook_link'];
+        var search = ['telf', 'email', 'facebook_link', 'brochure'];
         
         infosservice.getDataMany(search, function(data) {
             angular.forEach(search, function(value, key) {
                 $rootScope.infosRoot[value] = data.info[value];
             });
         });
+        console.log($rootScope.infosRoot);
     }
     
     var mq = window.matchMedia("(max-width: 767px)");
